@@ -33,4 +33,85 @@ Browser Components
 ------------------
 
 - Browsers use series of engines/programming modules to display web page
-- An engine is a bloc kof code that performs a specific task
+- An engine is a block of code that performs a specific task
+- Browser has rendering or layout engine that calculates pixel colors on frame buffer.
+
+================================
+Important Browser Considerations
+================================
+
+---------------------
+Document Object Model
+---------------------
+
+-DOM not an engine but represents web page structure for rendering engine.
+
+----------------------
+Separation of Concerns
+----------------------
+
+- SOC calls for one file to hold only one type of scripting
+- Principle shared in engineering disciplines
+- Three types of scripting to make webpage
+- HTML is also known as structure - it defines pages content
+- Cascading Style Sheets/styling information are known as presentation - defines page
+s appearance
+- Javascript adds programming and dynamism to web pages
+
+- Separation of concerns should be followed in HTML because browser parses code quickly
+
+===================
+Browsers Used Today
+===================
+
+- Chrome has 66% of market share.
+- Most compliant with W3C standards.
+- Requires each tab to run as separate instance
+
+- Safari is second with 18% of market share.
+- Mobile browsing not separated from desktop browsing
+
+- Edge started as internet explorer
+- Controversial because directly embedded in the Windows 95 OS.
+- Has 5% of market share
+
+- Firefox started as netscape navigator and dominated 1995 - 2000.
+- Netscape navigator 2 important because it was the first browser to store cookies, allow Javascript, and it introduced SSL
+- Replaced in 2004 for Firefox
+- 3% of market share
+
+=================================
+The World of ECMAScript Companies
+=================================
+
+-------------------------------------
+Technologies Relating to the Internet
+-------------------------------------
+
+- John Resig focused on UI, front-end development, and Javascript
+- Created jQuery library and considered leading voice in Javascript development
+- jQuery used by 10% of companies that need programming framework to use on site
+
+- ECMA stands for European Computer Manufacturers Association and it is standardization organization where JavaScript and client-side scripting languages are documented
+
+- Companies discussed are Adobe, Apple, Google, Microsoft, Mozilla, and Opera
+
+===================================
+Early History of HTML (1960 - 1988)
+===================================
+
+---------------------------
+Presentation of the History
+---------------------------
+
+- Internet Pre-History (1960 - 1988)
+- The Internet @ CERN (1988 - 1993)
+- The Internet Comes Home & Browser War Years (1995 - 1998)
+- The XHTML Years (1998 - 2005)
+- The HTML5 Years (2005 - present)
+
+----------------------------------
+Internet Pre-History (1960 - 1988)
+----------------------------------
+
+- Electronic computing came in WW2 by Alan Turing
