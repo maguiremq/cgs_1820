@@ -1,0 +1,36 @@
+=======================
+Disruptive Technologies
+=======================
+
+- Makes old products obsolete
+- Destroys old industry
+- Affects social order, law, and societal morals
+- Less expensive
+- Moves centralized power towards decentralizaton
+
+- Internet replaced printing
+- Printing was once disruptive to feudal system and church
+- 1450's when Gutenburg started mass book production
+- Power goes from church to publishers
+- Disruptive to truth since internet contains opinions or statements that are untrue
+
+- Internet started as means to send papers and data within CERN
+- Invented by Tim Berners-Lee
+
+==================
+What is a browser?
+==================
+
+- Views web pages
+- Application that renders web page by source HTML and CSS code
+- Gets sent to frame buffer (video card)
+- HTML5 in 2005 led to standards across browsing experience
+- All browsers use W3C Document Object Model to describe page structure, style, and content, except for Microsoft Edge
+- Browsers designed to convert invalid code to valid code
+
+------------------
+Browser Components 
+------------------
+
+- Browsers use series of engines/programming modules to display web page
+- An engine is a bloc kof code that performs a specific task
