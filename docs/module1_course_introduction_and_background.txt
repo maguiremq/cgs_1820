@@ -115,3 +115,174 @@ Internet Pre-History (1960 - 1988)
 ----------------------------------
 
 - Electronic computing came in WW2 by Alan Turing
+- Alan Turing created electronic bombe to break German Enigma code
+- Others developed Colossus which broke the code
+- First programmable computer called ENIAC
+- First computer using hard drive, RAM. and CPU - known as The von Neumann Architecture
+
+---------------------------------------------------
+Hardware, Networking, and the Intergalactic Network
+---------------------------------------------------
+
+- Hardware oriented project to see how to network computers
+- Intergalactic Network used ARPANet to create networked systems in the 1980s
+- JCR Licklider came up with above in the 60's
+- Packet switching, ARAPNet, Transmission Control Protocol (TCP) were key innovations
+
+---------------------------
+Software and Project Xanadu
+---------------------------
+
+- Xanadu was software=driven prject looking at how people would interact on network
+- Ted Nelson responsible
+- Came up with 17 core principles of the internet
+- Nelson coined 'hypertext' and 'hypermedia', with hyper referring to multidimensional and non-sequential nature of consuming information
+- Hyper also describes bridge/connection between two resources
+
+-------------------------------
+Invention of Personal Computers
+-------------------------------
+
+- Apple I first personal computer in 1975
+- Gen 3 computer meaning it has OS and consistent architecture with chipset
+- Steve Jobs and Steve Wozniak added mouse and GUI to help users
+- Jobs' metaphors: screen was desktop or working surface, we creat files and shown on paper pre-computer, files grouped together held in folders
+- Memory icons are drawers or places of storage
+- Unnecessary files are stored in trash
+
+=======================
+A New Metaphor of Media
+=======================
+
+-----------------------------
+Project Zanadu and Hypermedia
+-----------------------------
+
+- Internet made by Tim Berners-Lee and intended opening on 01/01/1983
+- Nelsons 17 principles for internet
+
+- Every Xanadu server is uniquely and securely identiﬁed.
+- Every Xanadu server can be operated independently or in a network.
+- Users are uniquely and securely identiﬁed.
+- Users can search, retrieve, create and store documents.
+- Documents consist of any number of parts each of which may be of any data type.
+- Documents contain links including virtual copies ("transclusions") to any other documents.
+- Links are visible and can be followed from all endpoints.
+- Permission to link to a document is explicitly granted by the act of publication.
+- Documents can contain a royalty mechanism at any desired degree of granularity. 
+- Documents are uniquely and securely identiﬁed.
+- Documents can have secure access controls.
+- Documents can be rapidly searched, stored and retrieved without user knowledge.
+- Documents are moved to physical storage based on its frequency of access.
+- Every document is stored redundantly to maintain availability.
+- Service provides charge their users for the storage, retrieval and publishing of documents.
+- Every transaction is secure and auditable only by the parties to that transaction.
+- The Xanadu client-server communication protocol is an openly published standard. Third-party software development and integration is encouraged.
+
+- Second theme of Nelson is idea that internet needs to develop own metaphors
+
+====================================
+What is Text? What is a Text Editor?
+====================================
+
+- HTML requires code using unformatted text typed into editor
+
+----------------------
+What is a text editor?
+----------------------
+
+- Creates files that hold unformatted text
+- Word is a word-processor not a text editor
+
+----------------
+What is WYSIWYG?
+----------------
+
+- What you see is what you get
+- Means display of file on monitor is same output generated when file is printed or viewed in another environment
+- Word is one because file displayed on monitor and printed version look same
+
+=============
+Document Flow
+=============
+
+- How to place content on a page
+- Applies to any element that has display of inline or inline-block
+- Content goes horizontally left to right until it no longer fits on current row
+- Line height determined by tallest element in row
+
+============================
+What an HTML File Looks Like
+============================
+
+---------------
+<!doctype html>
+---------------
+
+- First row of code identifies the doctype that tells browser how to interpret code
+- HTML5 embeds the DTD instead of trying to call it in
+
+------
+<html>
+------
+
+- <html> is where the code starts and </html> is where the code ends
+
+------
+<head>
+------
+
+- Admin information about where file is located
+- One meta tag to define character set and a <title> element in the <head>
+- Anything in <head> will not be visible on the web page but describes and defines the webpage
+- <head> holds information about file and <body> holds information about what is displayed
+
+------
+<body>
+------
+
+- Place content that you want people to see when file is opened in browser
+
+--------------
+.htm or .html?
+--------------
+
+- Difference goes back to W95 and ISO9660 level 1 standard where no file names longer than 8 characters and extension no longer than 3 characters
+- Level 2 ISO extended filenames and extensions
+- Microsoft continues to use .htm
+- Microsoft status within web community is not good
+
+-----------------
+Elements and Tags
+-----------------
+
+- HTML code written using elements or tags
+- An element is made up of open tag, close tag, and content between
+- Interaction described in HTML's Document Type Definition (DTD) built into HTML5 compliant browser
+- This is the first line of the html code with <!doctype html>
+- Tag is either opening or closing element without opposing element or element's content
+- Tag is one part of an element
+- <h1> is open </h1> is close
+- HTML code must follow HTML5 DTD
+- HTML does best to fix non-compliant tags and render text based on code as it was fixed
+
+----------------
+Case Sensitivity
+----------------
+
+- HTML not case-sensitive, but in page it should be
+- Convention is lowercase
+
+-------------
+Body Text <p>
+-------------
+
+- Normal body text that is not a header, list item, or other
+- Text in <p> element is 1 em tall
+- Paragraph technically has one em of space between paragraphs
+
+---------------
+Header Elements
+---------------
+
+- Defines a title to a section of text
