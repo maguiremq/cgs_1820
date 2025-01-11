@@ -286,3 +286,59 @@ Header Elements
 ---------------
 
 - Defines a title to a section of text
+- <h1> is first title, etc.
+
+---------------
+<p> versus <br>
+---------------
+
+- If you want to go to next line but no additional space between lines that paragraphs add, use <br>
+
+-------
+Display
+-------
+
+- Defines how element interacts or lays out with other elements
+- Block: element consumes entire line and will not allow content beside it or inline, so it consumes only space it takes up
+
+-----------------------------------------
+Spaces between Characters (HTML Entities)
+-----------------------------------------
+
+- Allowed no more than one space between characters in HTML
+- Workaround is `&nbsp` which is a non-breaking space
+- This is referred to as an entity
+
+=======================================
+Changing the Appearance of Page Content
+=======================================
+
+- <!doctype html> defines default styles applied to your webpage
+- Styles can be written at three different levels
+- Inline style applies only to element where style is added
+- Will begin to expand to page-based sty
+les (embedded) and then site-based styles (external)
+- Inline style this week will be changing the color of text and for centering
+- Inline style is held in attribute that sits inside element we're changing
+
+<p style = "color: red">This is red</p>
+<p>This is not red</p>
+
+- Attribute of color red is known key-value pair
+- To change alignment of text, use text-align
+
+<p style = "text-align: center">Some text</p>
+<p>More text</p>
+
+<!doctype html>: Applies default styles <h1>, <h2>, and <p> tags
+
+<html lang = "us">: written language setting
+<meta charset = 'utf-8'>: Binary converts following map of UTF-8 characters
+<title>: Text label for browser window
+<h1 style = 'text-align: center'>Page Title</h1>: Title is centered on page and can align accordingly
+<p style = 'color: green'>First Line</p>: text originally black but now green
+<p style = 'color: purple; text-align: right'>Fourth Line</p>: Text purple and right-aligned 
+
+- 16 basic colors in 140 named colors in HTML
+- Have universak definitions, but 124 may have different color mixes in different browsers
+- Use the hexidecimal code
