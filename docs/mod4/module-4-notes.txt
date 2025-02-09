@@ -1,0 +1,1197 @@
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesModule 4 Overview: Web Page Design & Structure
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Module 4 Overview: Web Page Design & Structure
+Module 4: Web Page Design & Structure
+Module Description
+Module 4 gives you guidance on how to design a web page as well as covering the HTML5  semantic layers that we will use to create that design. We will continue to build on how to use styles, design text, and use favicons. 
+
+At the end of this module you'll be able to:
+
+ Define some basic design principles that work in the print media
+ Create the main layers used to organize a web page
+ Link to an external stylesheet
+ Organize a stylesheet's rules in a useful manner
+ Add a favicon to your site
+Complete These Activities:
+
+ Complete the Readings
+ Watch and complete the labs
+Turn in These Products at the End of This Module:
+
+Assignment 4
+ Vocabulary 4
+ Quiz 4
+ Discussion: Three Sites Discussing Design
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesThe XHTML Years (1998 - 2005)
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+The XHTML Years (1998 - 2005)
+This third topic discusses the first years of home browsing. Incompatible browsers and proprietary features almost broke the Internet before it could take off. Microsoft wins this battle, but loses the war that was fought over control of the Internet.
+
+Internet Pre-History (1960 - 1988)
+The Internet @ CERN (1988 - 1993)
+Internet Comes Home & The Browser Wars (1993 - 1998)
+The XHTML Years (1998 - 2005)
+The HTML5 Years (2005 - present)
+Giving Up on HTML
+XML mixes with HTML to create XHTMLWhile home use of the Internet exploded, the Browser Wars had soured the developer community on HTML. The browser companies appeared to be more interested in serving themselves than they did creating a system that lived up to the promise of being an open communications system that everyone could use. Web developers were frustrated that they had to write ta Netscape page and an Internet Explorer page and then use a script to determine which web page should be sent to the browser that was requesting the page. Innovation was unchecked. Change was occurring too quickly and there was almost no attempt at finding common ground and standardizing web pages. The browser companies were running roughshod over everyone.
+
+In the late 1990s, many IT professionals had given up on HTML ever becoming standardized and looked for an alternative way to make web pages where the system could be developed once and no one would be allowed to add on non-standardized features. A programming language named XML was a good candidate for this new language because it was similar to HTML and because it was a strictly-enforced language. The W3C decided that a language that combined the strict adherence of XML with a backwards-compatible HTML component was the way to move forward. This new language was named XHTML. They theorized that the process of moving to XHTML might take 10 years and in 1998 started down that path. On December 5, 1998 the W3C wrote a working draft proposal named "Reformulating HTML in XML" that became a candidate recommendation August 24, 1999 and a full recommendation January 26, 2000.
+
+Whatwg logo, a green question market inside of a green circle with a white backgroundNothing much changed over the next few years. Versions of the new XHTML were put forward but no consensus could be reached. The W3C had a goal, but couldn't figure out how to achieve it. The development of XHTML was too slow and going nowhere. In June 2004, individuals from Apple, Mozilla, and Opera (NOT Microsoft) met and created a separate group outside of the W3C named WHATWG, or the Web Hypertext Applications Technology Working Group (logo shown to the right). This group's mission was to fix HTML rather than kill it. In January 2008 they published the first working draft of HTML5. Possibly because of the threat that XHTML represented or simply to stop the warfare, the browser developers agreed on principles that they could all use when developing their browsers and the Internet became a much happier place to be.
+
+Web development is unlike any other computing system that I've worked with because it's designed to work with malformed and syntactically incorrect code. The browser is expected replace any non-conforming code with something that will make do. This highly forgiving nature is needed if "regular people" are expected to be able to create their own web pages. How do you have a free and open communications system if only software engineers are able to use it? I wish I could remember the sources for this information, so please consider this next statement to be gossip, but I remember reading many papers which stated findings that over 95% of all web pages in the early 2000s contained at least one serious coding error. I don't remember how they defined 'serious coding error', but regardless, I think it's very safe to say that we need browsers to be forgiving if we want non-IT people to be able to join in.
+
+Meanwhile, back at the W3C, XHTML 1 became XHTML 1.1 and then 1.2, but they could never get XHTML to be both strictly-typed and be backwards-compatible with HTML. XHTML 2.0 never made it to the recommendation stage and XHTML was retired in 2009. HTML5 became a recommendation and the path forward in 2012 and XHTML was officially dropped in 2018.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWhy is a Web Page Named 'Index'?
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Why is a Web Page Named 'Index'?
+The Reason is Historical
+A library index card drawer with one index card selectedThe web pages that we've been working on all are named 'index', which made we wonder why they're all named 'index'. That seems like a strange name to call the first page of your site. It would seem to me that 'home', 'landing', or 'welcome' are more descriptive (and therefore more semantic) of the purpose of the site's first page. That is arguably true today, but it wasn't true in 1990 when Tim Berners-Lee invented web pages and web sites.
+
+If you ask your search engine a probing question like 'why are web pages named 'index', you're going to see that there's more than one reason given. The reasons that resonate with me are:
+
+The original first pages at CERN were a list of links that gave researchers access to other researcher's academic papers. This web page that a researcher might open was a list of research papers. Each item on the list was a link to a research paper. This opening page was an access page, not a content page. The first web pages were indeed indexes of other content.
+The configuration file of a web server (which you'll see later on in this course) includes a statement on line 375 that identifies which file name to open if a directory is accessed without a filename. You can change the file names on the list, but until you change it, the default first choice on that list is going to be 'index'. From the Apache configuration file:
+#
+# DirectoryIndex: sets the file that Apache will serve if a directory
+# is requested.
+#
+<IfModule dir_module>
+    DirectoryIndex index.html index.php
+
+The last line of code in the box above states which file will open (if available) when a directory is accessed without a file name. You can change this setting on your server to be any page name, or page names that you want. But no normal person is going to see that the name of the landing page for 'sfcollege.edu' is named 'index' and not something more semantic like 'welcome'.
+
+sfcollege.edu     →     actually opens     →     sfcollege.edu/index.html
+
+The name of the auto-loading page is not important What is important is that your web server defines an auto-loading page and that you need to use the right name to get the correct results. Each directory that you create inside of your domain should have an 'index' or auto-opening file at the root level so that direct access of the domain will still open the right web page.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesMap of Web Technologies
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Map of Web Technologies
+A Chronological Map of Innovation
+Shown below is a chronological map of web technologies. You do not need to memorize this map, but you should be aware of the different programming paradigms and tools that are shown here. We will be going over many of these tools later on in the course.
+
+The 1st through 5th listings are the technologies that were involved in the Browser War years.
+
+The 7th and 8th listings are about XHTML technologies, which is what this week's history covers
+
+The 9th and 10 listings occurred from 2005 to about 2015 and are about Rich Internet Applications
+
+ 
+
+Chronological map of web technologies
+
+Key to read the map:
+
+Browsers +& HTML created
+Mosaic was the first home browser
+CSS styling added
+IN 1995, Netscape Navigator 2 introduces SSL, JavaScript and cookies.
+Internet Explorer and Netscape Navigator start the Browser Wars
+DHTML is tried but fails due to standardization problems that the W3C and WASP was formed to fix
+A solution to proprietary code and browsers: XHTML (1998).
+XHTML 3 fails (2005)
+HTML 5 implemented by the browser vendors
+Rich Internet Applications & Single Page Applications; Ajax
+DHTML tools created and used; mobile applications and responsive web design
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesThe World of ECMAScript Scripting Engines
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+The World of ECMAScript Scripting Engines
+Technologies Relating to the Internet
+
+This week I want you to look at the white-green ovals in the image. These are the different engines that the browsers use to interpret JavaScript. In 2007, there was still competition between JavaScript (Mozilla) and JScript (Microsoft) as a client-side scripting language. JScript was officially discouraged and JavaScript was officially encouraged by the W3C in 2008. 
+
+The scripting engines do change over time, so this isn't a list I'd spend a lot of time on other than you need to realize that different browsers use different engines to accomplish the same task, and these different engines can render/interpret the same code differently. It's critical that you write and use code that's standard to help reduce the chance that your code will not render faithfully across all browsers.
+
+Google
+
+V8 (more recent)
+Mozilla variants:
+
+SpiderMonkey
+Tamarin
+ActionMonkey (recently)
+Apple
+
+JavaScriptCore
+Opera
+
+Presto
+Chromium (recently)
+Microsoft
+
+JScript
+.NET Framework
+Blink
+V8 (more recent)
+All the technologies/languages that interact with JavaScript
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesGraphical Design 101
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Graphical Design 101
+"The Non-Designer's Design Book"
+Robin Williams and her book, "The Non-Designer's Design Book"In the last module I introduced you to Robin Williams, a female graphic designer whose specialty was in the area using graphic design principles on a computer. Maybe her most famous book was "The Non-Designer's Design Book", which is going to be the basis for this page. Once again, her book is very concise and it tells non-designers exactly what they need to do to create engaging content. As the title states, this is not content that someone with a good design sense needs. Her instruction revolves around four main design ideas of Contrast, Repetition, Alignment, and Proximity, which creates a memorable acronym.
+
+Contrast
+Things that "are the same" should look the same. Things that are different should look very different. It doesn't matter what you choose for a design elements, so long as they're clearly the same or it's very different.
+
+Repetition
+Repetition is consistency. The elements of your web page should share a common element. Things that hold the same weight and value should look the same. On this page, I have two titles and 6 sub-titles. They all use the same font, but have different orientations and sizes. Margins are an example of repetition, as are the distances between things
+
+Alignment
+Everything should align to something. The human eye is very good at seeing continuation and movement. Text should be left-aligned. Title are the only possible exception and they should be left-aligned as well. Avoid center alignment as much as possible. I may place data in the center of the page, but most of my imagery sits on the right margin. This is a type of asymmetrical, or informal balance. Placing the subject in the center is called formal balance and it is usually boring, Placing the subject to the left or right of the center of the piece is using "The Rule of Thirds" to create asymmetrical balance. This adds interest to your page. Artwork commonly uses the "Golden MeanLinks to an external site." to lay out the image.
+
+Proximity
+Positive space are the things that you add to a page. Negative space is the empty parts of the page.
+
+Size and distance determines importance. Large positive space items are more important than small positive space items. Items with above average negative space surrounding them are more important than items with a small amount of negative space.
+
+Location and distance tell a story. Information that has a common point of reference should be close together and information that has no common point of reference should be further away.
+
+Two Free Added Bonus Principles
+Free Added Bonus Principle: Nothing Touches Nothing
+Text is not to touch an image or a border. Images are to be aligned with the text they're embedded in, but they should not touch text on any side. Text in a table should have at least 2 pixels of padding between it and the cell boundary.
+
+Positive and Negative Space: no jail bars
+I will typically have you show borders on layers so that you learn how to make a border and so that you can see where you borders are. I would use a "page border", but there's the only border I usually use. On these pages, I also use borders on the tables because I think they're a bit easier to read. Tables should use alternating row colors  to help the reader scan across the table, but you should not use table borders otherwise.
+
+The problem with borders is that a border is in "positive space", which is where the text and images are located. If you display borders, you're asking your readers to see the border but not read it as positive space (information to be absorbed); you're asking the reader to see the border and then ignore the border. 
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesA Dao of Web Design
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+A Dao of Web Design
+John Allsopp
+Image of John Allsopp
+
+Australian software developer, web designer, computer scientist, and author (three books). Author of "A Dao of Web Design", which has been described  as "A manifesto for anyone working on the webLinks to an external site." by Jeremy Keith, and cited as a key inspiration for Responsive Web DesignLinks to an external site. by Ethan Marcotte
+
+Synopsis:
+The "A Dao of Web Design" was written in 2000, at the end of the Brower Wars and before HTML5 standardized the browsing experience. Everyone knew there were big problems, but no one was willing to be the first to meet in the middle and work towards a solution. We  not only had broken browsers, but we also wrote unfortunate code.
+
+Well established hierarchies are not easily uprooted;
+Closely held beliefs are not easily released;
+So ritual enthralls generation after generation.
+Tao Te Ching; 38 Ritual
+
+Allsopp's point is that in an uncertain world, you cannot expect certainty. What worked for the printed media won't work for web pages. What was important for a printing press and a book is meaningless on a monitor (these are also messages from Project Xanadu). Let go of the idea that you can enforce the way a page looks. Styles are suggestions that may or may not be used by the browser. Write good suggestions instead of bad edicts.
+
+What I sense is a real tension between the web as we know it, and the web as it would be. It’s the tension between an existing medium, the printed page, and its child, the web. And it’s time to really understand the relationship between the parent and the child, and to let the child go its own way in the world.
+A note on the publication "A List Apart": this is one of the premier "voices that mattered" in web development. Being a web developer who is published in A List Apart is like being a doctor and being published in the New England Journal of Medicine.
+
+Link to ArticleDownload Link to Article
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWeb Pages That Suck
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Web Pages That Suck
+"Web Pages That Suck"
+Book cover. The authors are pictured along with many ornamental imagesA book written in 1998 by Vincent Flanders and Michael Willis that the subtitle says will teach you good design by looking at bad design. It's my understanding that design courses commonly show poor design as a way to teach people good design. This strikes me as an odd way to teach, but it seems to work in the art department.
+
+In 1998, browsers and authoring technologies were arguably the most dysfunctional that we have ever been. That, combined with the sheer infancy of commercial web pages and a lack of understanding how digital content was fundamentally different from print content gave the authors a lot of bad sites to choose from. Today, we have a much more defined and refined sense of what a web page should look like, how it should perform, and what tools we have to accomplish our mission.
+
+This book had a few sequels, its own (well-designed) web site, and ultimately turned into an annual "awards" event. The last "Suck" that I know of was written in 2015, meaning that the franchise had an almost 20-year run.
+
+Importance:
+A critical thing that I learned reading this book is that there are three types of web sites:
+
+Commercial: A commercial site sells things. The site is owned by a company and its purpose is to create a digital platform where the company's products can be sold. A commercial site will have a company landing page and departmental landing pages. They will give customers the ability to search for products and provide information that relates to the product. Commercial sites are typically text-light and image-heavy.
+
+Information: An information site's purpose is to provide readers with the ability to access information (medical, legal, statutory, etc) using a digital platform. Information sites are usually run by a governmental agency or a non-profit. Information sites are text-heavy and image-light.
+
+Ego: The 'word 'ego' here doesn't mean snobbery, it means personal use. An ego site is a non-commercial, non-information site that's about a person or a thing/entity. There is no single purpose for an ego site and no way to categorize them succinctly.
+
+Each type of web site has its own rules and acceptable practices, meaning that context plays an important role in what should be on your web page and how that content should be laid out.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesPositive Design: The CSS ZenGarden
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Positive Design: The CSS ZenGarden
+Zen Garden is About CSS
+Decorative image of the CSS Zen GardenThe CSS Zen Garden is a web site that starts from a single page of structure and invites people to add whatever imagery they want along with their own stylesheet to create a beautiful web page. Started in 2003 by Dave Shea, the Zen Garden showcases the power that styles have to control design. Separating web content from its appearance was very new in 2003 and many people still had no idea about how to use styles, let alone use styles properly. As much as anything, the web community had to not only come up with a workable styling system, but they also had to sell cascading styles to the public. The Zen garden was certainly an important and influential step in popularizing style sheets to web designers and the general public.
+
+Shea is a Canadian web designer who is also the co-author of a companion book titled "The Zen of CSS Design. Visual Enlightenment for the Web". He, along with many of the people I've named over the past few modules were leading voices in the Web Standards Project (WaSP). This group declared browser victory in 2013 and disbanded. The Zen Garden continues on today.
+
+You can click through the first seven styles. Clicking on the style name shows the rendered page while clicking on the author's name will show you their stylesheet. In the window below, you'll see the rendered web pages.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesReadability vs Legibility
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Readability vs Legibility
+User Experience:
+printing press with a printed pageReadability and legibility both define how a human looks and and read letterforms. Legibility refers to a reader's ability to distinguish one letterform from another. Because sans-serif forms have no distracting ornamentation, a sans-serif font is going to be more legible. Readability refers to the speed that the eye can move across a printed line. What makes one font more readable than another is how the shape of the letters help direct the eye on to the next letter. The ornaments on a serifed font do exactly that. Readability is also impacted by the predictability of the position of the next letterform.
+
+As a general notion, if your web pages have a more than a few paragraphs on them, then you should pick a serif font because they're more readable. Informational sites should use a serif font because we want to entice the reader to read. Commerce sites should stay away from long text descriptions, so they're better served by using a sans-serif font to improve legibility.
+
+Is readability more important than legibility? They're both important for different reasons at different times.
+
+Font Considerations with Page Design
+The x-height
+The x-height is the height of your lowercase letterforms. Traditionally, the x-height is 50% of the Cap size. but higher x-heights (to a point) make the font more legible.
+
+Kerning
+Kerning is the space between letterforms. The idea is that we want the letterforms to have the same amount of space between them within a word and about triple that distance between words. Lowercase letterforms are uisually rectangular-shaped, but uppercase letterforms can have angled shaped that cause kerning problems:
+
+WAVE   WAVE
+
+The left-hand font is proportional, meaning that the space between the letterforms is consistent. The space between the W, A, and V is pretty consistent. In the second version of 'WAVE', the font-family is monospace. The distance between the letterforms is measured vertically and the space between the W, A, and V is not very consistent. Text that's too far apart can be fixed by adjusting the kerning that's between those letterforms.
+
+Font Weight
+Extremely thin and very heavy fonts are harder for most people to read and especially very thin letterforms sometimes don't render well to a monitor. People are used to reading text that's at a middle weight. Light and fonts should be used sparingly as a point of emphasis while heavy fonts should also be used sparingly to denote important words or to identify titles.
+
+Line Length
+A standard line of text has about 80 characters in it. Readers have problems staying on the correct line as the line length increases. One way to combat long line-lengths is to use a taller line-height. If you're using a font-size that's less than 1em you might also consider adding a bit of line-height to your body text to make the reading experience more pleasurable. The only way that you can control line length is to place your text in a container and set the width on that container.
+
+Line Height
+The line-height for a letter form is usually about 30% taller than the characters in the line. Line-height's values are written in a decimal form. For example, 1.5 is the same thing as 150%.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesActivity: Tertiary Colors
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Activity: Tertiary Colors
+Mixing Your Colors
+In the additive RGB color model, the primary colors are red, green, and blue. In art class, you may have mixed pigments to create color, but pigments use a subtractive coloring system. The link below will take you to a page where you'll see color swatches and you'll try and figure out what the Red-Green-Blue (RGB) mix is that made that color in hexadecimal. The only colors you'll see are primary or secondary colors.
+
+A primary color is red, green, and blue. They cannot be mixed using other colors.
+Secondary colors are equal mixes of two primary colors. In this case, the secondary colors will be mixed at full intensity.
+A tertiary color for this activity will be made up of 2 parts of one primary color and one part of the other.
+To figure out what primary colors mix to create a secondary or tertiary color, you look where the color sits on the color wheel and which primary colors are to its left and right. If the color sits equally between two primary colors, then the color is secondary. If the color is sitting closer to one primary color than the other, this color is tertiary and it's color mix will have one 'ff'', one '80' and one '00' as the mix. In hexadecimal, 80 (8 * 16 = 128) is one half of ff (255). Orange is an example of a tertiary color. It sits between red and yellow, so it's a mixture of red and yellow (red + green). The color orange is roughly two parts red and one part green.
+
+Once you've determined which primary colors are involved, then you need to decide how much of each color was used. In this case, you're going to be given two choices:
+
+'00': this primary color isn't present
+'80' if the color is half there
+'ff': this primary color is present and at full intensity
+The color that you're defining is the background color for the row that you're working on. You must choose a setting for all three primary colors because that's how you'll define hexadecimal colors in your HTML code. For yellow, the answer is going to be red is  'ff', green is 'ff', and blue is '00'. The way that we'll write the color yellow in a stylesheet is: #ffff00, which means full intensity red, full intensity green, and no blue. You can check your answer by clicking on the 'Check' button to the right of the three pull-down menus. If a green check appears when you click on the 'Check' button, then your answer was correct. Otherwise, try again.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesHTML5 Semantic Structural Elements
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+HTML5 Semantic Structural Elements
+Where We're At
+The new HTML elements for this week are HTML5's semantic layers.
+
+We started out this semester by adding text to the page. Creating text-only pages is what Tim Berners-Lee did with the original web pages in 1990. We then added images to the text in Module 3. In January 1993, Mosaic became the first web browser that displayed images. In 1992, an engineer named Pei Wei created the Voila browser that had its own stylesheet language. However, it was again Untitled-4.pngNetscape's Mosaic browser that was the first commercial browser to successfully add styles to a web page We added styles to our web pages as part of Module 3. As web pages got more sophisticated, we needed better tools to create more complex layouts. Frames were tried (and failed). What ended up working was layers, which turned into semantically-named layers with HTML5. A layer is an HTML element that acts as a container or a box. The layer holds the part of the web page's content that's appropriate to that box. Compartmentalizing our content is one of the first steps that we'll take towards making our web pages follow the principles of mobile-first Responsive Web Design (RWD). 
+
+The HTML5 semantic layers are:
+
+body
+main
+header
+nav
+section
+article
+aside
+iframe
+footer
+A short definition of what each element is or does:
+
+body: holds all page content and is only as large as is needed to display the web page. The body is not the same thing as the browser window. The body will display 100% of the browser width, but it will be only be as tall as it needs to be to display the content. From a style perspective, body is where we define page-level styles
+
+main:  a container used to control width of the content that might be on over-wide browser windows. Commonly, 'main' has a max-width and is centered in the browser window when the browser window becomes wider than 'main'.
+
+header: holds the page titling information and potentially the site's navigation (which is discussed next and is a separate structure).
+
+nav: holds the links between the pages in the site.
+
+section: is the major unit of content on a web page (Note: some authors reverse the meaning of 'section' and 'article', but in either case, they're doing the same thing).
+
+article: is the minor or sub-section of a 'section'..
+
+aside: indirectly-related content
+
+iframe: not always defined as a structural element, but 'iframe' usually holds advertisements. An 'iframe' holds web pages instead of web content.
+
+footer: displays information at the page bottom. Footer content is typically a larger list of site and non-site links, links to the site legalese, and further resources.
+
+Note: the <header> and the <footer> should be placed inside of 'main'. The semantic element that comes closest to describing the monitor screen is <body>and the semantic element that's closest to the metaphor or a page is the <main> element. 
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWhat Layers Make Up a Standard Page?
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+What Layers Make Up a Standard Page?
+Pages Have Structure Too...
+An icon that has a page with four sections on itThe HTML5 semantic layers allow you to define content groups that align to the groupings that are commonly found in printed media. From this point on , the page content that you create will not go directly in the <body> of the page, Instead, the page content will go into a section of that page. By using semantically-named layers, we can help a screen reader understand the content of our web page better and we'll be able to move this grouped content around on the page by simply moving the box that it's in. Starting at the top and going down the page, here are the layers that you need to use when you create a web page. layers.
+
+HTML Element	Purpose
+<body>	Describes the part of the window that can hold content
+<main>	Acts as the "visible page" by defining the area where the content goes
+<header>	Holds page title; content common to all pages
+<nav>	Holds links placed underneath the <header>
+<section>	A sub-region of the page that holds content. Page made up of sections
+<article>	A sub-section of a <section>
+<footer>	Holds the legalese and site's "fine print"
+The idea here is that if we control the layers, we can control the content
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesLab: Semantic Layers
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Lab: Semantic Layers
+Instructions:
+
+Rip Van Winkle falling asleepIn this lab you're going to create a web page about two of Washington Irving's stories: "Rip Van Winkle" and "The Legend of Sleepy Hollow". The page will have a <main> for the viewable part of the page as well as using one <section> for each story. I added background colors and borders so that you could see the different parts of the page. Normally, the layers inside of the page are not visible. Download 'layers.zip' Download Download 'layers.zip'and unzip it.
+
+ 
+
+SlidesDownload Slides
+
+ 
+
+Movie:
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWhere Do We Place Styles?
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Where Do We Place Styles?
+A map with a location marker on topWe started off the course with a few inline styles so that you could see what they look like and how they work. In Module 3, we created styles is the <head> of our file. This type of style is called embedded - because those styles are inside the document. In this module, we're going to create our styles on an separate, or external, stylesheet and then link the stylesheet to our web page. You did see how linking to an external stylesheet works when we did the 'Images & Styles' lab in Module 3.
+
+Where Should You Put Your Styles?
+You have three choices of inline, embedded, and external. Ranked from most specific to least specific, the order is:
+
+inline
+embedded
+external
+Placing our styles in the most specific spot really isn't our goal. We want to place our styles in one spot where every page in the site can access them. This will allow every page in the site to look like the other pages in the site. We want to place our styles in the external style sheet that we then link those styles to every page in the site.
+
+How to Locate Styles
+The correct place to locate a style is based in:
+
+All styles start in the external stylesheet and these are the 'site styles'
+If we need to override the site styles on one page only, we'll embed those styles in the <head> of the file that needs them
+If we need to override either the external style rules for one HTML element only, then we'll place those style instructions inline
+This will be the 'cascade' of our CSS work. We're going to use all three levels of CSS in a site, but hopefully, 95% or more of your style rules will go into the external stylesheet and there are only a few page-level overrides and even fewer single-line overrides. In a larger site, you might create multiple external stylesheets, but we won't be doing that in this course.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesHow Should a Stylesheet be Organized?
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+How Should a Stylesheet be Organized?
+You Need an Organization...
+Four puzzle pieces being put together by for people99% of the time the order of your selectors in a stylesheet makes no difference to the rendering of the page. What determines page appearance is the specificity of the selector that holds the style declarations and it has nothing to do with the order that the style rules are defined in the stylesheet. The only time that the order of the style rules plays a part in page appearance is if you have two style rules that have the same exact specificity. In this case the second declaration will overwrite the first declaration.
+
+As a practical matter, humans need an organization if they want to find something and 'random' is never a good choice as an organizing theme. You should organize your stylesheets so that you can find things. In a professional environment, you will probably have a company style guide that tells you the proper order to use when you create a stylesheet. Such a style guide require you to organize your stylesheet this way:
+
+types:
+start with main, body, h1 and work down the page
+grouped selectors:
+by size of group
+ids
+classes
+advanced selectors (we haven't covered these yet)
+pseudo-classes
+As we go through the course, I think you're going to find that we spend more and more time working in styles. Right now, our HTML files are big and the stylesheets are small. That's going to change and our stylesheets are going to become the part of web authoring that takes most of our time. Organizing your stylesheets so that you can find things is going to become a matter of self-defense. You'll be well-served to come up with an organizational plan for your stylesheets now and start using it.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesLinking to an External Stylesheet
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Linking to an External Stylesheet
+<link>
+A web page with a red arrow pointing inA link is used to connect a resource to a web page. In this case, the resource is a stylesheet. You'll also use a link to connect your site's favicon to the web page. In both cases, the <link> calls a resource into the current web page, making the direction of the movement with a <link> is towards the page. A link tag has three required components. The order that the attributes are placed in doesn't matter:
+
+link
+href     hypertext reference: the location of the resource being called in
+rel       relationship: the relationship that exists between the file and the linked resource
+A link tag:  <link href="css/styles.css" rel="stylesheet">
+
+This link tag can be placed anywhere in the <head> of the document, but by convention, the style link will appear towards the bottom of the <head>. 
+
+<a>
+A web page with a red arrow pointing outAn anchor or <a> element is used to move from the current document to the listed document. The movement of an <a> tag is away from the page. An anchor tag has two required components and has one or more attribute. For a link to another web page, there is one attribute which is the URL of the linked resource:
+
+a          anchor tag is used to link
+href     hypertext reference: the resource that we're going to
+An anchor tag: <a href="https://sfcollege.edu" >
+
+<a> is also used for imagery and in that case, there are additional mandatory attributes that must be added. Image anchors are inward-facing.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesSpecificity
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Specificity
+Cascading
+A quick review of a style rule's pieces is in order:
+
+#one {
+    width: 7em;
+}
+
+#one is the selector. The selector used determines the specificity of the declarations and their values inside the rule.
+width: 7em; is the declaration which is made up of a property and a value.
+width is the property of the element that has an id of "one"
+7em is the value. This value is accepted as the shape's width only if the style rule it sits in has the highest specificity for that shape
+The cascade (as in Cascading Style Sheets) means that the styles that are used on any element can come from many places and be changed many times before the final style information is determined. There are at least five different places where styling information can be located that impacts the appearance of your web page:
+
+in the browser's default style values
+inside the element
+inside the page's <head> element
+inside an external style sheet
+and potentially from a user-written stylesheet
+All of these sources of styles interact in your browser's rendering engine to determine the final appearance of your page. There are of course rules that determine how the cascade works, and these rules are based in a number ordering that determines which style rules have the highest precedence so that these style rules can be used to display the web page.
+
+Note: you do NOT need to know how to calculate or read specificity. You need to know it exists and what it does.
+
+Each style declaration that attempts to modify an element is given a score and the value of the declaration with the highest score is the one that's used on the element. Specificity considers four key areas to determine which style gets displayed. Each of these key areas can be thought of as a place in a 4-digit number, though it is possible for a single place to have a score that's higher than 9. The first and most significant place is the Style Attribute, and if the style is inline it will score a '1'. All other types of styles will be a '0'. The second place value is for IDs, and the number that's placed there is the count of ids that the style rule impacts. The third place value is for classes and pseudo-classes and again, the rendering engine counts the number class elements that are involved and places that number here. The last column is for element reference, which is a style rule that's applied directly to the element. In essence so far, the specificity (order) that styles will be given precedence is:
+
+inline style rule
+id
+class and pseudo-class
+type/element reference
+I have two examples below where the specificity of two selectors is shown. In Example 1, the left-hand selector is an inline style rule (starts with a '1'), so it has precedence over Selector B that is an id and a class. In Example 2, neither selector is an inline style rule, but the right-hand selector is an 'id' (second number is a '1') while Selector B is a class, The value from Selector B will be used to style the property.
+
+Selector A	Selector B
+Example 1:	1,0,0,1	0,1,1,1
+Example 2:	0,0,1,1	0,1,0,1
+SpecificityA cascading waterfall
+What you need to know is that:
+
+Inline style rules carry the most specificity:
+ids are the most specific type of selector that we'll use in this course. Declarations that include an id are the most specific
+classes and pseudo-classes are the next most specific
+types are the least specific type of selector
+Embedded style rules are next:
+ids are the most specific type of selector that we'll use in this course. Declarations that include an id are the most specific
+classes and pseudo-classes are the next most specific
+types are the least specific type of selector
+External style rules are the weakest:
+ids are the most specific type of selector that we'll use in this course. Declarations that include an id are the most specific
+classes and pseudo-classes are the next most specific
+types are the least specific type of selector
+To shorten it up a bit and to turn specificity into rock-paper-scissors:
+
+Inline beats embedded and embedded beats external
+ids beat classes and classes beat types
+If two values have the same exact specificity, then the value that appears last is the value that's used
+In the Developer Tools, any styles that are struck through have been replaced by a more specific value
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesDRY Styles
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+DRY Styles
+Don't Repeat Yourself
+Several black umbrellas protect several people, but one much larger umbrella does the job much betterDRY (Don't Repeat Yourself) is a principle of software development aims to create specifications for a project where the requirements are defined once using unambiguous and authoritative abstractions (abstraction: simplify large data structures by making them smaller and more manageable). In the case of a stylesheet, we want to write your style rules so that a declaration (a requirement) is stated once but it's used as many times as is needed to style the page's elements.
+
+Advantages to DRY styles:
+
+Changing one declaration changes all instances of the property. 
+Stylesheets are smaller
+Declarations are easier to find
+no 'hidden' declarations to hunt down
+Updating the page's appearance is easier
+How to Create DRY Styles:
+This is up to you, but in engineering we usually try to start at what we see as the beginning and work to what we see as the end. I can see two possible ways to define DRY styles:
+
+Build DRY styles into your page design as you're designing the page (I've never succeeded at this...)
+Analyze your completed styles and then make them DRY (This is how I do it)
+The main tool that's used to create DRY styles is to use  grouped selectors, which is the topic of the next page.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesGrouped Style Rules
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Grouped Style Rules
+Other Ways to Write a Selector
+4 human shapes make the word 'rules' out of puzzle blocksSo far, our CSS selectors have been types (like p or h1), classes (like .text), or ids (like #text). The next type of selector that I'll tell you about is a grouped selector, which is used to create grouped style rules. Using grouped selectors is the main way to create grouped stylesheets. Using a grouped selector gives us the ability to use one declaration and apply it to several different selectors. A grouped style rule is a list of selectors, and like any other list, the selectors are separated by a comma and an optional space. The grouping of the selectors can be in any order and the grouping can mix any type of selector; including some selectors that we'll cover in future weeks.
+
+Here are three selectors that all use the foreground color of #6666aa:
+
+h1 {
+    color: #6666aa;
+}
+
+.thisclass {
+    color: #6666aa;
+}
+
+#thisid {
+    color: #6666aa;
+}
+
+Here is a grouped style rule that performs the same task and uses a whole lot less code:
+
+h1, .thisclass, #thisid {
+    color: #6666aa;
+}
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesFont Families
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Font Families
+The Font Families of HTML
+Uppercase BWord processors don't really think in terms of font families, they are more about individual font choices. Applications designed for the print media like Adobe's InDesign and Microsoft Publisher also don't make a big deal about font families. In fontography, there are several different font families and sub-families and fontologists can go on for hours and hours about their classification system for the different font families. In HTML, there are five font-families and we don't make a big deal about the families, but they are there and you should know what they mean and how to use them.
+
+The font-families of HTML:
+
+serif
+sans-serif
+monotype
+cursive
+fantasy
+Where Do We Get Fonts?
+First, for a font to be used on a web page, the font must be present in the user's computer. To be 'present in the user's computer' can mean two different things:
+
+the font is stored inside the 'fonts' folder
+the font has been downloaded from a CDN or a similar service
+The Font is Stored Locally
+A locally-stored font is found in a PC's 'Fonts' folder (C:\Windows\Fonts and on a Mac at either your system library or home library). A local font can be called directly in the font-family declaration. If the font name has any spaces in it, then the font name must be enclosed in quotes (treated as a string). For example,
+
+Arial can be written in uppercase or lowercase and no quotes are needed.
+"Helvetica Neue" must be enclosed in quotes
+The Font is Downloaded
+You can also include a pathway to a font that's not on your computer. Google Fonts is one such location where you can legally 'borrow' the font for use. The URL for Google Fonts is:
+
+https://fonts.google.comLinks to an external site.
+
+When you go there, you can select the font that you want and then either get the embed code or download the font. You can set a size and a style of font before downloading. The embed code for Roboto goes into the <head> of each file that will use the font. looks like this:
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+If you get the embed code, you need to remember to get the font and then to define the font using a font-family declaration. 
+
+p {
+    font-family: Roboto;
+}
+
+The font-family Declaration
+A font-family declaration should use at least three different values separated by commas.
+
+The first value is a specific font
+The second value is a universal font from the same font-family as the specific font
+the third value is the font-family
+The 'universal font' for the serif is Times New Roman and for sans-serif is Arial. There are other choices possible, but that's a good place to start. A font-family declaration for Roboto, which is a sans-serif font might look like this:
+
+font-family: Roboto, Arial, sans-serif;
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesFont Size
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Font Size
+How Large Should Text Be?
+A capital W in typeface1em is the default size for the <p> element and body text, but that's not necessarily the best size for text. The text size of 1em goes back 600 years at this point and was defined then to accommodate the technology of the day; which was a moveable type printing press. Today's monitors and laser printers are able to be much more detailed than a printing press. At this point, 1em for a font size is generally considered to be too large for "normal" text.
+
+The recommended font size for a web page on a desktop monitor is between 10 and 14 pixels. This works out to a size that's between .625 and .875em. I personally think that 10 and even 12 pixels is awfully small for anyone who wears glasses to read. My personal recommendation would be to stick to the high side of the recommendation and go with a .875em font size for your body text. The line-height is typically 25 to 30% taller than the font size and I would also tweak line height a bit by making it something between 130% and 150%, depending on how long you allow your lines of text to get. Line-height is assumed to be written in the decimal form, so the declaration for your body text might look like:
+
+p {
+    font-size: .875em;
+    line-height: 1.40;
+}
+
+.875em as your base font size that you define in the <body> of your stylesheet. This slightly smaller size works out to a 14pixle equivalent font size on a desktop monitor instead of the 16 pixel font size of 1em. 
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesInheritance
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Inheritance
+Passing on Styles
+Untitled-10-1.gifStarting this week and moving forward, we are going to be placing our content in container elements that we then place inside of the web page's 'body' element. To style these pages, we're going to take advantage of the principles of CSS inheritance. Inheritance of CSS properties works  like inheritance in biology does without the whole recessive gene thing to consider: the attributes of the parent (element) are passed on to its descendent elements. The animation to the right shows how changing the color of the top container changes the color of all of the containers inside of it. A descendent element must open and close, or be nested inside of another element for it to be its ancestor element:
+
+<header> I am a parent element
+    <p>I am a child element</p>     
+</header>
+
+Inheritance means that CSS properties that I define in the parent selector will also be passed on to the descendent elements. Using the example above, the 'p' element shown is a child of 'header' and any text styles that I apply to 'header' will also be inherited by this one, specific 'p' element. Inheritance is a general principle, so all elements can potentially inherit from an ancestor. However, the types of styles that are inherited the most are text and container properties. Text style properties (font-face, font-size, color, etc) inherit to child text elements and container style properties (border, width, height, etc) inherit to child container elements. 
+
+Untitled-9.gif
+
+in the animation above, we have three container elements; yellow, pink and cyan. Yellow is the parent element, pink is a child of yellow, and cyan is a child of pink and the grandchild of yellow. The default style for a container is text-align: left. so all text lines will align left due to their default style and because 'yellow' has an alignment of left. If the alignment of 'yellow' is changed to center, then the text in 'yellow' will change to center along with all of its descendants.
+
+yellow container {         /* yellow container selector aligning text to center is inherited by pink and cyan */
+    text-align: center;
+}
+
+Whatever alignment styles are placed in 'yellow' as a container will be inherited by both 'pink' and by 'cyan'. If this same alignment is applied to the font selector inside of the yellow container, then that declaration is not inheritable. If a text alignment of right is assigned to 'pink', then the text in the 'pink' layer and the 'cyan' layer will move to the right because 'cyan' is a child of 'pink', so text changes in 'pink' affect the text that's in 'cyan'. The text in 'yellow' is unaffected by the alignment change in 'pink' because yellow is an ancestor of 'pink' and not a descendant of pink.
+
+If I change the alignment of a <p> element in the yellow layer, that change will have no impact on other text unless that text is a descendant of that <p> element itself.
+
+<p id="red">Text I will turn red</p>     color: red;
+<p>Unaffected text</p>
+
+The top line of the text below will turn red, but the bottom line is unaffected by the style because the second <p> element is not a descendant of the first <p> element. They're merely neighbors, and that doesn't count.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesFavicons
+Spring 2025
+Home
+Syllabus
+Modules
+Grades11
+Discussions
+Announcements
+Favicons
+A Microsoft Innovation That Actually Caught On
+istockphoto-1404804958-612x612.pngOkay, that was a little bit snarky. It's not untrue, but it is snarky. Microsoft added the new feature called favicons to HTML with the release of Internet Explorer 5 in 1999. Favicons started out as a feature unique to Internet Explorer but today favicons are part of a specification of the W3C. The 1999 rules to create and use a favicon were:
+
+'icon' files with the .ico extension (RGB images with no compression or optimization; a bitmap).
+located in the root directory for the website.
+16 x 16 pixels in size
+A favicon appears on the tab for your web page's browser window to the left of the site's title. It can also appear in the bookmarks list and in other locations depending on the browser. The favicon should act as the logo for your site; giving your site a 'brand'. My image of the sun above is an example of a 'good' favicon. It's low-color and it's not very detailed.
+
+The requirements that a favicon must meet are much less stringent than they used to be. As you might expect, these are the W3C guidance that browser developers "must" make, but many browsers allow more file types and different sizes. Stacking (multiple sizes in the same image) are also common.
+
+allowable file types: .png, .svg, .jpg, or ico image
+located in your website (the 'images' folder is just fine)
+sized at 16x16, 32x32, or 48x48
+A link to a favicon today might look like this:
+
+<link rel="icon" href="images/favicon.ico">
+
+You can make a favicon in Photoshop by creating a .bmp image and then overwriting the '.bmp' extension with '.ico' (Note: don't ever overwrite extensions unless you know that there will be no loss of data/fidelity in the file. Other applications that you can use to create a favicon include: 
+
+favicon.ccLinks to an external site.
+App Icon GeneratorLinks to an external site.
+Favicon.ioLinks to an external site.
+Not all images make good favicons. A good favicon should be sharp and clearly depict the site's essence or by the company's logo.
+
+Favicons may not immediately show up in your browser after they've been added. You may need to clear the cache to remove the old version of your file that didn't have the favicon and replace it with the new version that does have the favicon.

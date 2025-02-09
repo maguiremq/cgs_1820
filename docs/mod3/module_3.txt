@@ -1,0 +1,1038 @@
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesInternet Comes Home & Browser Wars (1993 - 1998)
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Internet Comes Home & Browser Wars (1993 - 1998)
+Synopsis:
+
+This third topic discusses the first years of home browsing. Incompatible browsers and proprietary features almost broke the Internet before it could take off. Microsoft wins this battle, but loses the war that was fought over control of the Internet. At the end of the Browser Wars, draconian controls were suggested to respond to the uncontrolled proprietary encroachment of Netscape and Microsoft.
+
+Internet Pre-History (1960 - 1988)
+The Internet @ CERN (1988 - 1993)
+Internet Comes Home & The Browser Wars (1993 - 1998)
+The XHTML Years (1998 - 2005)
+The HTML5 Years (2005 - present)
+The Internet Comes Home
+Tim Berners-Lee's original HTML was intended to send scientific papers and text messages from scientist to scientist working at different CERN research facilities. However, the potential of the Internet was obvious. Shortly after the Internet's creation, it was introduced to CERN employees first in March 1991 and then it was released to the general public in August 1991 as an open project. In November 1992, there were twenty-six websites in the world
+
+Image of Marc Andreesen c 1993While the Internet has always officially been an open project, the five years from 1995 to 2000 in particular were characterized by the battle between Netscape and Microsoft over commercial control of the browser market. A few notable browsers were built from 1991 and 1993 and Mosaic was arguably the most important of these. Started in late 1992 and released in January 1993, Mosaic was developed by the University of Illinois's National Center for Supercomputing Applications (NCSA) by graduate student/employees Marc Andreesen (shown to the right) and Eric Bina. Mosaic was the first widely-available browser and was instrumental in popularizing the Internet for home users. It included a significantly-improved graphical (point and click) interface and it was the first browser to display images inline with text in the same window.
+
+logo for Netscape Navigator 2, the top half of a sailor's wheel against a night skyMarc Andreesen left NCSA in December 1993 and moved to Silicon Valley where he met James Clark and others. Using contacts that he had developed while at the NCSA, Andreesen recruited the core engineers he'd need to develop a new and even better browser. Andreesen originally named his new company Mosaic Communications Company, but the company's name was changed to Netscape Communications Corporation to avoid legal trouble. While Andreesen and his team at the NCSA created Mosaic, the NCSA was the legal owner of the software and the Mosaic name. Andreessen and his team developed Netscape Navigator 1 using a new code base, which was superior to Mosaic in may ways in December 1994. By August 1995, there were over 10,000 registered web sites worldwide.
+
+While the world of HTML was exploding, Håkon Wium Lie and Bert Bos developed styles and Cascading Style Sheets in 1994. Browsers have always had a style sheet embedded in them, but Lie and Bos figured out how web developers could override those default styles. CSS had two different recommendations during the Browser War years: CSS1 (1996), which dealt with text and color and CSS2 (1998), which documented page layout tools.
+
+Arguably the most important browser ever developed was Netscape Navigator 2, which was introduced in December 1995. This browser introduced Secure Sockets Layer (SSL), JavaScript, cookies, and animated GIF images. The browser was priced at $39. Andreesen recalled:
+
+That was the way to get the company jump-started, because that just gives you essentially a broad platform to build off of. It's basically a Microsoft lesson, right? If you get ubiquity, you have a lot of options, a lot of ways to benefit from that. You can get paid by the product you are ubiquitous on, but you can also get paid on products that benefit as a result. One of the fundamental lessons is that market share now equals revenue later, and if you don't have market share now, you are not going to have revenue later. Another fundamental lesson is that whoever gets the volume does win in the end. Just plain wins.
+Internet Explorer logo a lowercase e with and a shown orbit around itIn 1994, the NCSA licensed a derivative commercial product, Spyglass Mosaic to Microsoft. Two versions were given to Microsoft, one based on NCSA source code and another version built on a different model. Microsoft built their browser based on the Spyglass, or the non-conforming version. Internet Explorer was built using Microsoft's Document Object Model (DOM) was used instead of the Netscape DOM. Internet Explorer also used bubbling to determine events while Netscape Navigator used capturing. Both Netscape and Microsoft created a flurry of new HTML elements that were proprietary to their browser as a means of trying to gain a competitive advantage. To combat Netscape's early advantage, Microsoft embedded Internet Explorer into their Windows 95 operating system, making Internet Explorer free while Netscape Navigator cost $49. Netscape, the Department Justice, and many others immediately sued Microsoft for creating an illegal monopoly and the period of time known as the Browser Wars began.
+
+The Browser Wars
+The period between 1995 and 1998 in particular saw Navigator and IE grow further apart. It became impossible to write one HTML document that would work properly in both browsers. The W3C, which was formed in 1994 was still playing catch-up An eagle holding arrows in its left foot and an olive branch in its right. A shield is over its chest and a ribbon reading 'E Pluribus Unum' is in its mouthand the first few recommendations for HTML and CSS cataloged what Netscape and Microsoft had already invented instead of trying to define a sustainable way forward. Because the browsers were so far apart, new innovations like Dynamic HTML were dead on arrival. When creating web pages, web developers were forced to write their page to the Microsoft standard or the Netscape standard. Netscape dominated the early years of the Browser Wars, but Internet Explorer continued to improve while Netscape was seen as being a product in decline. By 2000, Microsoft's market share was over 75% while Netscape's was only 18%. Microsoft ultimately settled their lawsuit with the Department of Justice on September 6, 2001 rather than lose. Microsoft agreed to share their Application Programming Interfaces with competitors and to stop the anti-competitive practices towards other browser vendors.
+
+The World Wide Web Consortium, or W3C, and the Web Standards Project, codenamed WASP, attempted to bring some standardization to browsers by having the major browser companies agree on a single set of features and a uniform way to name web page objects. The HTML 3.2 and 4 recommendations were as much about deprecations (removals) of proprietary elements as they were about creating new, standardized systems. HTML was dominated by a digital version of the Hatfield's and the McCoy's and it was no longer seen as being open. The level of frustration with the in-fighting led the W3C to create XHTML, which they planned on use to move on from HTML. This is the topic that will be discussed in the next Module.
+
+It took a good 10 years for the W3C and WaSP to regain control over HTML and it was ultimately the threat of XHTML that finally got browser developers to agree to innovate within standards instead of trying to force the W3C to accept their proprietary features as industry standards. Both Netscape and Internet Explorer lost the Browser Wars. We leave the Browser War years with Internet Explorer having a more than 90% market penetration rate, but by 2003 IE had lost its dominance to Firefox first, and then Google Chrome next. The real winner of the Browser Wars was Google Chrome, which was brought to market in 2007.
+
+Shown below is a table of the major W3C recommendations in HTML and CSS from 1995 to 2000 and the thing that they're remembered the most for.
+
+HTML	CSS
+Recommend	Year	Purpose	Recommend	Year	Purpose
+HTML 2	1995	Structure of HTML; DTD	CSS 1	1996	Text & Typography
+HTML 3.2	1997	Tables & float; deprecation			
+HTML 4	1998	Positioning & deprecation	 CSS 2	 1998	 Page Layout Tools
+XHTML 1 & 2	2000 - 2002	Create strict HTML	 	 	 
+HTML5	2003 & ongoing  (2014)	Evolve rather than replace HTML	CSS 3	2001 & ongoing	eye candy
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWho is the W3C?
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Who is the W3C?
+Who Manages the Internet?
+W3C logo. A W, a 3, and a CEven before HTML left CERN, it was apparent that the growth and change of HTML would naturally occur and would be have to be managed. In 1994, which is very shortly after the Internet was made public, Tim Berners-Lee left CERN and took a position at MIT so that he could found the Worldwide Web Consortium (W3C), The original goal of the W3C was to create web standards and guidelines for web technologies so that the Internet would continue to be an open, accessible, and interoperable system that all people could use. This original goal has since been toned down by removing the 'create web standards and guidelines' and changed it to 'becoming a consensus-building organization that makes recommendations which lead to open, accessible, and interoperable systems that all people can use'. The W3C is not the dictator of the Internet. They have no ability to pass laws or force companies to bend to the W3C's will. What they do have at this point is the consensus of approximately 350 member companies from all over the world, including all of the companies that you saw on Resig's map of web companies. Internet companies learned the hard way the proprietary systems don't work. Innovation can, does, and should occur, but that innovation has to be brought into the consensus rather than trying to one-up the consensus.
+
+The W3C had a rocky start. The W3C spent most of their early years cataloging the proprietary innovations of Microsoft and Netscape instead of developing open standards for all. Untangling the Browser Wars consumed the W3C until 1998. From 1998 to about 2003 the W3C got tied up in an ill-advised attempt to enforce their view of the Internet on others instead of listening to what the browser developers and software companies had to say. It wasn't until about 2003 that the W3C became a forward-looking organization  that championed open systems that are built on consensus. 
+
+The W3C is made up of working groups that consider how proposed innovations impact on a specific area of concern. These working groups consider new ideas which if approved, they turn into specifications (definitions). Completed specifications are then sent to the W3C where, if approved by consensus, become W3C recommendations. From our recommendations are guidance on what a browser should do, not how to do it. Each company is left free to innovate as they see fit. 
+
+Key Takeaways:
+
+A specification is a committee-level approval for an idea
+A recommendation is an organizational-level approval which members then use to develop their corporate strategy
+There are no edits or threats. No one is required to follow the W3C's recommendations, but if you don't, your web page may not work in browsers that are W3C-compliant.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesAbout ASCII & Unicode
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+About ASCII & Unicode
+Background
+A computer understands two states or conditions that we describe as being '0 or 1', 'on or off', 'light or dark', 'north or south magnetism', or 'voltage or no voltage'. All of these states describe one bit (binary digit) of information. Eight of these bits, taken together, describe one byte. A byte is the fundamental building block of information stored on a computer.
+
+    1                      a bit
+    01100001      a byte
+
+Your computer has no way to understand what the letter 'A' is, or the number '6' is without having a way to convert these human concepts into bits and bytes.
+
+    Your computer understands the number 77 as: 01001101 
+
+Picture1.jpgConverting Integers to binary is fairly easy since they're both numbers. Pretty much every other type of data that a computer tracks uses a less-intuitive representative system to convert the colors, sounds, or text that a computer can save into a binary number. The representative system that's used to define text is the American Standard Code for Information Interchange (ASCII).
+
+ASCII was first used in 1963 on AT&T's Telegraph Typewriter Exchange Service. ASCII was also incorporated into the early computer operating systems, including DOS and the Mac operating systems. ASCII uses 7 bits of the standard 8-bit byte. The 8th bit, which is also the most significant (left-most) digit is always zero in ASCII. The 7-bit ASCII system allows up to 128 keyboard characters to be defined, which for an American English keyboard was more than enough. The ASCII system assigns a value to each key on your 102-key keyboard. These values range from 0 to 127 using the Decimal numbering system. You can see how the character is saved into your computer's memory by converting the decimal number to a binary number and then adding a leading zero to those 7 bits. ASCII is the converter between the text you type with the keyboard and the value that's stored in your computer's memory. 
+
+You do not need to memorize this chart, nor do you need to have a deep understanding of how information is saved into your computer's memory. You should be aware of ASCII and you should know how ASCII relates to Unicode. The ASCII chart is shown below:
+
+asciichart.png
+
+Unicode was introduced in 2007. As the name implies, Unicode attempts to create a universal system that works for all written languages. Unicode can theoretically use up to 8 bytes of space to describe a single character, but usually Unicode uses one or two bytes per character. Languages that use pictograms instead of glyphs for their alphabet usually use some kind of a 2-byte Unicode encoding system. For example, Big5, which is used in Taiwan, Hong Kong, and Macau for traditional Chinese characters uses 2 bytes of data per character.
+
+For people who write in Latin-based languages, and English is Latin-based, the impact that Unicode had on us was to expand ASCII by including the most significant digit in the character definitions as a '1'. This created an "upper register" of characters that allows Unicode to identify a much larger range of glyphs using the 'utf-8' (Unicode Transformation Format - 8 bits) system. These added characters include things like smart quotes, accented characters, symbols like a trademark, copyright, section sign, currency symbols, en and em dashes, added math symbols, and so on. In HTML, we can identify these symbols only by using 'entity names" or "entity numbers".
+
+Whenever you create HTML or CSS code, you must use only ASCII characters. A text file can only hold ASCII text. A browser will NOT process source code that has Unicode characters in it, though a browser will display Unicode characters as output if we ask for them correctly. 
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesOverview of Typography
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Overview of Typography
+Elements of User ExperienceWeb development and most professions are a mix of many disciplines. One of the disciplines that a good web designer is going to know something about is typography. You can create web pages without knowing anything about typography, but web development is a bit of a lot of disciplines mixed together. Knowing how to code isn't enough. The oval to the right is a listing of EVERY disciple that somehow impacts on user experience, which is one of the disciplines that a good web designer will know a fair amount about.
+
+You don't need to know all of the disciplines that are in the green circle, but having an idea about each of them will be be helpful in your understanding of what you're doing and why you're doing it.
+
+One of the skills that makes understanding how HTML and your browser work is typography. Typography is the art of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader. The point to this page isn't to make you an expert in typography, but to make you aware that typography exists and it's an important part of web authoring for at least these reasons:
+
+Typography builds brand recognition
+Typography subconsciously influences decision-making
+Typography holds the attention of the readers
+What You Need to Know:
+
+Again, this is general background information and I don't expect you to memorize everything that's here. You don't need to know the different parts of a letterform, but you do need to know that there are different parts to a letterform.
+
+In HTML there are five font families and you need to know the first two of them:
+
+Serif:  Has small strokes at the edges of letters, creating a formal and elegant look. Serif fonts are easier to read in print because the strokes guide the eye from letter to letter. Times New Roman is a popular serif font. 
+Sans-serif: Has clean lines without strokes, creating a modern and minimalist look.
+You should know that a serif is an ornament at the end of a letterform and that 'sans' is a French word for 'without'.  A serifed font has danglies at the ends of the letterforms and sans-serif fonts are straight-lined.
+
+You need to know that web pages with a large amount of text should use a serif font and web pages that are lean on text should use a sans-serif font.
+
+A chart with the different typographical measuresWe follow the same rules that publishers follow
+
+ser printers and monitors are sharp enough that reading 11 point text on a computer has the same comparative ease as reading 12 point text in a book. The main typography tools in Word are shown to you below. We use the same tools in the same way to structure a web page. I hope that at the end of this course you'll say that you learned as much about Word as you did HTML, because you can't learn one without learning the other. Almost everything that you see as an icon in the Word ribbon is a feature that's also part of HTML.
+
+The Home ribbon of MS Word
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesEmbedded Styles
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Embedded Styles
+Overview of Styles
+One of the very first additions to Tim Berners-Lee's HTML were styles. Styles override the browser-defined style declarations for the page content and the appearance of the element to look the way the developer wants them to look.
+
+There are three levels of style rules:
+
+inline
+embedded
+external
+Each one of these types of style rules has its own set of rules and implications. The good news is that style declarations are written the same regardless of where they're written. In modules 1 and 2, you wrote a few inline styles. This week you're going to be writing embedded styles and starting in Module 4 we'll move to writing external styles. Here's the main differences between the different levels of styles:
+
+Inline Styles
+Inline styles are written in the form of   
+
+<p style="color: red">
+
+This inline style rule changes the foreground color of the text inside of the p tag from black to red. An inline style will continue to work until the element's closing tag of </p>.
+
+Embedded Styles
+An embedded style is placed in the <head> of an HTML file and the style rules that you write there will impact all elements on the page. Embedded styles are written in the form of:
+
+p {
+    color: red;
+}
+
+This style rule will affect the color of every p element on the page. The 'p' is called the selector and it defines which element or feature we're styling. Following the selector are curly brackets. In programming curly brackets hold multiple statements that all tie back to the selector. I can have one declaration (color: red is a declaration) or I can have a million declarations. They're all held in the curly brackets, which group or package the statements that are inside.
+
+To add an embedded style to a web page, you place the style in the <head> of the file. The embedded style rule below will color all of the text on this page that's in <p> elements red:
+
+<html>
+    <head>
+        <style>
+            p {
+                color: red;
+            }
+        </style>
+    </head>
+
+External Styles
+An external style is placed on a separate page 'styles.css' and then the stylesheet is linked to the HTML page. The style rules that you write on an external stylesheet will affect any page in the site that the style sheet is linked to. External style rules are written the exact same way that embedded style rules are written:
+
+p {
+    color: red;
+}
+
+External style rules have a selector and that selector is modified by a series of declarations. Each declaration is made up of a property and a value. In this case, the property is 'color' (foreground color) and the value is 'red'. The property and the value are separated by a colon ':' and are terminated with a semi-colon ';' Terminating programming statements with a semi-colon is almost universal in computing with the exception of the Python programming language. and separating key : value pairs with a colon is also an extremely common practice. The last declaration isn't required to be terminated, but it's good practice to terminate all lines of code because you never know when you might come back and add a declaration. Any declarations that come after an un-terminated declaration will not be considered by the rendering engine, so you might end up paying a big price for not adding the last terminating semi-colon.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesThe Cascade
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcementsz
+The Cascade
+The Cascade
+CSS stands for Cascading Style Sheets. A style sheet is cascading because we can define several different declarations for an element and the rendering engine will take that information and create a calculated style sheet like you saw in the Developer Tools. Sometimes these style rules will conflict. When they do conflict, the specificity of each conflicting style rule is compared and the style rule that has the highest specificity is the one that's displayed. For what we're doing at the moment, the cascade that you need to be aware of is that external style rules are site-based, but also have the lowest specificity. Style rules that are embedded have middle-strength specificity. They are more powerful the external style rules, but are overwritten by inline style rules, which are the most specific and the most powerful. The animation below shows you how cascading works.
+
+
+The text starts out black, which is the default/browser-defined color for all text
+
+(Click on arrow) An external style rule is added that calls for the color of the text to be red. The external style is more specific than the user agent style, so the text's color is changed to red
+
+(Click on arrow) An embedded style rule is added that calls for the color of the text to be blue. Now the default color (black) is overridden by the external style rule (red) that is overridden by the embedded style rule (blue). All three style rules are present, but only the property and value from the most specific style is used.  
+
+(Click on arrow) An inline style is added that calls for the color of the text to be green. Now black is overridden by red, which is overridden by blue, which is overridden by green.. This process of choosing which value to apply to a property in the face of conflicting values is the cascade.
+
+The same type of cascading determines what to do if there's conflicting styles in types, classes, or ids. The rule is that the most specific identifier applies its styles.
+
+
+A <p> element gets its initial styling from the default browser values. The color of <p> text starts out being black
+
+(Click on arrow) A type style rule changes the color for <p> elements to red
+
+(Click on arrow) A class  is added to a <p> element. Now the original black color is overwritten by the red type, which in turn is overwritten by the blue class. A class is more specific than a type.
+
+(Click on arrow) An id is the most specific styling. The class, which is used to define multiple elements is overwritten by the id, which is used to define a single element. An id is more specific than a class and a class is more specific than an undifferentiated element.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesTypes, ids, & classes
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Types, ids, & classes
+Defining Elements for Styling
+The three main css selector types of type, id, and class shown in a triangleSo far, we've styled page elements using inline styles that we pace directly into the HTML element. Inline styles are unambiguous about what they're going to be applied to. As we move to embedded styles and finally to external styles, we're going to use selectors to identify what elements the style rule is being applied to.
+
+Having different selector types gives us different ways to access the page elements. There are six or seven 'main' selectors that we're going to use in this course out of the 10 or so selectors that are used. For this module, we will use the first three selectors that are on the list:
+
+Type, Name, or Element Selector
+ID
+Classes
+Pseudo-classes
+Group Selectors
+Advanced Selector
+ Type, Name, or Element Selector
+A 'type' is Adobe Corporation terminology that means a selector that modifies all HTML elements that are 'that type'. For example, a <p> element has a default font size of 1 em. If I want all of my <p> text to be 1.3 em tall instead, I'd create a style rule that uses 'p' as its selector (shown below):
+
+In the HTML	In the CSS
+<p>	p { }
+I am using the p element as my example, but any element can be styled the same way.
+
+The 'p' is the selector and it's also an HTML element. This style rule will modify the appearance of all <p> text on the page by making it 30% taller. Most of the style rules that we'll write in this course will use a an HTML element as the CSS selector. 
+
+ID
+An id is an attribute that's added to an element that uniquely identifies it in the HTML code. IDs are used heavily in JavaScript to apply coding to a page element. The same id can be used to uniquely identify a page element for JavaScript and CSS. Keep in mind that you can have as many ids on a page as you want, but each id must be unique on that page.
+
+In the HTML	In the CSS
+<p id="this">	#this { }
+Class
+A class is an attribute that identifies one or more elements on the page; preferably more.  Classes can be used in JavaScript, but classes are more of a styling tool than they are a programming tool.
+
+In the HTML	In the CSS
+<p class="these>	.these { }
+Getting the symbolism right is important. This is programming and there's no such grade as an A- in coding. Your code works or it doesn't work; it's right or it's wrong. In your stylesheet, ids start with a hashtag and classes start with a dot. There is no space between the symbol that represents the type of attribute and the name of the attribute.
+
+Important Takeaways:
+
+To override the default appearance of an element, use that element as the selector
+ID is used on one element in a page. The selector for an  id starts with a hashtag
+class is used to identify multiple elements on a page that will be styled the same. The selector for a class starts with a dot
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesEm Sizing
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Em Sizing
+Why Use Ems?
+points converted to picasAn em represents the height of 'normal' text, where 'normal' is defined by what the size of text that's printed to a page in a word processor. Modern word processors now use 11 point text, but 11 points makes for some funny math, so we'll use 12 points is for normal text - which is exactly the size of text you'd get if you pulled out an old typewriter and typed . Text is laid out to be 6 lines per inch and that works out to 12 point lines or 16 pixel lines on a desktop monitor.
+
+As we move from device to device, we'd like that text to remain the same size. There is not laptop size, tablet size, or in particular, smartphone size. Reading is reading the text has to be a certain size to be readable for most people and that size is a line-height of 16 pixels on a desktop monitor.
+
+The problem with talking in pixels is that a pixel is a relative measure that varies from device to device. An em is a more-or-less standard measure based on the size that the eye sees. Let's take a look at the size of text as we move from desktop to smartphone using a pixel measure and using an em measure. 
+
+Device	16px	1em
+Desktop :Monitor @ 96 pixels per inch)	B	B
+Laptop Computer @ 120 pixels per inch)	B	B
+Smartphone @ 327 pixels per inch)	B	B
+Because each device has a different number of pixels per inch, using pixels to measure leads to accurate, but inconsistent results across the devices. The point I want to make is the text on a smartphone becomes unreadable if you use pixel measures. I measure borders in pixels, but everything else I measure in ems so that the web pages that I build will look the same when they're viewed on a desktop computer or on a smartphone.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesCSS Default Values for HTML Elements
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+CSS Default Values for HTML Elements
+CSS Default Style Values
+The browser wars. Browser icons fighting on a monitor surfaceBefore HTML5 (before 2008), there was very limited cooperation between the different browser vendors. Each company tried to develop their own set of unique tools as a way to differentiate their browser from other browsers. The problem with this strategy is that a browser is meant to be a universal interface that displays content that can be universally understood. While the language that the text was using might change from country to country, the intention of Berners-Lee and the W3C was to create a universal platform for the sharing of information. What we got instead was the Browser Wars, competing Document Object Models (DOMs), and competing coding systems. In the late 1990s, web authors commonly included scripts to determine which browser was rendering the page so that custom instructions could be sent to that browser that it could understand.
+
+In the mid-2000s, HTML5 was both proposed and adopted by the browser vendors. The W3C had proposed a draconian system (XHTML2) that would have fixed the Browser Wars at the expense of most web pages becoming unrenderable. Browsers shaking handsThe choice for the browser vendors was to create and hold to a universal standard or have it forced on them. They chose to voluntarily cooperate and they developed HTML5 as an outcome of that cooperation. A main point to HTML5 was that browsers could be customized, but they must also be able to display standard code in a consistent way. The big questions of DOM addressing, page propagation,  and proprietary HTML elements were resolved. Different browsers offer different add-on features, but they all get the same result when doing the core work of reading, interpreting, and rendering web content.
+
+A big reason why the different browsers render standardized web pages consistently is because they all use the agreed-upon Default Values as their built-in stylesheet. To step back for a second, a web page is instructions, but what '<p>', '<h1>', and '<li>' mean and how they are displayed is  left up to the browsers. One of the reforms of HTML5 was to develop default style values for each of the HTML5 elements so that web authors could have confidence in how their HTML would appear in the browser. You can see these Default Values by going the the W3Schools reference pageLinks to an external site.. These default values are the base that we all start from, and with HTML-5 compliant browsers, we know that the base is now universal.
+
+It is important to understand that the CSS that we write overwrites these default values. You don't need to memorize the Default Values for HTML element appearance, but you do need to be aware of their existence and know that when we write styles, our styles are overwriting those styles. It's all part of the cascade. You also need to know how to look up the default styles so that you know if you're changing a default value or a style rule that you wrote.
+
+Resets Are No Longer Needed
+css-reset.pngBefore HTML5, web authors would reset, or turn off, the proprietary user agent (browser) default rules and then define their page appearance post-removal. These style sheets were numbed things like 'normalize' and 'css reset'. Since 2012 or so, there has been no need to neuter the browser's proprietary default styles because these default styles were no longer proprietary. Today, we can trust that an HTML5-compliant browser will read standard code and return a standard result. 
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesDeveloper Tools
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Developer Tools
+Troubleshooting From the Browser's Perspective
+Developer tools are built into all modern browsers and are accessed using the 'F12' key. The purpose of Developer Tools is to see how the currently-loaded page is performing in the browsing environment. These tools help web developers test and debug their HTML, CSS, JavaScript, and server-side scripting.
+
+We could spend a long time going through the Developer Tools and hopefully you'll see and use many of these tools in the web program. For this course, we're going to be interested only in the 'Elements' menu because that's the menu that shows you what the browser is rendering as opposed to what the browser was sent to attempt to render.
+
+The Developer Tools window shows three different panes for the web page. The left pane is its appearance after rendering, the middle area is the renderable (fixed, if necessary) HTML that was used to create the display that's in the left-hand window, and the right area is style information about the page. The middle pane is structural information and the right pane is presentation information.
+
+
+(Click the arrow) The main feature groups for Developer Tools. Our interest at the moment is in the 'Elements' tab. Tabs that most web developers will be interested in are:
+
+Elements:       Details the HTML and CSS being rendered
+Sources:         Shows the locations where the file being rendered is located
+Applications:  Information about the programming components of the page; mostly JavaScript
+(Click the arrow) The sub-tabs of the 'Elements' tab include 'Styles' and 'Computed'
+
+Styles:         Shows the developer-defined CSS and the browser/user agent default style values that impact the appearance of the currently-selected element. The declaration of 'display: block' that is struck through in the user agent style information  was overwritten by a developer-written style rule of 'display: flex', which is immediately above it (by chance). 'Styles' is a list of changes only.
+Computed: This is a list of every declaration that the the browser is using to render the element.
+(Click the arrow) 'Computed'  is a complete list of every style that affects the selected element. This is what the browser is using to render this shape.
+
+(Click the arrow) Clicking on an element in the page's HTML code selects that item. In this case, I have selected the section that has an 'id' of ten. An image appears that's made up of four concentric rectangles. This image defines the box model for 'isection#10'. The inside bluish rectangle is the section, the green area is where the section's padding is defined, the next box is the border, and the most outside box is the section's margin. The 'section#10' section is 1,000 pixels wide and 35 pixels tall. It has 16 pixels (1 em) of space between it and the shape above it.
+
+(Click the arrow) There are tabs along the bottom middle area that represent the DOM (or the hierarchy of nesting) for the selected element. Currently there are three tabs, one for <html>, one for <body>, and one for <section#10>, which is the currently-selected element. 
+
+(Click the arrow) Clicking on one of these tabs takes you to that element. Clicking on 'body' selects the body element, which also displays the CSS that controls the display of the web page's body.
+
+(Click the arrow) Clicking on any part of the page in the HTML selects that element and its style declarations and box model will appear in the right area.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesLab: Text & Image Styles
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Lab: Text & Image Styles
+Overview
+In this lab we're going to write several different style rules that impact text and a few style rules that impact images. These style rules will be written at all three levels of CSS (external, embedded, and inline) and will include the use of types, ids and classes. As we go through the lab, we're going to look at our page through the Developer Tools so that you can clock some time using Developer Tools.
+
+Download 'styles.zip' Download 'styles.zip'from this page and unzip the archive. 
+
+ 
+
+SlidesDownload Slides
+
+ 
+
+ 
+
+Movie:
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesPerception of Light & Color
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Perception of Light & Color
+"The Opticks"
+Isaac NewtonColor is important in communications and therefore, it's an important consideration when your design a web page. Changing color draws attention to the text and some colors draw more attention than others. Different cultures place different values on color. Color is understood culturally. In the Western culture, red and yellow are used to  represent danger and to draw attention. Red and yellow are 'warm' colors that younger people are attracted to. Blue and green are seen as being calming  or 'cool' colors and they convey safety and security. There is a language to color that artists intuitively understand and that I read about and memorize. Over the next few weeks I'm going to go over how your computer creates colors and how you can add color to your web page.
+
+It was widely assumed for a very long time that color was inherent to a material. For example, if you have some glass that's colored blue, then the blue coloring is a property of that type of glass. In 1704, Isaac Newton proved in his book "The Opticks" that color was a property of reflected light and not a property of the element. Therefore, the color of the light can't be based on the color of the glass. It has to be based in something else and that something else was light waves which we define today as light frequencies.
+
+(Click below) Shine a white light into a prism
+
+(Click below) The light is bent due to the different speeds  that the different light frequencies move at. Red is bent the least and indigo is bent the most. The first prism bends white light into a rainbow, or more scientifically, the spectrum of visible light.
+
+(Click below) When this spectrum of colors is re-bent again by passing the light through a second prism, the light turns back to white light.
+
+
+Shown below is the electromagnetic spectrum and the portion of it that's visible to a human eye. In terms of the total electromagnetic spectrum, the human eye sees color in a very narrow band of the spectrum. Animals' eyes  are sensitive to different parts of the electromagnetic spectrum that our senses do not perceive.
+
+The-electromagnetic-spectrum-Human-perception-is-limited-to-only-a-few-small-regions-of-1.png
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesAdditive & Subtractive Color Models
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Additive & Subtractive Color Models
+Types of Color
+Color models classify colors as being emitted or reflected. Your computer monitor emits color and your printer places toner on the page that absorbs all color except for the reflected color.
+
+Emitted or Additive Colors
+Emitted light is light that is created by exciting molecules until they cast off light. The monitor that you're looking at now creates emitted light, as does your TV, lightbulbs, and a campfire. Emitted light is made up of three primary colors, red, green, and blue. These three primary colors cannot be created by mixing other colors. All secondary (equal mixes of two primary colors), tertiary (unequal mixes of two primary colors), and complex (unequal mixes of all three primary colors) colors come from the primary colors. A computer monitor is capable of displaying up to 16.7 million different colors, of which you can differentiate about 5 million of those colors. The color model is additive, meaning that the color white sits at the center and is an equal mixture of all three primary colors at full strength. The color black is not defined because it has no color. As color is added to a color mix, the color moves towards the middle of the color wheel. Adding color makes the color lighter. The color wheel below is a 2-dimensional model and shows all colors at full brightness.
+
+Reflected or Subtractive Colors
+Reflective color is light that's bounced off or reflected back from an object. If you go outside and look at the leaves on a tree, the color of the leaves that you see is reflected light. White light hits the leaf but all of the light frequencies except for the green color that you see are absorbed by the leaf. The non-absorbed green light is reflected back to you and that is what our eyes see. 
+
+Reflected colors also have three primary colors: cyan, which is a blue-green color, magenta, which is a purplish color, and yellow. This is the color model that color printers use. The one allowance that we make to save ink with color printers is to replace equal mixes of cyan, magenta, and yellow with black. The "K" in CMYK doesn't stand for black, it stands for "key". The "key" plate in a printing process is the plate with the most detail - and that is usually the plate that prints black. In our world, "K" is a proxy for black, even if it technically doesn't mean black. Reflected colors use a subtractive color model, meaning that as add more primary color to the composite color, the color will become darker. Black is at the center of the CMY color model. The only way to lighten a reflected color is to remove some of the color that's already there. Non-color in the subtractive color model is white, like a piece of paper with nothing on it. In this color model, white sits outside of the color wheel. 
+
+The animation below shows the color models.
+
+Click to see the three primary colors turn into the full color wheel.
+
+Click to see how cyan, magenta, and yellow mix into their color wheel. CMY is a darker color model than RGB.
+
+Click to see the full spectrum of light that makes up white light reflect off the leaf
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesActivity: Primary & Secondary Colors
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Activity: Primary & Secondary Colors
+Mixing Your Colors
+In the additive RGB color model, the primary colors are red, green, and blue. In art class, you may have mixed pigments to create color, but pigments use a subtractive coloring system. The link below will take you to a page where you'll see color swatches and you'll try and figure out what the Red-Green-Blue (RGB) mix is that made that color in hexadecimal. The only colors you'll see are primary or secondary colors.
+
+A primary color is red, green, and blue. They cannot be mixed using other colors.
+Secondary colors are equal mixes of two primary colors. In this case, the secondary colors will be mixed at full intensity.
+To figure out what primary colors mix to create a secondary color, you look where the secondary color sits on the color wheel and which primary colors are near it. The color yellow sits between red and green, so yellow is mixture of red and green. Cyan sits at the bottom of the color wheel between blue and green, so cyan is a mixture of blue and green. While we're not there yet, orange is a tertiary color and it sits between red and yellow, so it's a mixture of red and yellow. Yellow is a mixture or red and green, so the color orange is roughly two parts red and one part green.
+
+Once you've determined which primary colors are involved, then you need to decide how much of each color was used. In this case, you're going to be given two choices:
+
+'00': this primary color isn't present
+'ff': this primary color is present and at full intensity
+The color that you're defining is the background color for the row that you're working on. You must choose a setting for all three primary colors because that's how you'll define hexadecimal colors in your HTML code. For yellow, the answer is going to be red: 'ff', green: 'ff', and blue: '00'. The way that we'll write the color yellow in a stylesheet is: #ffff00, which means full intensity red, full intensity green, and no blue. It is the combination of the three color strengths you defined in the pull-down menus. Set the intensity for each primary color (00 and not answered are not the same thing) and then check your answer by clicking on the 'Check' button to the right of the three pull-down menus. If a green check appears when you click on the 'Check' button, then your answer was correct. Otherwise, try again.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesActivity: Color Mixer
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Activity: Color Mixer
+Lab: Color Mixer Tool
+The color mixer allows you to use HTML 'range' inputs (that you'll learn about towards the end of the course) to mix RGB colors. The color that you mix is shown to you in the right-hand box (called a color swatch). Inside of that box is not only the color, but also the hexadecimal ('hex') color mix that made up that color. You can also see the strength of each primary color that's used in that color (the RGB column) and you can see the hex value for that strength in the 'Hex' column.
+
+</
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWeb Imagery
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Web Imagery
+About Images
+Loosely speaking, an image is a rectangle where each pixel in the shape is given a different color. With only one file type exception that we're not concerned about, the colors of the pixels are defined in the image file's <body> and the interpretation of those image colors is located in the image file's <head>. Just like in HTML, an image file's <head> holds metadata and the file's <body> holds the displayed content. The image <head> holds either a color map or the decompression algorithm that was used when the file was saved. The image <body> data is turned into individual pixel colors.
+
+There are two ways to decrease an image's file size. You can optimize the image or compress it. Optimizing reduces the number of colors that the file has to identify, which means that we can use a smaller number of bits to define each color. Compression involves either color averaging or color pattern matching.
+
+An image is placed in a bounding box. The bounding box has a width, a height, and a position in the document that come from the image's original size. The purpose of the bounding box is to create a viewport that displays the image. The bounding box not only holds the image, but it also defines where in the file the image will be located. This allows the text to be wrapped around the bounding box before the image is mapped into the bounding box, which occurs after the text is placed on the page. If you have a broken image link you'll see the bounding box on the page.
+
+Image File Types
+We have been able to place images inline with text since 1993 with the Mosaic browser. Not all image types can go on a web page, and there's a lot of different image types. HTML5-compliant web browsers have the built-in ability to render these four file types into a web page:
+
+.gif
+.jpg
+.png
+.webp
+The images are listed by the number of years the browsers have supported the file type, with .gif being the original file type supported and .webp being the most recent addition. Each of these file types has a distinctive use, but the use is not exclusive. At this point, many of these file types have many of the same features. The place where you'll see the biggest difference is in Photoshop, which is the premier image editing software. We aren't going to be doing any image editing in this course, you'll be provided with the images that you need to complete the labs and assignments.
+
+GIF Images
+Pronounced either GIF or JIF, the Graphic Interchange Format file type uses up to one byte to define one pixel's RGB color mix. The GIF file type uses optimization to create a 2 color (1 bit) to 256 colors (8 bits) color map. The position of the color in the color map determines the value that's stored in the file's <body> for that pixel's color. In the image below, a 16-color map is created on the left and the colors are numbered from 0 to 15. Each color has an RGB mix that's tracked in the <head> of the file. The color 7's RGB mix is shown in the middle. The image on the right is just that; it's a 9-pixel picture where the binary for each pixel in the image is shown. The very middle pixel uses color 7 as its color. Each pixel in the picture requires 4 bits to define its RGB mix.
+
+A color map on the left. Color 7's RGB mix is displayed in the middle and a "picture" is being laid out on the right
+
+The GIF file type supports void areas ("clear" parts of the image) and animations. GIF works best for high-contrast clipart, where 'high-contrast' means the color difference between adjacent pixels is very high. It is also good for making animations. GIF was introduced in 1987 by CompuServe.
+
+JPG Images
+The Joint Photographic Experts Group created this format and named it for themselves. There are two different extensions used with this file type: .jpg and .jpeg. You can use either extension when you create a .jpg image, but once the image has an extension you must use the proper extension to call the file. JPG images are associated with camera-generated images. JPG works best with low-contrast images, meaning that the color difference between adjacent pixels is small. A picture of a sunset is a good example of a low-contrast image even though the number of colors making up the image is very high. .JPG uses lossy compression to reduce file size. Artifacts will appear if an image is over-compressed, and as the name implies, the file size is reduced by eliminating "unneeded" information in the image. The JPG format also works best with a large number of different colors.
+
+JPG is still heavily used by digital cameras, though Apple phones use HEIF today. As of the day this page was created, HEIF is not a browser-supported file type. JPG was introduced in 1992 by the Joint Photographic Experts Group.
+
+PNG Images
+The PNG file type was created to replace both the GIF and JPG file types. A Portable Network Graphics image has two different versions, an 8-bit version that is at least equal to .gif and a 24-bit version that is equal to or exceeds the .jpg file type. PNG does out-perform GIF and JPG. PNG was introduced in 1995. It not only supports voided pixel color in the image, but it also supports translucence. PNG uses lossless compression, meaning that the fidelity of the image is maintained in the saved version.
+
+PNG can be used for anything that the GIF and JPG file types are used for.
+
+WEBP Images
+Just as PNG is a replacement for GIF and JPG, WEBP was created to replace PNG. WEBP was developed by Google in 2010, so it's been around for a while, but its support in Photoshop is limited.  A WEBP image will be 25% smaller than a PNG image and 30% smaller than a JPG. the file size savings is achieved by using both lossy and lossless methods to save the image. Apple Safari did not support WEBP until 2020, so WEBP images may not display in Safari browsers that have not been updated in a long time.
+
+Other Web Image Types
+There are two other types of images that you can place on a web page:
+
+<canvas>
+<svg>
+A <canvas> image is created by using JavaScript-like code to define the image. A scalable vector graphic is an image where you define regions of an image and color them. These regions are scalable, meaning that as you make the image larger or smaller, you also proportionally resize each color region in the image.
+
+Image Attributes
+Image Tag
+An image uses a self-closing/void element because the image doesn't hold any content beyond itself. You may see the self-closing version of an <img /> element used as well.
+
+<img>
+
+src Attribute
+The source defines the relative path that goes from the web page where the link is defined to the image that's being called in. All images are to be saved in the 'images' folder that sits at the root level of your web site and is at the same 'level' as all of the web pages in your site.
+
+a standard website with 2 subfolders and files
+
+If you place all your HTML files at the root level of the site (see above) and you place all of your images in the 'images' folder, then the pathway, or source that you'll use to locate your images will always be the same:
+
+<img src="images/filename.ext">
+
+Where 'filename' is the image's file name and 'ext' will be .gif, .jpg, .png, or .webp.
+
+Width & Height Attributes
+All non-background images must have width and height dimensions to pass accessibility. Adding the width and height attribute to your image allows the rendering engine to allocate the necessary space to define the bounding box that holds the image. The value for the width and height are displayed without a unit of measure, which in HTML5 is assumed to be pixels. The image's dimensions can be viewed by selecting the image. The order that attributes are displayed in is not important.
+
+<img src="images/filename.ext" width="120" height="89">
+
+Alt Attribute
+Images are required to to have alt text to pass the accessibility test. The purpose of alt text is to provide a text description of the image's content so that a screen reader can pass that information on to visually impaired clients. While there's not length restriction on alt text, you realistically want to keep the character count below 100 characters, which is something like 20 words. Shorter is better, but your text must describe the information that the image is passing on to sighted people and that's not an easy thing to do in 10 words or so.
+
+<ing src="images/filename.ext" width="120" height="89" alt="A customer handing money to a cashier">
+
+Title Attribute
+The title attribute is optional and it is used to add further explanations about the image. In Edge, the tooltip text (the text that appears when you put your mouse on top of an image) is the alt text, but in all other browsers, the tooltip text is the title text.
+
+<ing src="images/filename.ext" width="120" height="89" alt="A customer handing money to a cashier" title="A cash transaction">
+
+Determining an Image's Width & Height
+To find out an image's width and height in pixels, place your cursor over the icon for the file and wait a few seconds. If the tooltip doesn't appear, click next to the image first and then hover the image. A tooltip will appear (see below and to the right) that tells you the image's file type, the file's width and height in pixels (in that order), and the file size in memory.
+
+An imageTooltip for image
+
+Where to Save Images?
+Always in the 'images' folder, which sits at the root level of the website. In much larger sites than we'll build in this course, you may want to add subfolders to the 'images' folder or create a second folder for images. Placing all your images in the same folder makes figuring the pathway for your image source easy since it will always be the same:
+
+src="images/filename.ext"
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesFloating Images
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Floating Images
+What is Float?
+An image that will have Text Wrap applied to in in MS WordFloat is a style declaration that's applied to images, but, it's impact is mostly seen on the text that sits around the image. Floating images is not unique to HTML; It's part of word processing. In MS Word, what's called 'floating' in HTML is called Text Wrap (see image to the left). Text Wrap in Word has one inline option that's exactly like HTML's inline layout and six different ways that text can be wrapped around the image. In HTML, we have one way to wrap text around an image, which is the same thing as the first choice that's pointed to by the red arrow.
+
+Images can be styled to float either left or right, where 'left' means that the image moves to the left boundary of the page and the text flows around the image to its right. 'right' moves the image to the right boundary of the page and has the text flow around the image to its left.
+
+Technically, floating gives text and other block elements the ability to sit in the same line with other content. Practically, float gives your text the ability to flow around an image.
+
+Turning Float On
+While the style is referred to as floating the image, what you're really doing is allowing text and other page content to flow around an image. In Word, this is called 'Wrap Text', which may well be more descriptive of what we're actually doing. To float an image and allow text to wrap around it:
+
+img {
+    float: left;   (or right)
+}
+
+float only impacts the text that the image is a child of.
+
+Turning Float Off
+A float can't be turned turned on and off. Once you turn float on, it will stay on as long as there's renderable space beside the image. You can tell elements after the text block that's being floated to ignore the float and position itself beneath the floating element. You can clear left, clear right, or clear both; depending on need. This code example has one line of code that's a <p> element with an image in it that's being floated. The <p> tag beneath the floated <p> has an inline style that blocks it from being floated:
+
+<p><img>Text to float next to the image</p>
+<p style="clear: both">This text won't float</p>
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesPlacing Images in Text
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Placing Images in Text
+Image Display
+ By default, images have a display of inline-block, meaning that they are inline in terms that they don’t control space beside them, but they do have a defined width and height. Images that have a display of inline-block can be placed inside of a text element, 
+
+Text & Images Go Inline
+Images and text are going to be mixed together in your HTML code because the images and text are mixed together on your web page. There are two ways that your text and images can mix together:
+
+image is outside of any text elements.
+image is inside of a text element
+Click through the animation to see how placing images in or out of text changes the page layout. 
+
+
+How to read the slides:
+
+The cyan <img    > is the image tag. This allows you to see how the <img> tag and the <p> tag relate to each other.
+The gray rectangles are text that's inside the <p> element.
+The picture of the flower is the actual image being called in by the image tag.
+Slide 1 is text without an image
+
+(Slide 2) Image is outside of the paragraph. There is no interaction between the image that the text in the paragraph. (Slide 3) The image and text are on separate lines due to the <p> tag having a display of block 
+
+(Slide 4) The image is inside of the paragraph. The text and image now interact. (Slide 5) The baseline of the text and image are the same. The line-height is determined by the tallest element in the line, which is the image currently. Text touches the right side of the image.
+
+(Slide 6) The image is now floated in the paragraph. (Slide 7) The image top and the line-top are the same. The image moves to the left margin and the paragraph text flows around the image. The text in the paragraph is pushed down by the space taken up by the image.
+
+(Slide 8) The image is placed somewhere in the middle of the paragraph text. The image is rendered immediately after whatever character sits to its left. (Slide 9). The image is in effect a character in this paragraph. Since it is the tallest element on this line, the image's height controls the paragraph height. The space to the left and right of the image that's not inline with the text is empty and the text is again forced down by the space that the image uses.
+
+(Slide 10)The image is again placed somewhere in the middle of the paragraph text, but this image is floated. (Slide 11) The image floats to the right of the paragraph with the top of the image and the top of the text line where the image was called are the same height. The text flows around the image to the left and is pushed down the page by the space that the image consumes.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesResizing Images in CSS
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+Resizing Images in CSS
+Initial Size of Images
+image icon being expandedImages that are in the foreground must have a width and height that's defined in pixels (without the 'px') to pass validity tests. The size that you define in the <img> element should be the size of the image as it sits in the 'images' folder and not the size that you want the image to be.
+
+<img src="images/somefile.webp" width="300" height="200">
+
+Percentage Resizing
+An image can and should be resized using a style rule that sets a percentage on the width and the height to 'auto', which means 'in proportion'. The percentage size that you choose defines the relationship between the image width and the width of the parent element that's holding the image. Currently, the parent element is <body> , but that will change soon.
+
+The style rule that makes an image 25% of the parent element's width:
+
+img {
+    width: 25%;
+    height: auto;
+}
+
+Assuming that the image being resized started out as being 300 pixels wide and 200 pixels tall and the image is sitting in a parent container that's 500 pixels wide, the image will render at 125 pixels wide and be 83.3 pixels tall.
+
+Images can be percentage sized to height, but the vast majority of people change a browser's width and not its height.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+One unread release note.1
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesThe World of ECMAScript Applications
+Spring 2025
+Home
+Syllabus
+Modules
+Grades7
+Discussions
+Announcements
+The World of ECMAScript Applications
+Technologies Relating to the Internet
+
+This week I want you to look at the white-red rounded rectangles in the image. These are the different applications that can interpret or use ECMAScript. Some of these applications are browsers and some are plug-ins for browsers. Other applications are servers or server processes. You do  not need to memorize this list of applications, but you need to expect that a future employer may want you to use these applications in their website. This image as of 2024 is 17 years old, so there are applications listed here that are deprecated (no longer used) or even deleted. There have also been some new applications created since 2007, so this part of the image is probably the most suspect as it applies in 2024. The main applications included in this 2007 image are:
+
+Browser applications:
+
+WebKit/Chrome
+Firefox
+Edge
+Konquerer
+WebKit
+Safari
+Android
+Server applications:
+
+Apache
+Tomcat
+Plug-ins:
+
+Flash
+PDF
+AIR
+All the technologies/languages that interact with JavaScript
+

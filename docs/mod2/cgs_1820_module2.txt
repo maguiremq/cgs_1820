@@ -1,0 +1,654 @@
+Definitions
+In the animation at the bottom of the page, we start from an open browser with no page selected.
+
+Domain Name: 'sfcollege.edu' as an example
+A domain name is the name of the site. The domain name is the only thing that you need to type to get to the domain's landing page, or the 'index' page to open in your browser. The 'index' page is sent if it's available and no specific page in that folder is selected. 'www.' is thankfully no longer needed as a sub-domain. The forward slash at the end of the domain name is also optional. It is mandatory only if you're also going to include a file name in the URL. See the discussion on the use of 'www' at this siteLinks to an external site.. Typing only the domain name in the location box (right side) will open the landing page, which is an index page at the root level of the website. The folder structure so far for the Santa Fe College web site is this:
+
+folder and file
+https://sfcollege.edu/
+
+Protocol: 'https://'
+The protocol, or scheme defines which transfer protocol was used to move the file from the server to the client. The 's' at the end of 'http' means that the communications between client and server are sent using an encrypted channel. The secured channel used is commonly called SSL (Secured Sockets Layer), but almost certainly your computer today uses TLS (Transport Layer Security) to encrypt and decrypt HTTP traffic. Encryption will be discussed later on in this course.
+
+The protocol used doesn't display in the location bar once the page loads, but keep in mind that your browser will use 'https' unless it's specifically told to use 'http'. You can tell which protocol was used by the icon in front of the URL as well as some other methods. In Chrome, if the icon in front of the URL is:
+
+an 'i' in the circle i in circle is for httpthen you're used HTTP and the transmission is not secured
+two horizontal lines https then you're using HTTPS and you're using TLS to encrypt and decrypt communications with the server
+Folder in Pathway: 'admissions'
+Clicking the link to 'Admissions' that's on the web page directs the server to send the 'index' file that's inside of the 'admissions' folder. We know that we're looking at the landing page for the folder because there's no file name at the end of the URL and we also know that the admissions folder is a child (sits inside) folder because the pathway shows that 'admissions' comes immediately after the domain name.
+
+pathway to admissions
+https://sfcollege.edu/admissions/
+
+Sub-Folder in Pathway: 'get-started'
+A web site is organized in files and folders just like your computer's memory is. The web site has an 'admissions' folder that's at the root level for the web site and the 'get-started' folder sits inside of the 'admissions' folder. Agian, there's no specific file name listed in the URL, so the server will send any landing page that's located in the 'get-started' folder. If there is no landing page found in the 'get-started' folder, then the server will send a 404 error message, which means that you reached the server, but the server couldn't find a resource that matches your request.
+
+folder structure for 'get-started'
+https://sfcollege.edu/admissions/get-started/
+
+Page in a Sub-Folder: 'campus-visits.html'
+Since 'campus-visits.html' ends with .html, we know it's a file that's sitting inside the 'get-started' folder, which is the folder name that's immediately to its left. The 'get-started' folder has at least two .html files in it: its landing page of 'index.html' and 'campus-visits.html'
+
+sfeollege.png
+https://sfcollege.edu/admissions/get-started/campus-visits.html
+
+Animation
+(Click the arrow) to open the Santa Fe College website on its landing page
+(Click the arrow) The protocol of 'https:// is assumed in HTML5-compliant browsers. There's no need to type it.
+(Click the arrow) Click on the 'Admissions' link and the landing page in the 'admissions' folder is shown
+(Click the arrow) Click on the 'Get Started' link and the landing page in the 'get-started' folder is shown
+(Click the arrow) Click on the 'Campus Visits' link and the 'campus-visits.html web page opens
+
+FileZilla is an FTP Utility
+FileZilla is an FTP (File Transfer Protocol) utility (application used to perform a computing task) used to move files and directory structures (files and folders) from one computer to another computer while maintaining the folder structure of the files, Conceptually, FileZilla is a bridge that sits between your computer's memory and a web server. FileZilla allows you to move files and folders from your computer (on the left) to the ITE web server (on the right). The left-hand pane of FileZilla (shown at bottom of image) shows your computer's memory and the right-hand pane is your folder on the ITE server. Once you have a connection, you can drag-and-drop content between your computer and the ITE web server just like you drag-and-drop content from a thumb drive to your computer's memory. The only difference between a thumb drive and FileZilla is that the thumb drive has a direct, physical connection to your computer while FileZilla's connection to your computer is over a network.
+
+Map showing how FileZilla connects your home computer to the Santa Fe web server
+
+Probably the hardest part of using the ITE server is connecting to it. You need to provide FileZilla with three pieces of information to login:
+
+Information	Add This Information	Your Name	Data	What to Add:
+Host	home.ite.sfcollege.edu			
+Username:	Your email prefix	Chris Collins	chris.collins2	chris.collins2
+Password:	Student ID like this: XXXX-XXXX		12345678	1234-5678
+The port for standard FTP is 21, but you do not type that in. Leave the port textbox empty and click on 'Quickconnect'. Once you have logged in successfully, you can use the down arrow next to 'Quickconnect' as a bookmark. You can also save a host by using the 'Site Manager' listing in the File menu.
+
+Top area of the FileZilla interface. Add the Host, Username, and Password
+
+Top area of the FileZilla interface. Add the Host, Username, and Password
+
+If you connect successfully, you'll see this:
+
+Successful connection
+
+If you see a bunch of red text, your connection wasn't successful.
+
+Directories & Folders
+Right-click menu and 'Create directory' dialog boxA directory and a folder are practically the same thing. A directory and a folder serve the same purpose: to hold files so that they're easy to find. The technical differences between a directory and a folder:
+
+a directory is a location reference
+a directory can hold files and other folders. Technically, a folder can only hold files
+A folder is a GUI icon that represents the directory.  These dated and technical differences aside, you can think of a directory and and a folder as being the same thing with a different name.
+
+There are several ways that you can create a directory just like there are several ways you can create a folder. The way that I'll recommend here is to right click in the lower right side window and choose 'Create directory' from the context-sensitive menu that appears (shown to the right). A dialog box will appear that will show you the directory that's currently selected ('public_html' in this case) and the name of the new directory you're about to create. This is no different from when you create a new folder on your computer. Change 'New directory to the name that you want it to become and click on 'OK'
+
+A Web Server Is a Computer Too
+A cloud connected to many computersMaking web pages will test your understanding of folders and pathways. CGS1820 teaches you how to build a web page, but to see the web page you have to be able to locate it on the server in the right spot and then know how to address that spot using a link. The first part of this is locating your work in the right place. To locate a file on your computer, you simply drag and drop it where you want it to be. We're going to do the same thing with our web sites, but we have to do this dragging and dropping between two different computers and we have to use an application (FileZilla) to create the bridge between our client computer and the server.
+
+FileZilla is no different from File Explorer on a PC or the Finder on a Mac. You're going to have a target that you're going to copy (ALWAYS send a copy of your work) that's located in one folder and send the target to a destination, which will be a 'mod' (for the weekly Modules) folder on the ITE server.
+
+OneDrive or any cloud storage system uses a system that works very much like FileZilla to send and receive files. The difference between cloud and the ITE server is that the cloud system hides the details of the connection from you.
+
+Directories and Folders
+
+A directory and a folder are practically the same thing. A directory and a folder serve the same purpose: to hold files so that they're easy to find. The technical differences between a directory and a folder:
+
+a directory is a location reference
+a directory can hold files and other folders. Technically, a folder can only hold files
+A folder is a GUI icon that represents the directory.  These dated and technical differences aside, you can think of a directory and and a folder as being the same thing with a different name.
+
+There are several ways that you can create a directory just like there are several ways you can create a folder. The way that I'll recommend here is to right click in the lower right side window and choose 'Create directory' from the context-sensitive menu that appears (shown to the right). A dialog box will appear that will show you the directory that's currently selected ('public_html' in this case) and the name of the new directory you're about to create. This is no different from when you create a new folder on your computer. Change 'New directory to the name that you want it to become and click on 'OK'
+
+A Web Server Is a Computer Too
+A cloud connected to many computersMaking web pages will test your understanding of folders and pathways. CGS1820 teaches you how to build a web page, but to see the web page you have to be able to locate it on the server in the right spot and then know how to address that spot using a link. The first part of this is locating your work in the right place. To locate a file on your computer, you simply drag and drop it where you want it to be. We're going to do the same thing with our web sites, but we have to do this dragging and dropping between two different computers and we have to use an application (FileZilla) to create the bridge between our client computer and the server.
+
+FileZilla is no different from File Explorer on a PC or the Finder on a Mac. You're going to have a target that you're going to copy (ALWAYS send a copy of your work) that's located in one folder and send the target to a destination, which will be a 'mod' (for the weekly Modules) folder on the ITE server.
+
+OneDrive or any cloud storage system uses a system that works very much like FileZilla to send and receive files. The difference between cloud and the ITE server is that the cloud system hides the details of the connection from you.
+
+Check First, Upload Second, Check Again
+paper moving on to a monitorEach week (except this week) you'll complete a coding assignment and upload the complete web site to the ITE server. Your upload will include the 'index' page that you coded in HTML and a stylesheet that you coded in CSS. You'll be provided with the images that the pages require. Before you upload your assignment, you need to check it by running it through the W3C's 'validator.nu' page validation service.
+
+HTML validation:  https://validator.nu/Links to an external site.
+CSS validation:  https://jigsaw.w3.org/css-validator/Links to an external site.
+You'll upload the page in question and you'll get a validation score. Once you've checked your page's validation, then you'll upload your site into the 'cgs1820' folder so that it can be found.
+
+Finally, you need to check to make sure that your web site is in the proper place by opening your browser and typing in the URL that you submitted for me to check. The URL is to look something like this:
+
+http://home.ite.sfcollege.edu/~your.name/cgs1820/modx/         where the x is the module number.
+
+The next page is a lab that shows you how to upload your web site into the ITE server.
+
+Working With Zip Files
+winzip logo, a clamp around a filing cabinetZipping takes a collection of files and folders and saves them into a single archive/file. When the archive is unzipped, a folder is created that holds everything that had been zipped up. A computer treats a zipped archive as if it were a single file.
+
+When to Zip
+if you want to move folders and files together. 
+Any time you're moving more files than is practical to move 
+If you're moving executables and some other types of files that get blocked due to security reasons
+How to Zip
+select the folders and files that you want in the archive
+Do not select a folder that holds the things that you want to zip. Select only those folders and files that are to be included in the archive.
+Right click on the selection and choose 'Compress to Zip File'
+You won't be zipping files in this course, but you'll be doing a lot of unzipping. You can tell a file that is an archive because its icon is a folder with a zipper running the long way. All of your coding labs and assignments will start off with you unzipping an archive so that you can the base code to start off with.
+
+ziph.png
+
+How to Unzip
+Right click on the archive
+Choose Extract All ... from the menu
+A folder will appear that has the same name that the archive had. This folder holds the unzipped folders and files. The outer folder's name is tied to the archive and you can change the name of an archive the same way that you change the name of anything in computing. In most cases, the outer folder will hold your assignment. You won't include this outer folder when you upload the assignment to the ITE server. You'll upload only the contents in the folder.
+
+I would leave the assignment's content in the original folder as you gain nothing by moving it. I'd work on it there and then upload to the ITE server from there. Make sure that you're downloading the archive to where you want it to go. 
+
+The Internet @ CERN (1988 to 1993)
+
+The Development Years
+The topic in this week's history is the invention of the Internet at CERN and its early formative years at CERN.:
+
+Internet Pre-History (1960 - 1988)
+The Internet @ CERN (1988 - 1993)
+The Internet Comes Home & The Browser Wars (1995 - 1998)
+The XHTML Years (1998 - 2005)
+The HTML5 Years (2005 - present)
+The Internet is Invented
+
+Image of Tim Berners-Lee sitting at a computer that is displaying a web pageThe European Organization for Nuclear Research (French acronym: CERN) is an organization of 17,000 physicists and nuclear scientists who work primarily at universities or national labs in the countries where the scientists live. One of their biggest problems CERN faced is communication. In March 1989, an English computer scientist named Tim Berners-Lee (shown to the right) proposed a new system to send scientific documents stored on a remote server to local computers all over the world using phone lines. The purpose of the original Internet was to store and send all of CERN''s research documents to any of CERN's employees who needed them. These local computers would then display the documents using software the Berners-Lee was developing called a browser. To work, the system needed:
+
+a programming language based in SGML that could be used to create the document
+a system that can request, send, and receive documents
+an interface where the document can be read
+Page 1 of the proposal for the InternetTo make the Internet happen, Tim Berners-Lee had to use the existing TCP/IP system along with a variant of SGML that he named HTML (Hypertext Markup Language). He proposed to combine his HTML with a new networking protocol (the HTTP Protocol) and a new class of software that he was developing called browsers to create the what we know today as the Internet. 
+
+This proposal was declined.
+
+Berners-Lee didn’t accept no for an answer. He, along with a small group of engineers at CERN built a prototype of this system without management’s support. Once management saw the prototype, they did grant their approval in May 1990 for continued work. The rest, as is said, is history.
+
+The first page of his May 1990 proposal is shown to you on the left. This is what an academic paper looks like, though they usually are almost entirely made up of unformatted text. For the first few years or so,  all web pages looked this way. Berners-Lee invented the browser and he named the first version of his browser “WWW”. This browser was intended for use by scientists at CERN to send and receive scientific papers and data.
+
+In March 1991, Berners-Lee released his WWW software including the browser and the server software to CERN employees. In August 1991, he made this same software available to the public. To order to maintain the open source nature of the Internet and to oversee its growth and development. Berners-Lee left CERN in 1994 and joined MIT, where he founded the Worldwide Web Consortium (W3C). Since 1993, HTML has gone through at least six different major updates and style sheets have gone through three major versions.
+
+The World of ECMAScript Implementation Languages
+
+Technologies Relating to the Internet
+This week I want you to look at the white-blue gradiated clouds in the image. These are the different implementation languages that are used in web scripting. There are many clouds at the bottom of the image that were placed there to create a full map, but they aren't major contributors to the Internet today.
+
+the clouds of technologies and tools that are associated by company. This will give you a good idea of which company names you should be aware of and the tools/technologies that they developed. Again, as an IT professional you should be aware of these implementation languages, but you don't need to memorize the list. As you take courses in these different languages you should think about how the language itself compares and contrasts with other languages I will place this list in the order of their importance to web programming. I believe that all of the implementation languages listed at the bottom of the image pre-date the Internet but were used as a basis to create languages that we use today on the Internet.
+
+JavaScript
+C/C++
+Java
+Ruby
+Python
+Perl
+
+Keyboard Shortcuts
+
+Keyboard shortcuts are made by pressing two or more keys at the same time where the combination of keys issues a command to the operating system. Keyboard shortcuts work the same for a Mac and a PC, though you use the 'Command' key on a Mac instead of using the ''Ctrl' key that a PC uses to activate the shortcut.
+
+There are more keyboard shortcuts than I have time to memorize. Here is a complete list of keyboard shortcuts published by W3SchoolsLinks to an external site.. I heavily use these six keyboard shortcuts and I believe that you should too (if you don't already):
+
+Shortcut (Mac is Option  Mac Command Key  )	Purpose
+'Ctrl' + Z	Undoes the last thing done. Repeatable
+'Ctrl' + X	Cut
+'Ctrl' + C	Copy
+'Ctrl' + V	Paste
+'Ctrl' + S	Save
+'Ctrl' + A	Select All
+If you're not using keyboard shortcuts, you're really missing out. Like anything else, they take a bit of time to learn, but they are major timesavers for me.
+
+Measuring Systems
+
+Measurements in Publishing
+Printing broadsidesA web page can be measured in inches, centimeters or any other well-known system, but these measuring systems are too large to make sense in publishing. Going back to the days of Gutenberg and likely before, publishers measured in points and picas. There are 12 points to a pica and 6 picas to an inch, meaning that there are 72 points to an inch. There are also six lines of text to an inch, meaning that the height of a standard line is one pica and that one pica holds 12 point text. Microsoft Word continues to measure in points where '11' for a font size means 11 points. Word no longer uses 12 for its standard size because laser printers and monitors are sharp enough that reading 11 point text on a computer has the same comparative ease as reading 12 point text in a book. The main typography tools in Word are shown to you below. We use the same tools in the same way to structure a web page:
+
+The Home ribbon of MS Word
+
+Points and picas are great if you're an Italian printer living in the middle ages, but they're not real helpful for us on a computer. The measuring systems that web developers use is based in pixels and ems.
+
+Pixels
+A pixel (picture element) is a color dot on your monitor. A pixel is a relative measure that refers to the size of the emitting element that makes up your monitor. Different devices use different size pixels and therefore have a different number of pixels per inch. Desktop computers almost always have 96 pixels per inch, laptop monitors may have up to 120 pixels per inch, and your typical smartphone has anywhere from 180 to 350 pixels per inch.
+
+All kinds of things are measured in pixels; especially images and anything else that might end up being displayed on your monitor. In styles, the pixel measurement is used to define image size and may be used to size borders. With rare exception, these are the only web elements that you should measure in pixels.
+
+Introduction to Hexadecimal
+
+Major Computing Numbering System
+Humans think of numbers using Base 10 or decimal. This system uses 10 numbers from zero to 9 and we also write our numbers using place values. Shown below is three hundred and twenty five.
+
+325
+
+The way that Arabic numerals are understood is by taking the number and multiplying it by the place value where it's located. More correctly, you take the number and multiply it by the Base and the power for the place value. My 325 from above is understood this way:
+
+3x102 + 2x101 + 5x100
+
+Four numbering systems: binary, decimal, octal, and hex
+Hexadecimal is one of at least four numbering systems that have been used in computing. In web work, we use hexadecimal to define colors and any time you want to define a color that isn't one of the 16 universal colors you should use hexadecimal to define the color. The four main numbering systems used in computing is shown to you on the right. Octal (Base 8) is no longer commonly used. All of the other numbering systems are alive and well.
+
+Hexadecimal is a numbering system that uses 16 digits from 0 to f instead of using 10 digits from 0 to 9. The additional digits in hexadecimal are from 'a' to 'f', where 'a' is the equivalent of 10, 'b' is like 11, 'c' is like 12, 'd' is like 13, 'e' is like 14and 'f' is like 15. From 0 to 9, hexadecimal and decimal are the same, but the next number in decimal after the digit 9 is 10, which means one ten and zero ones. In hexadecimal, the digit after 9 is simply a. If you have the number 10 in hexadecimal, what you're saying is you have 1 in the 16s place and no ones. 10 in hexadecimal is 16 in decimal.
+
+Decimal numbers greater than 9 and their hexadecimal equivalent:
+
+10 → a
+11 → b
+12 → c
+13 → d
+14 → e
+15 → f
+Converting From Decimal to Hexadecimal
+Steps:
+
+Divide the decimal number by 16. The quotient goes in the 16s place
+If the quotient is greater than 10, convert the quotient to a letter
+The remainder goes in the ones place
+If the remainder is greater than 10, convert the remainder to a letter
+Example: 184
+Divide 184 by 16. The quotient is 11.
+11 is greater than 9, so 11 represented as b
+8 is fine as is
+Conversion: 184 in decimal is b8 in hexadecimal
+Decimal	Hexadecimal
+48  	30
+132  	bb
+62  	3d
+181  	b5
+Converting From Hexadecimal to Decimal
+Steps:
+
+If the 16s number is a letter, convert it to its decimal equivalent
+multiply that number by 16
+If the 1s number is a letter, convert it to its decimal equivalent
+Add this number to the product of the 16s place value times 16
+Example: 5c
+
+No need to convert the 16s place value.
+5 times 16 is 80
+c is 12
+80 plus 12 is 92
+Conversion: 5c in hexadecimal is 92 in decimal
+Hexadecimal	Decimal
+c4	196   
+7b	124   
+ac	172   
+46	70   
+Here is a Conversion Activity Download Conversion Activitywhere you can practice converting hexadecimal to decimal and decimal to hexadecimal. Each time you open or refresh the page you'll get different problems to solve. Being able to convert numbers between numbering systems is not a critical skill yet, but if you're going to work in IT, you'll probably need to learn how to work with binary and hexadecimal sooner or later. It might as well be sooner. All of the numbers that you'll convert in this activity will be between 0 and 255 in decimal and between 00 and ff in hexadecimal. 
+
+Hexadecimal numbers should be written in pairs, so the number 3 in hexadecimal is written as '03' and the decimal number 11 is written as '0b'.
+
+
+
+Ems
+A capital W in moveable type with a space beneath for descenders
+The original 'em' measurement came to us from Middle Ages printing and it defined the width of the character 'M'. This measure is a lot more useful for us than points and picas are. In the old typefaces, an M had the same width and height (it was square), so it was useful for measuring the height of a line of text, which is how we use it today. A standard line of text on a monitor is the same representative size as a line of text in a book, meaning that there are 6 lines of text per inch and each line of text is 1/6 of an inch. If you're following along, that's also a pica and if you ever sat down in front of a typewriter and used it, the typewriter also uses 6 lines to an inch and 12 points per line of text.
+
+Assuming that we're talking about desktop monitors, the standard pixel size is 96 pixels per inch. On this desktop monitor, there will be six lines of text per inch, so each line of text has a height of 16 pixels. For this standard desktop monitor, one em equals 16 pixels. The 1em = 16px relationship probably will not be true on a laptop, tablet, or smartphone device. For the time being, we will learn how to write our measurements properly to work across all devices, but talk about sizes as they relate to a 96 pixels per inch monitor.
+
+Things to know:
+
+You can use any measuring system that you want to size elements on a web page, but you'll really handicap yourself if you don't use ems to measure text and containers and pixels to measure image sizes. All measurements are written with the value first followed by the measuring system used with no space in between. On a standard desktop monitor, all of the sizes below are the same distance:
+
+1em
+12pt
+16px
+.167in
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+Whitespace
+Whitespace
+Helping With Code Readability
+An uppercase W with the foreground missing and the text 'whitespace' shown beneathWhitespace is any character that appears as a blank space on the screen. There are two main ways to create horizontal whitespace:
+
+space bar
+tab key
+And one way to create vertical whitespace:
+
+line break or 'Enter' key
+You should use whitespace in code to help make the code more readable by placing the code in predictable positions. The whitespace is added to help the reader understand the relationships between the different lines of code. Shown below is the HTML code from the end of Module 1. Let's dissect its use of whitespace:
+
+<!doctype html>
+<html lang="en">
+1 -><head>
+        <meta charset="utf-8">
+2 -----><title>Inline Styles</title>
+    </head>
+3   |
+    <body>
+4       <h1 style = "text-align: center">Page Title</h1>
+5       <p style="color:green">First Line</p>
+        <p style="color: magenta">Second Line</p>
+        <h2 style="text-align: center">Sub Title</h2>
+        <p style="color: orange">Third Line</p>
+6       <p style="color: purple; text-align: right">Fourth Line</p>
+    </body>
+</html>
+
+Indentation (1 & 2): Optional Whitespace
+Indentation helps the reader to understand what's inside of what. From a quick scan of this code, I can see that the <head> and <body> elements are inside of the <html> element. <head> and <body> are children of <html>. I can also see that the <meta> tag for the charset and the <title> elements are children of <head>, or that they "belong" in the <head>.
+
+The element that sits outside of the indented elements is referred to as the 'parent' element and the elements that are indented are known as 'child' elements. The child elements are an example of nested code. A parent element opens and then has child or nested elements open and close before the parent element closes. See the example below:
+
+<parent element>
+    <child, nested element>
+    </child>
+
+</parent>
+
+Child elements are indented either 2, 3, or 4 spaces. The 'Tab' key is commonly used to indent text, but the distance that the tab key creates is not consistent across the different text editors. In Word, the 'Tab' key creates an ½" space, but in a text editor, the tab key is likely to add a distance of four or five spaces.
+
+I personally prefer to indent using 4 spaces. Feel free to choose any number of spaces for indentation that you want to use. The only thing that I ask is that you indent consistently. Spaces Inside < >:
+
+Spaces Between Blocks of Code (3): Optional
+I left an empty row between the <head> and <body>. I did that so that the reader can easily see that the <head> is different from the <body>. This space acts like the gap between paragraphs in a Word document; it gives the reader a visual break between differing thoughts.
+
+Spaces Around Mathematical Symbols (4): Optional
+In the attribute about text alignment, I wrapped the equals sign with spaces. I usually do this in other programming languages, but I don't add whitespace around mathematical symbols in HTML because the line lengths of HTML code are already pretty long.
+
+Space After the Colon (5): Optional
+I removed the whitespace that I usually place between the colon and the property's value because I think whitespace here makes the statement more readable.
+
+Space After a Semi-Colon (6): Optional
+Any space that you place after a semi-colon is optional. I would add the whitespace if you're stringing together several style declarations into one style attribute. I would not add whitespace after a semi-colon that has nothing coming after it.
+
+Space Between an Element and an Attribute (6): Mandatory
+If your element has attributes following it, then the element has to be separated from the attribute by one space.
+
+Keep in mind that what happens inside of the angle brackets is HTML code and any content that's not inside angle brackets is page content. Code and content are different and they follow different rules. Whitespace is for code. Your content should appear as it would in a properly-formatted Word document.
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+Folder Structure of a Web Site
+Folder Structure of a Web Site
+Organizing a Web Site
+A web site's folders are a close match the Separation of Concerns that web pages follow. For the size of web site that we'll be building, you need to have have three folders:
+
+a folder for images
+a folder for the cascading stylesheet(s)
+a folder for (Java) scripts and potentially PHP pages
+Every HTML page will sit at the root (main or bottom) level of the site. I would not add folders for HTML files until you have at least 20 pages in the site. Images are a bit trickier because your site can gather a lot of images fast. I would use a single 'images' folder up to the point where I could no longer quickly find the image I was looking for. A folder for your scripts also can be tricky because you have pages with both JavaScript and PHP on them. I would place all my PHP
+
+Every site that you upload as a module assignment needs to have these three folders. There is no single best practice for the names you place on these folders. Are are the guidelines on folder names:
+
+folder names are single words written entirely in lowercase. Numbers may be included, but not as the first character
+letters and numbers only. No special characters and no symbols.
+no spaces folder names
+short names are good names, you're going to be typing these folder names a lot
+In the table there are some suggested folder names:
+
+Contents	Likely Folder Names
+Images	images
+Style Sheets	styles, stylesheets, or css
+Scripting	scripts or js
+I personally would use 'images', 'css', and 'js' as my folder names
+
+Folder Organization
+The animation below starts out at the folder that holds a web site. I've named this folder 'site/root' to be generic, but this folder's name for the moldule assignment that you're working on,  which is 'mod2.' for this week. The 'mod2' folder holds the entire site.
+
+(Click the arrow) When the root folder is opened, all of the HTML files that make up the site will be visible and you'll also see the three folders that hold the images, styles, and scripts used by the site.
+
+(Click the arrow) When the sub-folders are opened, you can see all of the site's contents. The 'images' folder is communal and it holds all of the images for the site. There will have one stylesheet that holds the styles that are common to all pages. It's possible to have additional stylesheets in the site, but we won't get to that point in this course. For CGSD1820, you'll have one stylesheet in your styles folder that styles every page in your site and that's it.
+
+Scripts are usually done by the page where they're involved, so it's very likely that you'll have one JavaScript file for each page in the site, JavaScript is not part of this course, so this folder will be empty until we get to the very end of the course and then it will hold one .js file.
+
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+Default Styles for <p> & <h1>
+Default Styles for <p> & <h1>
+Setting the Appearance
+This week continues the discussion on typography, or the layout of text on a page. Typography is an important component in graphic arts that defines how text interacts other page content. A web developer must have many skills and knowledge that goes well beyond writing HTML and CSS code because the paradigm that we work in requires us to understand a fair amount about graphic design, typography, information design. 
+
+All HTML elements have default style values and these values are built into all modern browsers. Without these style values, all text would look exactly the same. Last week we added text to the web page using the <p> and <h1> elements. Text in the <p> element is body text, which is the main text on a webpage. Body text passes on the ideas and opinions of the author. Headings are titles that help the reader understand the organization of the page. There are six levels of heading text that  are used to place titles on the page. The numbering after the h defines the relative importance of the heading. An h1 is more important than an h2, and so on. The default style values for the <p> and <h1> are shown below:
+
+p {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+}
+
+h1 {
+display: block;
+font-size: 2em;
+margin-top: 0.67em;
+margin-bottom: 0.67em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+
+I'm not going to fully describe these style rules this week. We'll get to that in future modules, but for now, I want to get you started on the Default Style Values and at least introduce you to the meanings for display and for margin.
+
+display: block
+A display defines how one element lays out with other elements. There are several displays that we'll get into later on in the semester. A display of block means that no other element can sit in the same row with this element, so both the <p> and <h1> elements control the entire line that they inhabit. The contents of the two lines in my example below will easily fit on the same line, but because both of them are block elements, they are rendered into different lines and the space between them has additional space, which is called margin. 
+
+<p>Here is some text<p> --------------------------------------------------------------->
+
+<p>Here is some text<p>
+
+margin:
+Margin is the space around something. Both of these elements have margin added vertically but not horizontally. Margin on the <p> element is what creates the additional space between paragraphs and the margin on the <h1> element is what gives it so much negative, or empty space above and below the title.
+
+<h1>Here is a page title<h1> ---------->
+<p>Here is body text<p>
+
+Important Takeaways:
+
+Every element that you put on a web page has default style values. When we write style rules, we're actually overwriting these default values and this process of less important style rules being overwritten by more important style rules is known as 'cascading'.
+
+Block elements, or element that have a display of block consume the entire line
+
+margin is used to push one element away from another
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+What are Lists?
+What are Lists?
+Lists are Organized, Related Information
+Body text is written in the narrative form. A list is a collection of related information that's presented in a more concise manner. A list in HTML and a list in in all other applications are handled identically. Applications are expressions of paradigms, or our way of understanding things. In most cases and in most places, our understanding of "things" or how the world works, is remarkably consistent. Lists are no exception to this rule. All of these word processing applications have lists and all of them work exactly the same:
+
+Picture2-2.png
+MS Word
+
+htmllogo-3.png
+HTML
+
+Picture4-2.png
+Open Office Writer
+
+Picture5-1.png
+Google Docs
+
+corel-wordperfect-office.png
+Wordperfect
+
+In all places, both inside and outside of computing, a list can be ordered and unordered. There is a one-character difference between an ordered list and an unordered list in the computing code, but there is a big difference between what the list types signify. A list's ornament (the number or the bullet) defines how the list items relate to each other.
+
+If the list uses numbers or letters as the ornament, then the  list items are ranked and they have an order of importance or a chronology that starts with item 1 and ends with the last item.
+If the list uses some type of bullet as the ornament, then the list items are of relatively equal value and the order that they're dealt with is not important.
+Well-written list items:
+
+are usually sentence fragments
+should be written so that whatever text starts off the list reads smoothly into each item on the list
+should all end with the same punctuation (comma, semi-colon, period or better yet, no punctuation)
+can start with either an uppercase or lowercase character (be consistent!)
+have two or more list items
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+Lists and Sub Lists
+Lists and Sub Lists
+Coding Lists
+An HTML list with numbers and a sublist of uppercase characters
+
+A list in HTML uses two almost distinct, but related elements: an outer element that defines the list generally and inner list items, which define the specific parts of the list. The outer list element defines the type of list (bulleted or numbered) and any styles that are applied to the list element as a whole. List elements are visible. The elements that create lists are:
+
+unranked lists are unordered lists <ul>
+ranked lists are ordered lists <ol>
+Ordered List
+<ol>
+    <li></li>
+    <li></li>
+</ol>
+Unordered List
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+In both list types,  the list items use <li> as the element that holds the text that's displayed as the list. These <li> elements are indented, or nested to show that that their parent element is the list itself. The <ul> and <ol> elements are not directly visible on the page beyond them being the structure that the list items are displayed in. The default style  values for the two list types is the same except for the list-style-type. For an unordered list, the default style is disc (a filled dot) and for an ordered list the style is decimal (number). The very last declaration is about padding, which is space inside of an element. this is what causes the list to appear to be indented on the page.
+
+Ordered List
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+Unordered List
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+Attributes for Lists
+You can choose the type of ornament that you want to have displayed with your list by adding an attribute to the list. For the ordered lists, there are five different appearances you can use:
+
+</tr
+HTML Code	Result
+<ol style="list-style-type: decimal">	1, 2, 3
+<ol style="list-style-type: upper-alpha">	A, B, C
+<ol style="list-style-type: lower-alpha">	a, b, c
+<ol style="list-style-type: upper-roman">	I, II, III
+<ol style="list-style-type: lower-roman">	i, ii, iii
+For numbered lists, you can start the numbering at any number/letter. You must count by 1. Tol start the numbering at four, use this code below:
+
+HTML Code	Result
+<ol start="4">	4, 5, 6
+There are four different bullet shapes that are part of HTML:
+
+HTML Code	Result
+<ul style="list-style-type: disc">	●
+<ul style="list-style-type: circle">	○
+<ul style="list-style-type: square">	▪
+<ul style="list-style-type: none">	 
+Sub lists
+A sub list is a list that's nested within another list. In effect it's a list that's pretending to be a list item in the parent list. The sub list and the list are joined events in Word, but that's not the case in HTML. In HTML, the list and the sub list are separate entities and they must be styled separately. Shown below is a numbered list of four counties in Florida with the third county having a bulleted sub list of three cities that are in that county:
+
+<ol type="1" start="4">
+    <li>Marion</li>
+    <li>Levy</li>
+    <li>Alachua
+        <ul type="circle">
+            <li>Gainesville</li>
+            <li>Alachua</li>
+            <li>Indian Springs</li>
+        </ul>
+    </li> 
+    <li>Putnam</li>
+</ol>
+Levy
+Alachua
+Gainesville
+Alachua
+Indian Springs
+Putnam 
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+Lab: Lists & Sub Lists
+Lab: Lists & Sub Lists
+Note: this is what a typical lab will look like. There will be instructions at the top that tell you what needs to be done, but these instructions will probably not be enough for you to know what to do. Beneath the instructions will be a link called 'Slides'. The slides will describe each instruction a bit further and then show you the code that matches up to the instruction. Finally, you'll see a movie link beneath that. In the Movie link, I'll use the PowerPoint slides as a background and discuss each instruction and why I wrote the code the way that I did. 
+
+Learning is about engaging with new ideas. If you don't engage, you won't learn. The more that you engage the more likely it is that you do learn. It's up to you to decide how much time and energy (how much you want to engage)  you want to put into this course or any course. 
+
+If I were you, I'd watch the movie in one window and and code as I watch. As new slides open up, you can hit 'Pause' to type in the code.
+
+The pages are about the theory and understanding of HTML. The labs are about the coding. It's where you apply your learning to accomplish a task. Labs are not turned in. This is where you practice the coding that you'll do when you complete your assignment.
+
+Instructions
+Use the template file Download template filefrom 'Create & View a Web Page to complete these lists:
+
+a 4-item ordered list
+add a 5th item to the list
+Number the list with uppercase letters
+Start the list with an uppercase 'C'
+add a 4-item unordered list beneath the ordered list
+use a circle ornament instead of the disc
+make a sub list of 3 items
+make the sub list have square ornaments
+ 
+
+
+W25 CGS1820.0M1: WEB AUTH 1
+More Text Elements
+More Text Elements
+Marking Up a Page
+Proofreading marksNot too many years back, an aspiring author would sit down in front of their Underwood typewriter with a ream or so of paper and they'd write their "Great American Book". They would then put their manuscript into a very large envelope and mail the manuscript to a publisher. Assuming that the publisher decided to publish this book, they'd then have an editor sit down with the manuscript and a red pencil and the editor would "mark up" the manuscript and then send the marked up copy to the printer. The printer would use the markup and the manuscript as instructions that they'd use to print the book. HTML is a markup and when we start in on CSS next module, CSS is also markup. It's instructions on what should be on the page and how it should look.
+
+The HTML language has "borrowed" and then modified many typographical and publishing ideas that have been in publishing for a very long time. All of the elements that I'll discuss on this page are things that a publisher would "mark up" to show their printer how the author wants the printed page to appear. Every element on this page is something that a printer or a graphical designer would immediately recognize. This is a good thing on the one hand because that makes HTML easier to learn and recognize. It's a bad thing because web pages aren't really published documents, they're digital documents and they should really have their own way of seeing things. That's Ted Nelson from Project Xanadu speaking from 1962 - and he's going to be shown to be right sooner or later.
+
+Below are several elements that are text-oriented and perform specific tasks in publishing. They are in no particular order.
+
+<blockquote>
+
+A quote is the direct repeating of what someone else says. A quote is usually 5 or fewer sentences. The words that the other person spoke are placed inside of quotation marks and their quote is cited. A blockquote is a quote that's longer than 40 words; say 5 sentences or so. A blockquote starts on its own line and it's indented on the left and right margins. Blockquotes are not placed in quotes, but end with the citation (who said it). 
+
+In HTML, a blockquote looks like this:
+
+end of the paragraph</p>
+<blockquote cite="http://https://www.gutenberg.org/files/98/98-h/98-h.htm">
+It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair
+</blockquote>
+<p>Start of next paragraph
+end of the paragraph
+
+It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair
+Start of next paragraph
+
+<cite>
+
+A cite is used to define a title of a work. For examaple:
+
+<p><cite>American Gothic</cite> by Grant Wood. Painted in 1930.</p>
+
+<caption>
+
+A caption is text that concisely describes what a figure (an image or a table of data) is trying to say. A caption can be placed on any side of the figure it's describing. A caption must be the first element that defines the figure.
+
+<table>
+    <caption>Savings by month in 2025</caption>
+</table>
+
+<hr>
+
+A horizontal rule is a line that goes across the page. The <hr> tag is the first tag you've seen that doesn't have a closing tag. This type of a tag is called a void element because the <hr> doesn't 'hold" anything. <hr> elements can also be written as <hr />, which is called a self-closing element. <hr /> was part of XHTML (19989 - 2005) and  it is not part of HTML5. It is still commonly used though to be inclusive with the deprecated XHTML2 standard. A horizontal rule will go completely across the page, but you can add styles to the horizontal rule to make it any length, width, and color that you want. The code below places a horizontal rule between the top and bottom paragraphs.
+
+end of top paragraph</p>
+    <hr>
+<p>Beginning of bottom paragraph
+
+<br>
+
+Break is another void element that can also be written as the self-colsing element of <br />. This tag moves your text to the next line instead of moving it to the next paragraph.
+
+<p>Hello<br>
+World</p>
+
+<strong> & <em>
+
+<strong> refers to the importance of the text. It is about magnitude or major change in importance. <em> (emphasis) is about how one word relates to another within a sentence. <em> is about minor, nuanced changes in a word's value within a sentence.
+
+<strong> and <em> have replaced <b> (bold) and <i>. <b> and <i> were deprecated (replaced and do not use) because they are structural elements that were being used to change presentation. Using structural elements to change an element's appearance violates the Separation of Concerns, but more importantly, it causes problems with accessibility. Information should always be passed in at least two different ways. For example, a link is colored blue and it has an underline. This allows both color deficient and visually impaired people to understand what's a link and what isn't a link. The problem with <b> and <i> were that they define an appearance (bolder text or italicized text), but don't state if the appearance change has meaning beyond the changed appearance.  <strong> and <em> make this difference clear. By the way, <em> is nothing like the measurement of em. 
+
+<strong>Read This</strong>   Read This
+<em>today at 5:00pm</em>   today at 5:00pm
+
+<strong> and <em> should be used to define a structural change (this text is more important than that text) in the text. If you use these elements to change the appearance only for the text, then you're using them improperly. HTML is for structure and styles are used for appearance/presentation. If you want to change the weight of some text then you should use  the style 'font-weight' instead of using <strong>
+
+<sup> & <sub>
+
+Super and subscript change the size and the baseline of your text. Superscript is used for mathematical powers and you may have run across subscript in a chemistry class in your atom definitions (like C12 or H20).
+
+C<sup>12</sup> or H<sub>2</sub>0
+
+<small>
+
+Text can be sized by using ems (preferably), but they can also be made one size smaller by using <small>. There used to be a <big> element, but it was deprecated. Both <small> and <big> are old HTML and they technically violate the Separation of Concerns because they use structure to change presentation. <small> is used on side comments and small print. Copyright notices and legal text is usually written in small print. There is also an <x-small>. I can see using <small> on your fine print because it's easy, but it's also not good practice.
+
