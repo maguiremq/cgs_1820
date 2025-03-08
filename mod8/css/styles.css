@@ -1,0 +1,62 @@
+/*Stylesheet for Semantic Layers*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #7A2929;
+    background: #fffff3;
+}
+main {
+    margin: 1em auto;
+    border-radius: .5em;
+    max-width: 122em;
+    border: 1px solid black;
+    padding: 1em 1em .5em;
+    background: #f9f4de;
+}
+h1 {
+    font-family: forte, Harrington, fantasy;
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+}
+section {
+    max-width: 122em;
+    margin: 1.5em auto;
+    border: 1px solid black;
+    padding: .5em;
+    background: #fff3f3;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.3;
+}
+img {
+    float: left;
+    width: 33%;
+    height: auto;
+    margin-right: .5em;
+    margin-bottom: .5em;
+}
+cite {
+    clear: both;
+    display: block;
+    margin-left: 3em;
+}
+footer {
+    text-align: center;
+    font-size: .9em;
+}
+@media screen and (min-width: 80em) and (max-width: 122em) {
+    section {
+        max-width: calc(122em - 1em);
+        width: calc(100% - 60em);
+        /* display: flex; */
+        overflow-y: auto;
+        align-items: center;
+    }
+    #sleepy {
+        float: left;
+    }
+    #rip {
+        float: right;
+    }
+}
