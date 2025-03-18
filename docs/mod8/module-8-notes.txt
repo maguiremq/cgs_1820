@@ -1,0 +1,246 @@
+vw, vh, and rem sizing
+Percentage-Sized Measures
+Measuring tools'vw' and  'vh' are both percentage-sized measures that are based on the current size of the viewport (the area inside of the browser window). the 'v' stands for 'viewport' and the character after defines the direction of measure. In most cases, our interest is going to be in horizontal measures, so the 'vw' is going to see more work than 'vh'. 
+
+'em' the size necessary to make rendered text the same size as typewritten text
+'vw' or viewport width. 1vw is 1% of the current width of the viewport
+'vh' is viewport height. 1vh is 1% of the viewport's height
+'rem' is a root em. The root em assumes that the current font-size is 1em and measures off of it
+1vh will almost never equal 1vw because monitors (and browser windows?) are usually about twice as wide as they are tall.
+
+As a very general rule of thumb, pixels, ems, and rems are used most often for font sizes. We've been using ems for all measures in this course to this point. If they are used, 'vw' and 'vh' are usually used to set padding, margins, and container widths and heights. 
+
+Multiple Classes
+A class is different from an ID because a class can be attached to more than one element. Classes are also different from IDs because classes can be combined, meaning that one class attribute can hold any number of class selectors.
+
+id="one"
+class="one two three"
+
+The meaning of a multiple class is that the declarations of the first selector are combined with the declarations in the second selector. Any conflicts in multiple class declarations will use the last property's value.
+
+This is not a topic that we'll delve into in this course, but multiple classes can be used to create semantic class names where the final appearance can be determined in the web page. To create a class that colors text red and centers it on the page, you might use this multiple class:
+
+class="red center"
+
+where the above classes might look like this in the stylesheet:
+
+.red {
+    color: red;
+}
+
+.green {
+
+    color: green;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+
+Instead of writing long style rules in your CSS page, multiple classes allow you to "write" your styles in the HTML document without having to worry about overriding declarations in an existing style rule that don't fit the current purpose.
+
+Early Attempts at Fixed-Position Page Layout in HTML
+Lots of Failed Attempts
+Early ideas in web page design used fixed-size structures that were made up of page regions. The idea was to tables like are found in Excel or Word to define the size and position of page regions and then place content into those regions. Three different systems were tried and none of these efforts was used very long.
+
+use a table as the page structure
+use framesets and frames
+use absolute and relative positioning
+Use Tables
+An HTML tableHTML tables were used to create page designs in the very early days of the Internet. ery early on in the mid 1990s, Monitor sizes back then were much smaller and more consistent, say in the 640 x 480px or 800 x 600px range. The web author would use a table to impose the page's dimensions and structure. The table was made up of merged and split cells that had a defined width and height, so vertical positioning was possible. Tables created accessibility problems and made the HTML code almost impossible to read. Tables done in this way were almost impossible to use flexible sizing. Arguably, it was the accessibility issues that ended the practice of using tables for page design, but everyone recognized that tables were the wrong tool for the job. The problem was that tables were the only tool that was available for page layout in the mid 1990s.
+
+Use Framesets
+Example of a frameset; a top title area, a left area for links, a center area for content, and a right area for iframeUsing tables to enforce page layout was a bad idea that was replaced with an even worse idea. A frameset is a table-like system that again tried to enforce a single fixed-size layout to be used regardless of the size of the browser window or the monitor. By the time framesets came along, we were using laptop computers to view web content and it became clear very quickly that web page designs had to adjust to different browser sizes. Arguably the larger problem was what to put into each of the different frames and what to do with an empty frame. Framesets as an idea lasted less than 5 years starting in the late 1990s. Framesets were part of the HTML 4 recommendation and it was deprecated as part of HTML 5.
+
+Use Positioning
+position icons being movedThis gets us to Plan C for page design, which was positioning. The use of absolute and relative positioning was originally defined in the HTML 2 recommendation, but it didn't gain in popularity until it was compared to framesets, and then using positioning didn't look so bad. We will do one lab so that you can see what positioning is, and then we'll smoke this Canvas course shell Eskimo-style to remove any lurking evil spirits. Absolute positioning is the antithesis of Responsive Web Design, which is what we want to use to lay out all our pages. Positioning is not deprecated, but it is widely condemned. Positioning should only be used as a last resort.
+
+Calculating Center the Hard Way
+One way to center an element is to move the margin-left of the shape to the mid-point of the window and then subtract ½ of the shape's width. If a block element shape has a width of 350px, then I can center that shape in the window by setting its margin-left to.
+
+margin-left: calc(50% - 175px);
+
+
+ISlide 1) A green square that's 375 x 375px and is sitting on the left margin. It is to be moved to the horizontal center of the window.
+
+(Slide 2) Set the margin-left for this green square to 50% of the parent container size. This moves the left side of the green box to the middle of the parent container.
+
+(Slide 3) Subtract out ½ of the shapes width. This aligns the midpoint of the shape to the midpoint of the parent container.
+
+The same system can be used for vertical positioning, and you can use margin-right and add ½ the content width as well.
+
+Progressive Enhancement & Graceful Degradation
+Check Module Before Using...
+Progressive Enhancement and graceful degradation are both web programming strategies that considers the tools that we have as developers and the presence or absence of features in the rendering environment. While this is a sound engineering strategy to use one of these testing systems and certainly something that I'd do in a commercial setting, it's not something that we're going to do in this course. My mission here is to introduce you to the idea so that you're aware of this practice before it gets sprung on you in a future course. 
+
+Progressive enhancement adds features as they are found. Graceful degradation removes features if  not found
+
+Progressive enhancement tests to make sure the feature is supported before it attempts to use it. The base page will include code that will run in all circumstances and when support for a feature is found, the supported code is run in place of the default/pessimistic original code. The features that we check aren't necessarily in a hierarchy like the above image suggests, but these are features that we have some reason to believe may not be supported in some browsers.
+
+Graceful degradation is the same basic mindset, but in reverse. With graceful degradation we assume all features are present but test for their presence. If the module needed to run the code is missing, we use the fallback code instead of our fully-featured code. The good news is that very little has changed in browsers over the past 15 years, so the need to check a browser for its features is not really a concern with HTML5. However, there are still clients that don't trust JavaScript and have turned off the JavaScript module, or some browsers that do not render images. These accessibility and security concerns are much more likely to come up than a browser that doesn't support localStorage or have full support for CSS3 features.
+
+Foundations of Responsive Web Design
+It Starts Here...
+John Allsopp
+After 10 to 15 years of trying to make monitors adapt to our web pages, web designers finally gave up and started writing code that adapted to the display environment. This change in attitude and perspective was exactly what Allsopp called for in his paper "A Dao of Web Design":
+
+"it's time to really understand the relationship between the parent (printed media) and the child (digital media), and to let the child go its own way in the world."  — John Allsopp
+
+One of the main tools that allows us to write adaptable code was the invention of media queries. Media queries were first described by Håkon Wium Lee (the inventor of CSS) in 1994 as part of CSS1, but they were not pursued. Media queries were brought up again in 1998, but work in earnest on media queries didn't start until 2000. The first public draft describing media queries was published in 2001 and the Media Query Level 3 module became a recommendation in 2010. Media Queries Level 4 was approved as a Candidate Recommendation in 2021.
+
+Image of Ethan Marcotte
+The use of media queries as a tool in Responsive Web Design was popularized by the paper "Fluid Grids", which was published in 2009 in "A List Apart." Marcotte coined the term "Responsive Web Design" and described its four pillars as:
+
+mobile-first design
+percentage-sized container elements
+percentage-sized images
+media queries to position (float) containers
+inks to an external site. by Ethan Marcotte
+
+Synopsis:
+The "A Dao of Web Design" was written in 2000, at the end of the Brower Wars, before HTML5, and before media queries were well-known. Allsopp's advice to  stop thinking of a web page as a paper document was written before we had the tools in place to make it happen. Marcotte described one of the major tools that we use today to make web pages act like a digital document instead of acting like a piece of paper.
+
+Four Pillars of Responsive Web Design
+It Start Here...
+The four pillars of RWD can really be boiled down to three prevailing themes:
+
+design mobile-first
+everything is sized on a percentage basis
+use media queries so that the device can select the correct styles to use
+Mobile First
+smartphone becomes laptop becomes desktopThe design that we'll do in this course will use a default style rule with three media queries that align to three different monitor sizes. In a commercial setting, you'd probably use 4 or 5 different media queries to handle just the monitor display part of the site experience. The default style size will be for smartphones. We design for smartphones first because it's easier and better to design in single direction: from smallest to largest. Moving from small to large is easier than moving from large to small because large sizes are easier to work with than smaller sizes, so we want the design to get progressively easier to describe instead of getting progressively tougher to describe
+
+Use Percentage-Based Image Sizing
+Shape being stretchedImages must be initially defined using pixel sizes, but all images are to be styled so that their rendered size is a percentage of the the parent container where they are located. Without percentage sizing, one image will never good good across a range of devices, but with percentage sizing, we can get the same image to be the same rough size on a smartphone and a big screen TV.
+
+Fluid Grids (Percentage-Based Container Sizing)
+Shape being stretchedAll of the containers that hold content will use a min-size, a max-size, and a percentage size when their current size is between the min- and max- sizes. We always use percentage sizing for container widths and if the height of a container is defined, it will be defined in ems or some other relative measure so that the measurement can have meaning across the different device types.
+
+Media Queries
+checklistAll commercial sites since about 2012 have been designed using media queries. Media queries hold Allsopp's "style suggestions" and the actual device determines which of the groups of style rules to apply to the structure of the web page. A media query is a conditional style rule that's applied if the condition of the media query is met. Media queries are part of the cascade like all other styles, though the same declaration with a different value in a media query will have the same specificity and the declaration in the last media query will overwrite any pre-determined styles.
+
+What is a Media Query?
+Main Building Block of Responsive Web Design (RWD)
+The same web page on a monitor, a tablet, and a smartphoneA media query uses conditional statements to determine which set of style rules the browser's rendering engine should use to lay out the page. Media queries are used to render a web page onto different-sized monitors and they're used to format content to be displayed on different types of hardware (monitor, printer, etc). The name implies that a media query asks what type of hardware is being used to render a web page, but that's not really true. We don't query a media for its type (printing excepted), but we do query the media for its screen size. A media query allows the rendering engine to determine the width of a window that's rendering the page and then use the CSS style rules that  optimize the page's design to fit into the current context.
+
+Using media queries is ground zero for Responsive Web Design and RWD is the main topic for the next two modules.
+
+A media query is an 'if' statement that's applied to style rules. There are usually two conditions tested. The first condition is a media type, like 'screen' or 'printer'. The second condition is going to test a feature of the identified media. The prototype of a media query is shown below:
+
+@media not|only mediatype and (media feature) and (media feature) {
+    CSS-Code;
+}
+
+The media query is put together with Boolean conditions of AND and OR. 'and' means that all conditions must be true while 'or' means that the condition is accepted as true if either condition is true. In our case, we will not be using the 'not|only' limited and our mediatype will be 'screen'. The media feature is going to be either a 'min-width' or a 'max-width'. A media query that applies the color of 'lightgreen' to the background of the page's <body> when the screen's width is at least 480 pixels is shown below:
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+Setting Media Query Breakpoints
+More Art Than Science
+The same web page on a monitor, a tablet, and a smartphone**Teacher Legal Disclaimer**
+
+This page describes the assumptions that I used to set set a RWD breakpoint strategy. The data that I provide here is good to the best of my knowledge as of the summer of 2024. I didn't cover tablet computers because that would require is to create a media query for that targeted environment, and I think that for this course a default(smartphone) size and three other targeted sizes is good enough. If I did add a tablet size, I'd break the laptop range into two ranges. With RWD, we do not target devices; we do target sizes. However, I think that to not consider how your responsive strategy will look on today's devices is a bit silly. 
+
+Life is full of assumptions. Generally, bad assumptions lead to bad decision-making and hopefully good assumptions lead to better decision-making - though the jury is always out on that one. Here are the background assumptions that I used to develop these media query breakpoints:
+
+The maximum number of characters in a line is 70 to 80 characters at 1em line-height. Line length depends on a lot of things, but the literature is pretty clear that this size area is correct.
+The average number of characters that are in a word is 5 characters. That comes from Mr. Freeman, my typing teacher and it's also the character block size of encrypted text because in the English language, the average word size is 5 characters.
+80 characters divided by 5 characters per word gives us a  line length of 16 words per line
+Using a lowercase 'x', one line in a Word document using 11 point (.9em) text holds 102 characters or 17 words
+I could find no average character width, but I'll assume that the average character width is about .7 em.
+All of this information above leads us to the idea that a line of text should be in the 50 to 60em size range and on a desktop computer, that works out to 800 to 960 pixels of width on a properly-sized container.
+The <main> size and column widths do not consider any padding, border, and margins that might be added on
+Using the seven assumptions above, and considering that things change, that you should always consider your target market's needs, and that what's being described here are size ranges of a container, here is how I'd set up my media query breakpoints:
+
+Target Device	Screen  Width	<main> Min width	<main> Max width	Columns	Column Min Width	Column Max Width
+Smartphone	24em	100%	37.5em	1	100%	100%
+Laptop	37.5 - 90em	37.5em	60em	1	100%	60em
+HD Monitor	90 - 150em	90em	135em	2	45em	60em
+Oversize	>150em	135em	240em	3	45em	80em
+Shown below is how the information above lays out on the different devices. Again, keep in mind that we're discussion -min and -max size ranges and we're not really targeting specific devices, but we are considering device types. I also listed these device sizes in standard pixels, which are numbers that are a bit easier to digest. These images show you what a three-layer  design looks like on the different monitor types.
+
+
+(Slide 1) The smartphone/default layout
+
+(Slide 2) Small laptop layout
+
+(Slide 3) Large laptop layout
+
+(Slide 4) Small desktop monitor layout
+
+(Slide 5) Large desktop monitor layout (Note: HD monitors fall in the middle of this range)
+
+(Slide 6) Small mega-screen layout (TV or a small gaming monitor)
+
+(Slide 7) Large mega-screen layout
+
+Writing the Media Query Statements
+Theory Into Action
+From the prior page...
+
+Shown below is the chart that you saw on the prior page.
+
+Target Device	Screen  Width	<main> Min width	<main> Max width	Columns	Column Min Width	Column Max Width
+Smartphone	24em	100%	37.5em	1	100%	100%
+Laptop	37.5 - 90em	37.5em	60em	1	100%	60em
+HD Monitor	90 - 150em	90em	135em	2	45em	60em
+Oversize	>150em	135em	240em	3	45em	80em
+Now this sizing strategy needs to be converted into media queries.
+
+Styles Before Media Queries for Smartphones
+The style rules placed here will be define the look and feel for the site and this is where a majority of your style rules will be located. The style rules that get overwritten here are going to be size or position-related. Web page viewed on a smartphone are the most different due to the limited width of a smartphone. From our experiment with the zoom meta tag, we know that a smartphone will display about 400 pixels horizontally when the phone is in the portrait (up and down) orientation. This represents about half the width that our other devices will be able to display. Design considerations that you might consider for the  smartphone design include:
+
+eliminate unneeded images (by using display: none) or significantly reduce the size of your site's imagery.
+links must be located at the top of the page for a smartphone and should be located there anyway.
+containers size themselves vertically to the content. Don't add scroll bars to the layers. You can add scroll bars to the medium and large layers if you want.
+your container and <main> width is 100%. No side-by-side layers on a smartphone.
+Small Monitor Styles
+The first media query defines the condition for when that group of style rules turn on and potentially turn off. Once you turn something on, it will stay on until it's turned off or its overwritten. If you want your styles to cascade from small to large, you'd only define the starting or min- point. If you want things to appear at this level but at no other level, then you'd need to turn off this media query explicitly or turn off those things that you don't want on in another media query.  
+
+@media screen and (min-width: 25em) {
+@media screen and (min-width: 25em) and (max-width: 90em) {
+
+For what we're going to do in this course, turning on the media query at its min- level is going to be enough. However, the decision to use a max-width is going to be based on the site that you're working on and what you're trying to accomplish.
+
+In this small monitor media query we're going to be defining one layer that can be 25 to 60em wide. We don't want our layers to get too wide as that becomes a problem as well. We can set a max-width on <main> to 60em and then let the container inside of <main> take up 100% of the available space. 
+
+Medium Monitor Styles
+Override the small media query when the browser window size (the screen size) exceeds 90em. I chose 90em as the breakpoint because at that size, I can create two layers that are 45em in width each. If you wanted to go down to 40em for a layer size, you could reduce this breakpoint to 80em instead of 90em. There is no right and wrong here.
+
+In the middle size, I want the first two layers to sit side-by-side and they can scale with the page up to where they individually have a width of 60em. 
+
+@media screen and (min-width: 90em) {
+@media screen and (min-width: 90em) and (max-width: 135em) {
+
+Large Monitor Styles
+Large monitors are going to be big screen TVs and gaming monitors. I let the layer width get a bit larger here simply because of the real estate that we have to cover. 80em for a width is as big as I'd want to go. The layout for large monitors will be three layers side-by-side, so 45em x 3 = 135em for my min-width and 80 x 3 is 240ems is my max-width. I may or may not have additional padding, borders, and margin to consider in these dimensions and I decided to leave them off of this first run through RWD to keep the example as clean as possible.
+
+@media screen and (min-width: 135em) {
+@media screen and (min-width: 135em) and (max-width: 240em) {
+
+The calculations for these sizes assumes that the mid-size query will display two layers side-by-side and the large query will display three layers side-by-side. If you choose a different layout strategy, then you'll have to adjust your mathematics accordingly.
+
+When done, your stylesheet's structure will look like this:
+
+default style rules
+
+ 
+
+@media screen and (min-width: 25em) {
+
+    lots of overwritten rules
+
+}
+@media screen and (min-width: 90em) {
+    some overwritten rules
+}
+
+@media screen and (min-width: 135em) {
+    a few overwritten rules
+}

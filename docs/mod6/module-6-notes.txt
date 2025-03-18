@@ -1,0 +1,253 @@
+Complex Colors
+artist paining on a canvas
+Types of Color
+A complex color is unequal mixes of all three primary colors. Here's what we have so far:
+
+Color Type	Description
+Primary colors	Can't be created by mixing other colors. Red, green and blue only
+Secondary colors	Two primary colors mixed equally. Shades of cyan, magenta, and yellow only
+Tertiary colors	Two primary colors mixed unequally. Many, many colors
+Complex colors	Three primary colors mixed together. Pretty much all colors.
+
+4 Intensities of RGB
+Instructions
+Swatches going from red to magenta in columns and going from ff, aa, 55, 00 in brightness in rowsLook at the background color for the row you're working on and guess the red, green, and blue hexadecimal color values that define that color. Use the pull-down menus to select your answer. Your choices this week are '00', '55', 'aa', and 'ff'. Check your answer by clicking on the 'Check' button to the right of the three pull-down menus. If a green check appears when you click on the 'Check' button, then your answer was correct. Otherwise, try again.
+
+Hint: do the easier colors first and then use them to get your answers on the more difficult colors.
+
+Bonus Hint: this is an extremely difficult activity and is not for the feint of heart. Determining color mixes at this level is not a skill you need for this course., so feel free to think of this as a REALLY optional activity. We're going to continue with colors and color models because a web engineer should know these things, but its's not really content for this class and it's not going to impact your grade.
+
+The Influence of Unix
+Meet the Unix Operating System
+Unix logoUnix was the original operating system that made it big. Unix was invented as Generation III computers (which had a consistent internal architecture and high-level programming capability) were starting to be used. Unix was developed in 1969 at Bell Labs research center by Ken Thompson, Dennis Ritchie, and others. Unix is an important operating system because it was first, which means that the operating systems that came after it used Unix as their starting point. Maybe even more importantly, Unix was the operating system of choice by the systems making up ARPANet as we moved into the 1980s. ARPANet was a precursor system that allowed clients at one of the system's schools to get any document that had been shared to the system.
+
+Unix is also important because we write the pathways to resources and links to other web pages today using the Unix pathway symbolism. These symbols used to be typed into a command prompt so that you could move around the computer and find the file or application that you were looking for. Today, we type them into the URL line in a browser and use them to identify the file that we want to open that's located in the domain's memory. The symbols are:
+
+Symbol	Name	Meaning
+~	Tilde	Shortcut to the home directory of 'public_html' for the ITE server
+.	Dot	Current working directory (the current folder you're in)
+..	Double dot	Parent working directory (go up one folder level)
+/	Forward Slash	Goes after any folder name. Optional on last folder
+Unix is an open group standard today. The Unix class of operating systems has many variants including Mac OS X, Linux,  and Solaris. Ubuntu, Redhat, and Debian are all Linux-based. One last point. Shown here is a picture of Ken Thompson and Dennis Ritchie, who were the driving force behind the creation of Unix. They exemplified the Unix credo of "No beard, no belly, no guru".
+
+Information About Links
+Links
+A hyperlink, or a link for short,  is an instruction that's embedded into a web page element that when activated, sends the client from the resource that they're currently looking at to another resource. Hypertext links were one of the main innovations created by Tim Berners-Lee that makes the Internet successful. Links are what makes the Internet work: The innovations of Tim Berners-Lee:
+
+Innovation	Purpose
+URL	an addressing system that locates resources on networked computers
+HTTP	protocol to send a request and receive the requested page
+HTTPS	replaced HTTP. Encrypts the message and response while it is in transit
+HTML	a document format that allows for embedded hyperlinks
+Links are placed in anchor elements. The <link> tag that' we've been using is a similar idea, but a <link> is used to include the instructions in a stylesheet to a web page. An anchor element has several attributes, but we will only use the 'href' attribute. Here are the more commonly-used attributes:
+
+Attribute	Purpose
+href	Pathway to the page/resource
+title	Text displayed in a tooltip when the cursor hovers over the link               
+id	Link to an anchor mark within a page; unique identifier
+Target	How the new page should be opened
+Link States
+Linked text appears differently from unlinked text. Link text is blue in color and it is also underlined. This is a good example using two different dues to alert users  The color of blue is also significant because it's the last color that people lose to color deficiency. The first color lost is red and the second color lost is green. The underline is important because it tells a person who is achromatic (no color vision whatsoever) where the links are.
+
+Pass on information using two different means that rely on two different systems. Build redundancy into the system.
+
+Link State	CSS Selector	Appearance & Meaning
+Unvisited	a:link	Blue, underlined. Link has not been activated yet
+Visited	a:visited	Purple, underlined
+Active	a:active	Red, underlined. Link is currently being used
+Hover	a:hover	No set appearance. Cursor is over the link
+Changing the Link Appearance
+Do not change the appearance of your links. People expect unused links to be blue and they expect links to be underlined. Changing the colors is ill-advised, removing the underline is just a bit short of a catastrophe. I recommend using a hover state and here you'd want to use a color that's different from blue that works into your site's color scheme and is probably a cooler color (blues and greens). The point of the hover is to draw attention, not to raise panic.
+
+Best Practices With Links
+There are others, but this is what we'll focus on in this course:
+
+Use text that describes the destination
+Use a title
+Do not use URLs as link text
+Link text should stand on its own (Example: 'Download the syllabus' instead of 'Click here'
+Using The Target Attribute
+The target attribute specifies which window the link should open in. There are basically two choices for window: the current window and a new window. The advantage to staying in the current window is that the new page is part of the browsing history and the client can go 'back' to the page that they came from without having to close the current window.
+
+The only target attributes I'd consider using is 'blank' and I would have to think long and hard before I used it. Using 'blank' interrupts the browsing history and that can cause new or unaware users anxiety. People expect their browser history to work and 'blank' disrupts the browser history.
+
+'Blank' opens the new page in a new instance of the browser. 'Self' is the default state, so there's no need to use it and the 'parent' and 'top; target attributes only make sense if you're using frames, which were deprecated in the early 2000s. Frames was a page design idea that came and went in just a few years.
+
+Target	Meaning
+_self	Opens in the same tab (default and needs not be stated)
+_blank	Opens in a new tab or browsing instance
+_parent	Opens in the current frame (window portion)
+_top	Opens from a frame to the entire window
+
+Names, Classes & Ids
+Attributes You Need to Know; Get Comfortable With
+Apply an id or apply a class?The three attributes listed below are something that you need to memorize, learn, and digest. In this course, we'll be working with ids and classes in almost every lab and every assignment. They are both used heavily for styling and ids are also used heaving for JavaScript (client-side scripting). Names are not used for styling, but they're used heavily in server-side scripting (which we don't do in this course but is an important part of web programming).
+
+id
+An id is an attribute that can be applied once per page. Ids must be unique to the page, but can be repeated from page to page within the site. Ids are used in CSS styling and for JavaScript for DOM node identification. Ids are also used to create page anchors (also known as jump link).
+
+Example: the manager of a store is an id
+
+class
+A class can be applied as many times on the same page as the page designer wants. A class is a label that's applied to multiple elements so that a single style rule can be applied to all elements in the group. You can use the class attribute as a hook for JavaScript programming, but it's not commonly done. The major use for a class is as a group identifier for CSS styling.
+
+Example: the employees of a store are a class
+
+The id and class attributes are not exclusive, One element can have both a class and an id at the same time. The rule to determine when to use a class and when to use an id:
+
+If you define one element only, then use an id to identify this single element
+If you define more than one element, then use a class to identify all elements in the group
+Attribute	CSS symbol	Example in HTML	Example in CSS
+id	#	id="thisone"	#thisone
+class	.	class="thesemany"	.thesemany
+name
+The name attribute is used in forms and for server-side work. The name attribute is not used for styling. The name attribute can be used multiple times on a web page (for a radio group in particular), but the result from the name attribute will be unique. The name attribute can also be used to identify DOM nodes for JavaScript, but again, it's not commonly done.
+
+The <nav> Container
+<nav> is for Links
+Structure of a typical HTML5 documentthe <nav> element should be used to hold the site's links. Normally, the <nav> element isn't styled or visible. Its purpose is to assist automated systems be able to understand the structure of your web page so that its relevance to a search string might be determined. The <nav> element also assists people who use screen readers, text browsers or any other kind of assistive technology in knowing that the contents of the <nav> element will be links and should not be understood as body text.
+
+The <nav> container is usually not visible on the web page and needs no styling other than to potentially change its display for positioning purposes. There is no rule that says you can't style a <nav> element, it's just that in most cases there's no need to make the <nav> layer visible. <nav> is about structural integrity and typically has no visual impact.
+
+Placement of <nav> Elements
+The <nav> element and the links that it holds are placed at the top and bottom of your web pages; never along the sides. Placing links on the sides was an HTML4/XHTML design idea that doesn't work for people who are using smartphones. In the XHTML years, we forced our pages onto desktop monitors and placing links on the left consumed some of the additional width that a desktop monitor has. Smartphones have no "extra" width to use; their orientation is vertical instead of horizontal, so our web pages have to be able gracefully transition from a horizontal layout to a vertical layout. Placing links on the left side and allocating 200 pixels of width for a menu of links doesn't work on a smartphone that might have 600 pixels of width to work with.
+
+Design Considerations (on another page too)
+You should organize your links in a <nav> layer so that you have 5 to 7 "top level" links that go across the page just beneath the header element. Don't ever have more than one row of links at the top of your page when it's being viewed on a desktop monitor. Smartphones have their own limitations, but one row of links when the page is fully extended. Each of these links will connect to a page that again has hopefully 5 to 7 links at its top level.
+
+The current fashion is to use tabbed navigation that's either list-based or button-based. 
+
+The footer of a web page is usually used to hold the 10,000 links that we're required to have (EEO/AA statements, the privacy policy, and other legalese) but that no one reads. You should have a 'contact' link hopefully at the top and bottom of the page.
+
+Making Tabbed Navigation
+Main Navigation System for HTML5
+Three rows of tabbed navigationTabbed navigation is yet another metaphor that compares tabs on folders or tabs in a notebook to a widget on a web page that takes you to that part of the site. Amazon popularized the use of tabbed navigation starting in 1998. Tabbed navigation is an important part of building user interfaces because they improve on user experience. There are two main systems for creating a tab row, which is to use a container element like <div> to create the tab boxes which are then labeled or to use a list to define the tab text and then style the list to look like a series of tabs. The tabs that are shown to the right are fairly complex and also include icons. The tabs that we'll create for this course will be a box with hopefully a single, descriptive word inside the box to tell the client where the tab links to
+
+The two examples below both can create a three-button row of tabs. The example of tabbed navigation on the left uses <div> and the tabbed navigation on the right uses an unordered list as the basis for the navigation button text. <div> requires more HTML but less CSS to create its interface. using lists can be beneficial because sub-lists will display as sub-menus. However, the fashion of showing extended navigation trees that a list can make has been replaced by listing pages or folders as your links and showing customers only one level of links at a time. Many people found link trees hard to understand and easy to get lost in. This is where having a browser history so that the client can go back to where they came from is important and why you should avoid using the target attribute of '_blank' if at all possible.
+
+three buttons or tabs: Products, Customers, and Employees
+
+<div id="one">
+    <p>Products</p>
+</div>
+<div id="two">
+    <p>Customers</p>
+</div>
+<div id="three">
+    <p>Employees</p>
+</div>
+<ul>
+    <li>Products</li>
+    <li>Customers</li>
+    <li>Employees</li>
+</ul>
+Advantages and Disadvantages of Tabbed Navigation
+Tabbed navigation works best when the organizational hierarchy of your site is fairly vertical or depth-oriented. Breadth-oriented hierarchies do not work well with tabbed navigation. The advantages to using tabbed navigation include:
+
+Tabbed navigation naturally creates a hierarchical and top-down organization that people understand
+its efficient  use of space
+the ease of navigation that it creates
+users can intuitively understand the site structure that the tabbed navigation presents
+The disadvantages of using tabbed navigation:
+
+it limits the number of categories that can be shown to 7 or 8 per page.
+Tab names can be difficult to fit on the tab
+Not everyone appreciates a top-down hierarchy
+Works best on small sites with a limited number of pages 
+Design considerations for Tabbed Navigation:
+Design considerations for tabs include:
+
+Label text should be clear, short, and semantic
+The tabs should relate to the functional units within the organization
+Use visual cues to indicate the active tab. These visual cues should also be understood by people with very limited sight. You might consider changing the border-bottom color instead of a slight change in background color that a person with a strong visual imparment might miss.
+
+What is the Document Object Model (DOM)?
+The DOM is a tree, hierarchy, or structure that describes the relationships of the nodes, objects, or elements that make up a web page. The DOM gives each element both common and unique ways to identify it so that the element can be programmed. In effect, the DOM is how variable names (or programming hooks) are applied to each element in the file. The images below are very short HTML document on the left and what that file's DOM structure looks like on the right.
+
+<!doctype html>
+<html>
+    <head>
+        <title>My Title</title>
+    </head>
+    <body>
+        <h1>Title</h1>
+        <h2>Sub Title</h2>
+        <p><img>Paragraph 1</p>
+        <p><img>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </body>
+</html>
+document
+  ∟ <html>
+    ∟ <head>
+      ∟ <title>: "My Title"
+    ∟ <body>
+      ∟  <h1>: "Title"
+      ∟  <h2>: "Sub Title"
+      ∟ <p>: "Paragraph 1" 
+        ∟ <img>
+      ∟ <p>: "Paragraph 2"
+        ∟ <img>
+      ∟ <p>: "Paragraph 3"
+
+A DOM tree is basically a nested listing that shows the parent/child and sibling relationships that exist between the elements that make up a web page. The nesting that we show when we're typing HTML code shows us this document tree, which is one of many reasons why it's important to type your code using nesting. In the document tree above:
+
+there are two title elements and  three paragraph elements that are all children of the body element. 
+each >p> element has one <img> as its child. The images can be addressed and accessed as first-child of the p element
+The DOM is most commonly discussed when JavaScript is applied to a web page, but we can also use the DOM notation to create CSS advanced selectors. An advanced select is a selector that's aimed at specific node in the document tree as opposed to a selector that's applied generally to the web page elements.  Your understanding of the DOM and DOM notation is going to expand as we use DOM notation to define advanced selectors over the next three weeks. 
+
+Link States
+An Array of Appearances
+A black ball can take on many different colors like a type can have pseudo stylingThe link pseudo-classes defines how the action of a mouse on a link can change the appearance of the link. The most used type of pseudo-class is on links, which is why pseudo-classes is being brought up in this module.
+
+A <p> element has one state and one appearance. It's text that's black and 1em tall. The appearance of a <p> element doesn't change once it's drawn to the page. A <p> element is like the black ball in the image to the right. It has one color appearance: black; That's not the case for a link. A link (the <a> element) is a single element that when activated, sends the client to another web page. However, the appearance of that link changes depending on the current status of the link. If the link has not been clicked on yet, the link is blue. If the link has been clicked on, then its color is purple. The <a> element hasn't changed, but its appearance has.  If you are currently clicking on a link and your mouse button is still down, the link turns red. You may also see a fourth color for the link when you move your mouse on top of the link but do nothing else.
+
+In effect, the appearance of a link in a browser is based in an array of appearances that are applied to an <a> element. Pseudo-classes are what gives the <a> element the ability to change its appearance. A pseudo-class is like the colored balls that sit to the left of the black ball. They are the same element, but now their color is different to denote some changed function that they serve.
+
+You can also apply a pseudo-class to a <p> element, but body text doesn't have changed states to account for like a link has. The link states used by CSS are placed to the right of the 'z' and separated from it by a colon. The name for the state is fairly semantic:
+
+State	Pseudo-class	Appearance
+Unvisited	a:link	Blue underlined text
+Visited	a:visited	Purple underlined text
+Hover	a:hover	Varies, no set standard
+Active	a:active	Red underlined text
+
+Advanced Selectors
+Targeted Styling
+Advanced selectors is a topic that will carry on into Modules 7 and 8. This is a topic that takes some time to digest, so the instruction is being spread out.
+
+An advanced selector is a means to apply a style to a specific element without having to use an id. Advanced selectors use combined style rules that  are written using types, classes, and ids along with DOM notation. that adds more specifically to the targeting of the selector. 
+
+You do not need to know the names of the different types of advanced selectors. What you do need to learn is how to read them so that you know what they'll do.
+
+Child Selectors
+Selector	Meaning	Applies to
+div.text	Applies to <div> whose class is "text"	<div class="text">
+    <p>Yes<p>
+</div>
+div .text	Children of <div> classed "text"	<div>
+    <p class="text">Yes<p>
+</div>
+a:link	Link appearance	Link
+a:visited	Visited link appearance	Link
+a:hover	Appearance of link when hovered over	Link
+div>p	All <p> children of <div>	<div>
+    <p>Yes<p>
+    <p>Yes</p>
+</div>
+div+p	Only first <p> child of <div>	<div>
+    <p>Yes<p>
+    <p>No</p>
+</div>
+
+<div> Instead of <li>?
+What Can Be Linked?
+Pretty much every element can be turned into a link by wrapping that element in <a></a> tags. Text, of course can be a link and so can images. Container elements can also be links, but that's not commonly done if the container is a semantic element. One exception to the "everything can be linked" idea that I know of is that you can't turn a list item <li> into a link, but you can turn the text that's inside of an <.li> element into a link, which is what we did.
+
+This is valid:	<li><a href="page2.html">Triceratops</a></li>
+This is not valid:	<a href="page2.html"><li>Triceratops</li></a>
+The valid and the invalid code have the same elements, but in a reversed order. This is one reason why using a list might not be the best way to create tabbed navigation. We can link the text, but we can't  include the list item into the link.
+
+If we use <div> elements instead of list items, we can wrap both the <div> and the text that it holds in a link, making the shape and the text clickable. One disadvantage to using <div> is that we can't use the :first-child and :last-child pseudo-classes to style the edge borders, but there are other ways to get that job done that aren't difficult. While the lists are nice because they can be used to create sub-lists, I think the current fashion is to use <div> elements that go to one page instead of using lists that allow us to define menus of pages.  
+
+This is valid:	<a href="page2.html"><div>Triceratops</div></a>

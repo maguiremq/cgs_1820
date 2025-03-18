@@ -1,0 +1,555 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+	<head>
+        <meta charset="utf-8">
+        <title>Color Slider Tool</title>
+        <link href="../../css/styles.css" rel="stylesheet">
+        <meta name="author" content="Steven W. Johnson, Ph.D.">
+        <meta name="dcterms.rightsHolder" content="Steven W. Johnson">
+        <meta name="dcterms.dateCopyrighted" content="January 1, 2019">
+		<style>
+			body {
+				background-image: linear-gradient(90deg, #e7d6c3 0% , #fcf1e6 33%, #fcf1e6 67%, #e7d6c3 100%);
+			}
+			button {
+                cursor: pointer;
+            }
+			main {
+				margin: 20px auto;
+				text-align: center;
+				width: 570px;
+			}
+			table {
+				border-collapse: collapse;
+				width: 590px;
+				border: 0;
+			}
+			td {
+				padding-top: 3px 0;
+			}
+			th {
+				background: #f3f3f3;
+			}
+			.size150 {
+				width: 150px;
+			}
+			.size50 {
+				width: 50px;
+			}
+			.size25 {
+				width: 31px;
+				background: #f3f3f3;
+			}
+			.size90 {
+				width: 90px;
+				background: #fff;
+			}
+			.size275 {
+				width: 275px;
+				background: #f3f3f3;
+				vertical-align: top;
+			}
+			.size50 {
+				width: 40px;
+			}
+			span {
+				font-weight: 100;
+				font-size: .9em;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<main>
+			<header>
+				<h1>4 Levels of RGB</h1>
+			</header>
+
+			<section>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Color</th>
+							<th scope="col" class="size170">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hex Mix<br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Red&nbsp;&nbsp;Green&nbsp;&nbsp;Blue&nbsp;</span></th>
+							<th scope="col" class="size50">Test</th>
+							<th scope="col" class="size25">&nbsp;</th>
+							<th scope="col">Color Wheel</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="background: #ff0000">
+							<td class="size75">&nbsp;</td>
+							<td>#
+								<select id="qr1">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg1">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb1">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+							</td>
+							<td><button type="button" id="q1">Check</button></td>
+							<td id="qans1"  class="size25"></td>
+							<td rowspan="16" class="size275"><img src="https://courses.sfcollege.edu/files/51789258/download?download_frd=1" width="246" height="267" alt="Color Wheel" title="Color Wheel"/></td>
+						</tr>
+						<tr style="background: #00ffff">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr2">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg2">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb2">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+							</td>
+							<td><button type="button" id="q2">Check</button></td>
+							<td id="qans2" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #ff00ff">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr3">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg3">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb3">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q3">Check</button></td>
+							<td id="qans3" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #ffaa00">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr4">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg4">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb4">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q4">Check</button></td>
+							<td id="qans4" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #aa00ff">
+							<td>&nbsp;</td>
+							<td style="color: white">#
+								<select id="qr5">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg5">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb5">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q5">Check</button></td>
+							<td id="qans5" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #00ffaa">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr6">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg6">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb6">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q6">Check</button></td>
+							<td id="qans6" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #aa55aa">
+							<td style="color: white">&nbsp;</td>
+							<td style="color: white">#
+								<select id="qr7">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg7">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb7">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q7">Check</button></td>
+							<td id="qans7" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #aaaa55">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr8">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg8">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb8">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q8">Check</button></td>
+							<td id="qans8" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #0055ff">
+							<td>&nbsp;</td>
+							<td style="color: white">#
+								<select id="qr9">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg9">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb9">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q9">Check</button></td>
+							<td id="qans9" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #aaaaaa">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr10">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg10">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb10">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q10">Check</button></td>
+							<td id="qans10" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #55ff55">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr11">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg11">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb11">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q11">Check</button></td>
+							<td id="qans11" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #555555">
+							<td style="color: white">&nbsp;</td>
+							<td>#
+								<select id="qr12">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg12">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb12">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q12">Check</button></td>
+							<td id="qans12" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #5555ff">
+							<td>&nbsp;</td>
+							<td style="color: white">#
+								<select id="qr13">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg13">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb13">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q13">Check</button></td>
+							<td id="qans13" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #ffaaff">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr14">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg14">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb14">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q14">Check</button></td>
+							<td id="qans14" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #ffffaa">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr15">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg15">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb15">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q15">Check</button></td>
+							<td id="qans15" class="size25">&nbsp;</td>
+						</tr>
+						<tr style="background: #55aaaa">
+							<td>&nbsp;</td>
+							<td>#
+								<select id="qr16">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qg16">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select>
+								<select id="qb16">
+									<option value=" "></option>
+									<option value="ff">ff</option>
+									<option value="aa">aa</option>
+									<option value="55">55</option>
+									<option value="00">00</option>
+                  				</select></td>
+							<td><button type="button" id="q16">Check</button></td>
+							<td id="qans16" class="size25">&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<script>
+			var size = document.getElementsByTagName("tr").length;
+			var i=1;
+			for (i=1; i<size+1; i++) {
+				document.getElementById('q'+i).addEventListener('click', answer, false);
+			}
+
+			function answer() {
+				var row = this.id.replace("q", "");
+
+				var string = document.getElementsByTagName("tr")[row].style.backgroundColor;
+				string = string.replace(/[^0-9,]/g, "" );
+				var pieces = [];
+				pieces = string.split(",");
+				var r = Number(pieces[0]).toString(16);
+				if (r==0) r = "00";
+				var g = Number(pieces[1]).toString(16);
+				if (g==0) g = "00";
+				var b = Number(pieces[2]).toString(16);
+				if (b==0) b = "00";
+
+				var answer = r+g+b;
+
+				var color = document.getElementById("qr"+row).value + document.getElementById("qg"+row).value	+ document.getElementById("qb"+row).value;
+
+				if (answer == color) {
+					document.getElementById("qans"+row).innerHTML='<img src="https://courses.sfcollege.edu/files/50741424/download?download_frd=1" width="25" height="16" alt="Correct Answer" title="Correct Answer">';
+				}
+				else {
+					document.getElementById("qans"+row).innerHTML='<img src="https://courses.sfcollege.edu/files/50741420/download?download_frd=1" width="25" height="16" alt="Correct Answer" title="Correct Answer">';
+				}
+			}
+		
+		</script>
+    </body>
+</html>

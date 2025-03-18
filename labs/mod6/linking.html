@@ -1,0 +1,155 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Linking</title>
+		<meta name="author" content="Steven W. Johnson, Ph.D.">
+		<meta name="dcterms.rightsHolder" content="Steven W. Johnson">
+		<meta name="dcterms.dateCopyrighted" content="January 1, 2019">
+        <style>
+            main {
+				max-width: 700px;
+				margin: 20px auto;
+				border: 1px solid black;
+				border-radius: 5px;
+				padding: 8px;
+				}
+			body {
+				background-image: linear-gradient(90deg, #e7d6c3 0% , #fcf1e6 33%, #fcf1e6 67%, #e7d6c3 100%);
+			}
+			h1 {
+				text-align: center;
+			}
+			table {
+                width: 440px;
+				margin: 0 auto;
+            }
+			input[type=text] {
+                width: 135px;
+				text-align: left;
+				padding: 4px;
+            }	
+            td {
+                text-align: left;
+				padding: 4px;
+            }
+            .left {
+                text-align: left;
+				width: 360px;
+            }
+			tr:nth-child(even) {
+				background: #f6dfc7;
+			}
+			tr:nth-child(odd) {
+				background: #e9d9c9;
+			}
+		</style>
+	</head>
+
+    <body>
+        <main>
+			<p>Below is a typical site map for a web site. Each question asks you to define the relative address between the two resources identified by the question. If the link you enter in the textbox is correct, the box will turn green when you leave the box. If the box turns red, then your proposed link is not correct. You may re-enter any 'broken' links until you get the pathway correct. The first question is answered for you.</p>
+			<p style="text-align: center; margin: 20px auto;"><img src="https://courses.sfcollege.edu/files/51789334/download?download_frd=1" alt="sitemap" title="sitemap"></p>
+                  <table>
+                      <thead>
+                      <tr>
+                          <th>Pages</th>
+                          <th>Link</th>
+                      </tr>
+                          </thead>
+                      <tbody>
+                      <tr>
+                          <td class="left"><label for="q1">1. Link from page1 to page2</label></td>
+                          <td><input name="q1" type="text" disabled id="q1" style="background: #cfc;" value="page2.html"></td>
+                      </tr>
+                      <tr>
+                          <td class="left"><label for="q2">2. Link from page2 to styles</label></td>
+                          <td><input name="q2" type="text" autofocus id="q2"></td>
+                      </tr>
+                      <tr>
+                          <td class="left"><label for="q3">3. Link from styles to img2</label></td>
+                          <td><input type="text" name="q3" id="q3"></td>
+                      </tr>
+                      <tr>
+                          <td class="left"><label for="q4">4. Move from img1 to img3</label></td>
+                          <td><input type="text" name="q4" id="q4"></td>
+                      </tr>
+                       <tr>
+                          <td class="left"><label for="q5">5. Link from page2 to img2</label></td>
+                          <td><input type="text" name="q5" id="q5"></td>
+                      </tr> 
+                      <tr>
+                          <td class="left"><label for="q6">6. Link page3 to styles&nbsp;</label></td>
+                          <td><input type="text" name="q6" id="q6"></td>
+                      </tr>  
+                      <tr>
+                          <td class="left"><label for="q7">7. Link page3 to image1</label></td>
+                          <td><input type="text" name="q7" id="q7"></td>
+                      </tr>  
+                      <tr>
+                          <td class="left"><label for="q8">8. Link from styles to img3</label></td>
+                          <td><input type="text" name="q8" id="q8"></td>
+                      </tr>  
+                      <tr>
+                          <td class="left"><label for="q9">9. Link from page1 to styles:</label></td>
+                          <td><input type="text" name="q9" id="q9"></td>
+                      </tr>  
+                          </tbody>
+                  </table>
+         </main>
+         <script>
+             for (var i=2; i<17; i++) {
+                 document.getElementById("q"+i).addEventListener('blur', checkscript, false);
+             }
+             function checkscript()  {
+                 var score = 0;
+                 answer = [];
+                 answer[1] = "page2.html";
+                 answer[2] = "css/styles.css";
+                 answer[3] = "../images/img2.webp";
+                 answer[4] = "img3.png";
+                 answer[5] = "images/img2.webp";
+                 answer[6] = "css/styles.css";
+                 answer[7] = "images/img1.jpg";
+                 answer[8] = "../images/img3.png";
+                 answer[9] = "css/styles.css";
+                
+
+                 //var pos = this.id.replace("q", "");
+                 for (i=2; i<17; i++) {
+                     if(document.getElementById("q"+i).value !="") {
+                         if (i==15) {
+                             if(document.getElementById("q"+i).value == answer[i] || document.getElementById("q"+i).value == answer[17]) {
+                                document.getElementById("q"+i).style.background = "#cfc";
+                                score++;
+                            }
+                            else {
+                                document.getElementById("q"+i).style.background = "#fcc";
+                            }
+                         }
+                         else if (i==16) {
+                             if(document.getElementById("q"+i).value == answer[i] || document.getElementById("q"+i).value == answer[18]) {
+                                document.getElementById("q"+i).style.background = "#cfc";
+                                score++;
+                            }
+                            else {
+                                document.getElementById("q"+i).style.background = "#fcc";
+                            }
+                         }
+                         else {
+                            if(document.getElementById("q"+i).value == answer[i]) {
+                                document.getElementById("q"+i).style.background = "#cfc";
+                                score++;
+                            }
+                            else {
+                                document.getElementById("q"+i).style.background = "#fcc";
+                            }
+                         }
+                     }
+                 }
+                 percent = parseInt(score/15*100);
+                 document.getElementById("quizscore").innerHTML = percent;
+             }
+         </script>
+    </body>
+</html>

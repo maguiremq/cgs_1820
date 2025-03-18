@@ -1,0 +1,129 @@
+/*
+---
+Once your page is ready,
+add on to the stylesheet by adding these three media queries: 
+
+screen width <=40em: 
+
+The three layers are to display vertically and use 100% of 
+the screen width. Text and images cannot touch the border of the window. 
+set the image size to taste 
+
+screen width <=100em: 
+
+two layers display horizontally and the third layer is 
+beneath. The two top layers will take up approximately 50% of the browser 
+width and the lower layer is approximately 100% of the screen width use 
+padding and margin as needed and at your discretion. I would not use borders,
+but you may if you really want to set the image size to taste 
+
+
+---
+*/
+
+@charset "utf-8";
+
+@media screen and (min-width: 0em) and (max-width: 40em) {
+    body {
+        background: #ba0c2f;
+    }
+    section {
+        display: block;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 100em) {
+
+    body {
+        background: #009950;
+    }
+
+    section {
+        margin: auto;
+        overflow-y:auto;
+    }
+
+    #image {
+        display: block;
+        margin: auto;
+    }
+
+    #caverns {
+        float: left;
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    #tubing {
+        float: right;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    #goodolejohn {
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+}
+
+/*
+
+-------------------------------------------------------------------------------- 
+screen width>100em;
+three layers lay out horizontally,
+each layer is approximately one third of the screen width set the image size 
+to taste All other styling is up to you.
+-------------------------------------------------------------------------------- 
+
+*/
+
+@media screen and (min-width: 100em) {
+    body {
+        background: #ffffff;
+    }
+    section {
+        width: 33.33%;
+        margin: 1%;
+        text-align: center;
+        float: left;
+        overflow-y:auto;
+        padding: 0;
+    }
+    body {
+        background: #ffffff; 
+        float: left;
+        text-align: left;
+    }
+    #img {
+        display: flex;
+        /* margin: 5%; */
+        padding-bottom: 50%;
+        text-align: center;
+    }
+    p {
+        vertical-align: middle;
+    }
+    #caverns {
+        margin: auto;
+    }
+    #tubing {
+        margin: auto;
+    }
+    #goodolejohn {
+        margin: auto;
+    }
+    /* #h1, #h2, #h3 {
+        text-align: center;
+    } */
+}
+
+

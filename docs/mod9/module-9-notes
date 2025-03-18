@@ -1,0 +1,363 @@
+Using Multiple Stylesheets
+A Site Strategy
+A style guide impacts all aspects of the written documents of the companyEach page in a multi-page site should have the same look, feel, and consistency as the other pages in the site. A main way that we make that happen is by using the same stylesheet to define the appearance of all pages in the site. The idea of a stylesheet isn't new with HTML. The academic world has its style guides and the companies usually requires that any published documents that represent the company in any way all use the company style guide for formatting and appearance. Style guides typically cover written documents, advertisements, presentations, promotional materials, inter-office memos, and any other document that somehow represents the company. A stylesheet in our web site serves that same purpose as a company's style guide, but isn't nearly as  encompassing.
+
+A web site isn't necessarily limited to one stylesheet. You should create a single stylesheet that's applied to all pages as your "style guide", but pages that have unique elements on them like tables and forms in particular might need to have customized styles applied to them. You have two choices for how you can handle this, you can either write embedded style rules on the web page for these custom elements or you can create a second stylesheet that holds only the customized styles and apply this second style sheet to the page.
+
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/scrolltable.css" rel="stylesheet">
+
+In the above example, I am using my normal 'styles.css' stylesheet as the site style guide and I'm also adding style rules for a scrolling table using 'scrolltable.css'. So long as the two stylesheets don't hold conflicting styles, there's no problem with using a second stylesheet and the order of their placement is not important
+
+In the project, you're going to create three different tables (a layout table, a display table, and a scrolling display table) on three different web pages. It's not going to be possible to write one style rule that manages the appearance of all three tables. To solve this problem, I'm going to suggest that your 'styles.css' stylesheet doesn't reference tables, but instead you create a single stylesheet for each type of table appearance that you want to define and then call that stylesheet in as a second style rule on the page where the table is located.
+
+Web Accessibility Initiatives
+Who's Defining & Working On Accessibility
+There is one primary accessibility organization:
+
+WAI: Web Accessibility Initiative
+There are two Accessibility standards:
+
+WCAG: Web Content Accessibility Guidelines
+ARIA: Accessibility of Rich Internet Applications
+WAI: Web Accessibility Initiative
+WAI logoWAI is one of the four domains that make up the W3C. WAI's membership includes governmental officials as well as representatives from tech companies and disability communities. WAI was founded in 1997, four years after the creation of the W3C. WAI's guidelines routinely become international standards for web accessibility. The emphasis of the WAI's work is to create systems so that people can participate equally in the digital world. The WAI works to make sure:
+
+accessibility standards/guidelines are harmonized globally
+technical standards and specifications support accessibility
+new tools used to create and deliver digital content support accessibility
+content creators and managers of digital content have relevant accessibility knowledge
+new technologies, digital products, and content addresses accessibility from inception (“born accessible”).
+WCAG Web Content Accessibility Guidelines
+WCAG logoThe Web Content Accessibility Guidelines (WCAG) are a set of globally-adopted technical standards created by the World Wide Web Consortium (W3C) to make the web more accessible to everyone. The guidelines aim to make websites, apps, electronic documents, and other digital assets accessible to people with a broad range of disabilities, including sensory, intellectual, learning and physical disabilities. WCAG has defined criteria that remove many of the barriers that people with disabilities face when navigating a website or other digital asset. These guidelines are discussed on the page titled "Important Coding Considerations.
+
+WCAG 2.2 AA logoWCAG has gone through four versions (1, 2, 2.1, and 2.2) and has 3 conformance levels (A, which isn't so good, AA, and AAA). The goal is to meet AA standards, which almost always meets any legal requirements that a site has for accessibility. WCAG is often referred to in legislation and in court decisions as the benchmark for web accessibility.
+
+ARIA Accessibility of Rich Internet Applications
+ARIA logoARIA, which stands for Accessible Rich Internet Applications, is a set of HTML attributes and roles that help make web content and applications more accessible for people with disabilities. The "A" part of ARIA is for 'accessible' and that makes immediate sense. A Rich Internet Application (RIA) is a programming system that was popularized in the late 2000s. RIAs use JavaScript and probably Ajax (asynchronous partial page loading of content built using JavaScript) to load information stored in a data source. An RIA is much more interactive and provide a better visual experience than a standard web page can.
+
+RIAs had all kinds of accessibility problems due to the asynchronous loading of content and its reliance on JavaScript to manage the system. Since RIAs were all the rage from 2007 to 2012 or 13. RIAs are still alive and well, but they're not the buzzword that they used to be. RIAs are still an accessibility nightmare, hence the need for ARIA. ARIA is a W3C specification that helps assistive technologies, like screen readers, understand the elements on a web page. This allows users to interact with the page more effectively
+
+An Accessible World: OS Accessibility Tools
+Tools in your OS
+
+Your OS has several...
+
+High contrast
+A setting to "improve the readability of the display by applying a special system color scheme." High Contrast is turned on by pressing the left 'Shift', the left 'Alt' and the 'Print Screen' keys all at the same time. High contrast appears to show one background color (black), white text, and blue links with gold visited links
+
+image.png
+
+normal web page
+same web page with high contrast turned on
+The Windows Accessibility Tools are opened by using the 'Windows' key plus 'U'. Accessibility is a sub-menu off of 'Settings' and you can get to the Accessibility settings by going through the general Settings as well. Shown to the right is the Accessibility menu. Each of these items can be clicked on and customized to meet a client's needs. These settings are tracked as part of your Windows login, so one person's settings has no impact on another person's settings.
+
+Accessibility toolsThe settings:
+
+Text size
+
+Visual effects
+
+Mouse pointer and touch
+
+Text cursor
+
+Magnifier
+
+Color filters
+
+Contrast themes
+
+Narrator
+
+Audio
+
+Captions
+
+Speech
+
+Keyboard
+
+Mouse
+
+Eye control
+
+How the Eye Works
+The Eye is a Pinhole Camera for the Brain
+The human eye reacts to a specific band of light frequencies found between the ultraviolet and the infrared ranges. This 'visible light' is experienced by us starting with the shorter and faster wavelengths as being violet or blue. The light that is longer and slower is orange and red. A  person who cannot see one of the colors of the spectrum or confuses one color in the spectrum for another is referred to as being 'color blind'.
+
+The electromagnetic spectrum
+
+The eye can be compared to a pinhole camera in that light comes in through  small hole (the pupil) and is projected on the back wall of the eye (the retina), and the light is captured in the eye using rods and cones. Each color cone reacts to a specific band of frequencies: blue (S for short), green (M for medium), and red (L for long). The color of the cone in the animation below defines the frequency it reacts to. The cones create color information that's passed on to your brain while your rods pass on additional luminance information and are used for night vision.
+
+
+(Slide 1) The human eye. The pupil is at the left, the retina is the right side of the circle and the optic nerve connects your eye to the visual cortex in your brain.
+
+(Slide2 ) Light accepted into the pupil
+
+(Slide 3) Light hits the back of the eye (the retina) where the eye's rods and cones are located. Rods and cones are light-sensing cells that are shaped as their name describes. Each cone reacts to a specific frequency in the electromagnetic spectrum. These frequencies fall in the color ranges of red (long waves), green (medium waves), or blue (short waves). Rods react to lightness and can see the grayscale. 
+
+An Accessible World: Visual Considerations
+Visual Acuity
+The different ways that the visual acuity of people can be affected that goes beyond being remedied by using prescriptive glasses include:
+
+color blindness
+blindness
+Both names describe an extreme condition that rarely occurs. Most people who have color and visual deficiencies are better being described as being impacted or deficient and not being totally missing of this visual ability.
+
+Color Blindness
+A person who is "color blind' has a visual condition where they are unable to see or process a range or ranges of colors. Color blindness is not a switch that when thrown takes a person from seeing the full color spectrum correctly to seeing no color at all. There are varying levels of color blindness and color deficiency, color weakness, or color confusion are more accurate descriptions of the problem.
+
+There are four main categories of color blindness that create seven different conditions. Below is a table that describes the different conditions and what they mean :
+
+Category	Condition:	Cause:	Meaning:
+Protan	Protanopia	Red cones missing	Unable to see red colors
+Protanomaly
+Red-Green Shifting	Red cone confusion	  Red colors appear greenish
+Deutan	Deuteranopia	Green cones missing	Unable to distinguish red and  green colors
+Deuteranomaly
+Green-Red Shifting	Green cone confusion	Green colors appear reddish
+Tritan	Tritanopia	Blue cone missing	Unable to see blue colors
+Tritanomaly
+Blue-Yellow Shifting	Blue cone confusion	Shifts blue/green or yellow/red
+Monochrome	Achromatopsia
+Monochromacy	All cones missing	No color in vision; sees lightness
+Shown to the left below is a series of color wheels that represent what a person sees when their color deficiency is caused by missing cones, an 'opsia'. Shown to the right below are the different ways that colors can shift, or an 'omaly'.  The shifting color lines are drawn on top of the Lab color model, which is the color model best suited to describe color in nature. The lines in the charts show the direction that the colors shift along. Protan color confusion radiates out from the red corner in all directions. Deutan confusion runs in parallel along the right boundary of the Lab model. Tritan confusion radiates out from the blue corner in all directions.
+
+Color wheel for different types of color deficiency
+Color confusion lines for each type of color confusion. The protan confusion radiates from red corner into both blue and green. The deutan confusion runs roughtly parallel to the right edge of the Lab color model and the tritan confusion radiates out from the blue corner
+
+A CCD-based camera and the human eye work pretty much the same way, except that the CCD camera has photosensors to capture frequencies of light while the eye uses cells to perform the same task. A CCD's photosensors are arranged in a Bayer pattern (like this: red square in upper left, blue square in the lower right and the upper right and lower left corners are green ) to capture light in specific frequencies relating to red, green, and blue. The 'normal' Bayer pattern uses two green photosensors for each RGB mix because the green frequency range is roughly twice as large as the red and blue ranges individually (see the Lab color range above) and because the luminance of the color is best captured in the green range.
+
+
+(Slide 1) Replace the eye's rods and cones with a CCD using the Bayer pattern .  
+
+(Slide 2) Light hits the photosensors in the CCD and the frequencies are captured and then sent on to the CPU for processing
+
+(Slide 3) A CCD that mimics protanomaly will have defective red photosensors (the red  sensors are now brown). The light that these photosensors capture is red light, but the CCD processes that information as if it was green light, shifting the color from red to a greenish-brown color. 
+
+(Slide 4) A CCD that mimics deuteranomaly has defective green photosensors. Green light is now captured, but the green light gets processed as a pinkish-brown color.
+
+(Slide 5) A CCD that mimics tritanomaly has defective blue photosensors. Blue light is captured, but its processed as yellow light and get processed by shifting blues into to the yellow or green range
+
+(Slide 6) If a CCD has monochromacy, then the color frequencies in the light are not read and the lightness level of each color is sent on to making a grayscale picture.
+
+Statistics on Color Blindness:
+
+Color blindness is a naturally-occurring mutation that is also passed genetically. Colorblindness is most often found in regions and countries where there are restricted gene pools. About 8% of all males and .5% of females have some form of color blindness. More than 95% of colorblind people have Protanomaly, or red-green color shifting. About 1 in 33,000 (or .0009%) people have Monochromacy and are totally color blind.
+
+Coding Considerations:
+
+I personally wouldn't do anything different for a web site's color schemes unless the web site is designed for people who have some type of color blindness. The most important consideration is your link color. The default link color is blue and that's good because blue is the least likely color to be impacted by color deficiencies and color shifting. Changing your link color to a color in that's in the reds or greens might not be a good idea because these are the first colors to get shifted or eliminated. 
+
+Don't give a contextual meaning to red
+Avoid images that display a full range of colors
+Blindness
+Snellen eye chartPeople who can't distinguish the letter "E" that's on the top line of the eye chart while wearing prescriptive eyewear on have less than 20/200 vision  and are considered legally blind. Like color blindness, blindness is not a "is" or "is not" proposition. 85% of people who are legally blind have some amount of residual vision. 
+
+People who are unable to make out a web page while using prescriptive glasses will probably use a screen reader to read the page to them and will also probably use a mouse device that's voice-controlled. Screen readers can be based in hardware or software and can be located the computer's operating system or in its applications. Most browsers at this point offer a screen reader add-on that's either a plug-in or an extension.
+
+Coding Considerations
+
+Spacing is created with margin or padding exclusively. Additional horizontal space is never created by using the space bar, non-breaking spaces, or the tab key and vertical space is never created by using additional <br> tags or by adding empty paragraph elements
+Images must be declared as either being decorative or they must have alt text. The alt text must describe the information that a sighted person gains by looking at the image.
+Do not create heading text as an image. This is a mistake because search engine optimization algorithms consider the connection between titles and body text and because the titles need to be read as text so that the screen reader can properly understand the page's structure. accessibility. All things that appear as text need to be text
+All text must be zoomable (an issue in early browsers that is not an issue any longer)
+
+Assistive Devices: Screen Readers
+Screen Readers
+A monitor with a sound icon showing volumeA screen reader is hardware or software that analyzes the layout and content of a web page and then reads the content of the document in context to the client. The client is able to move around in the document by using the titles or images as reference points. The magnitude of the reference point is determined by the type of heading that it was defined as (h1, h2, etc.). Once the section of text is identified, the screen reader 'reads' (auditory outputs) the text to the client.
+
+Screen readers give visually limited people the ability to not only read a document, but to also move around within a document just like a sighted person does. For instance, a fully-sighted person can look at section titles and the first few sentences in a section to determine if they want to read or skip the section. Screen readers also give visually impaired people this same ability to move to first hear the page's organization and then to interact with the content as they see fit.
+
+Some of the best examples of hardware screen-based readers include Apple's iOS VoiceOver, Android TalkTalk, and the Kindle Text-To-Speech. Screen reader software examples include NVDA Non-Visual Desktop Access, Job Access With Speech (JAWS), Microsoft Narrator, and Fusion. A screen reader may be used in conjunction with a voice-to-text "mouse" so that the client can interact with the page without having to read it first.
+
+Microsoft Narrator
+A monitor with a sound bubble and a speaker iconNarrator is a screen reader that's built into Windows 10 and 11. Narrator was developed by Paul Blenkhorn and first installed as part of Windows 2000. This is an application that's been around for a long time. Narrator can read dialog boxes and the Windows controls that are found in most Windows applications. Learning how to use Narrator is not a 20-minute exercise. My goal here is to make you aware of the different assistive devices this week. As a professional in the field, you should learn about these devices as they make sense.
+
+Voice controls
+
+Apple VoiceOver
+A limb-extended human in a circle with an icon for a speaker showing volumeStarting with macOS X, Apple has included a native screen reader called VoiceOver on its Macs and MacBooks. The feature is designed to help low-vision or blind users navigate their computers — and the internet — more easily. It works by reading aloud text descriptions of everything that appears on the screen, as well as reading any displayed text. The technology also allows users to interact with elements on the screen. While VoiceOver is primarily meant for those with visual impairments, it can be helpful in many different scenarios — for example, if you’re someone who has a learning disability and prefers to listen to text rather than read it. To activate VoiceOver, go to the System Preferences and select 'Accessibility' from the menu. Go to the 'Vision' category and select 'VoiceOver', and then click on 'Enable VoiceOver'. 
+
+Lab: Screen Readers
+Instructions:
+
+Download and unzip 'screenreader.zip'. Download unzip 'screenreader.zip'.\
+Open the 'screenreader' folder and you'll find two HTML files ('index', 'nohead') 
+and some folders. The two HTML files will look the same in your browser, 
+but the 'nohead' file uses CSS to make body text look like header elements. 
+The slides show you how to turn on Navigator, but you should wait to do that until after you've opened by HTML pages in your browser. You will not be doing any coding in this lab. The point to this lab is to see how Navigator and other screen readers work.
+
+SlidesDownload Slides
+
+Action 	Key Sequence	Notes
+Open 'index'	 	 
+Open 'nohead'	 	Both files appear the same
+Open Navigator	Windows logo
+ + Ctrl + Enter	Click on 'Skip for now' and click back in browser window
+Scroll 'down' through headings	H	Should go down the page by header
+Scroll 'up' through headings	Shift + H	Should go up the page by header
+Select 'nohead' and scroll headings	H	Doesn't work, there are no headings
+Select 'index'		
+Scroll 'down' through images	G	Go down the page by images
+Sell 'up' though images	Shift + G	Go up the page by images
+Read from beginning of page	Cap Lock + Ctrl + I	
+Read from the top of the window	Caps Lock + W	 
+Read from this point on	Caps Lock + R	 
+
+Note: Scan mode is automatically turned on. If scan gets turned off, you can 
+turn it back on by using: Cap Lock + Spacebar to turn on or off
+
+Below is a chart of the images on the page and whether they have alt text or a title.
+
+Assistive Software: Browsers
+Voice-to-Text & Text-to-Voice
+Web page with a microphone for text to voiceAll of the major browsers have supported accessibility features for years. All four of the major browsers have built-in accessibility features that are turned on by default. Chrome offers extensions that can be used to expand its accessibility features and Edge, Firefox and Safari all have additional built-in features that must be enabled before they can be used. 
+
+These technologies can also simplify navigation and provide support in an intelligent way, becoming a guide for the visually impaired. In that manner, browsers like these have many capabilities and are able to provide voice identification and dictation, text-to-speech, integrated screen readers, screen magnification and zoom, as well as text identification when interpreting characters from images.
+
+PwWebSpeak is an example of an early browser that was self-voicing, meaning that the client talked to the web page and the browser talked back to the client. This browser was invented in the late 1990s and was not updates so that it can run on 64-bit computers.
+
+WebbIE uses a text-only display that works with a screen readers, such as Navigator or VoiceOver.
+
+Lynx was one of the first text-based (no images displayed) browsers used by blind people. Its ability to read text aloud, voiceover options, and Braille support make it one of the most popular voiceover and assistive technology software solutions of this kind. Lynx is also the oldest browser still in operation. It was developed in 1992.
+
+Assistive Devices: Keyboards & Mice
+There are several different classes of peripherals that have adaptive alternatives. My intention here is  not to tell you about every type of adaptive device, but instead to make you aware of the most commonly-used peripherals.
+Adaptive Keyboards: 
+Keyboard Type/Description	Image
+Low Vision/Large Print keyboards have larger keys, high-contrast colors, and use a larger character size on each key	low-vision keyboard has yellow keys with large letters
+Dyslexia keyboards use color-coding to separate out vowels, consonants, numbers, and function keys.	Dyslexia keyboard is color-coded for vowels, consonants, numbers, and function keys
+Braille keyboards use braille identifiers instead of characters	Braille keyboard
+Hand Sign keyboards include American Sign Language (ASL) hand signs as well as letters on the keys	Hand sign keyboard has ASL hand signs for each letter
+On-Screen or Virtual Keyboard is a "keyboard" that appears on a touch monitor or a touchless monitor where the mouse is used to select characters	On-screen keyboard display
+Adaptive Mice:
+Mouse Type/Description	Image
+Ergonomic mouse is designed to fit better into a hand and not cause physical strain (wrist, hand, forearm)	ergonomic mouse sits inside the hand
+Vertical mouse realigns the wrist to a better position. Helps resuce strain on muscles and tendons	Vertical mouse has a vertical orientation instead of a horizontal orientation
+Bar mouse is positioned in front of the keyboard and uses a bar operated by the thumbs	Bar mouse goes beneath the keyboard
+Trackball mouse has the ball on top instead of the ball being underneath. The mouse remains stationary	Mouse doesn't move
+Joystick mouse uses a pivoting handle to position the cursor	Moving the joystick moves the cursor
+
+An Accessible World: Big Picture Recommendations
+Meeting the Minimum Standard
+Judge with gavelWhat we have found is that making your web pages more accessible creates a better User Experience for all uses. This gets back to accessibility. Accessibility is about access, and anything that limits access for one, limits access for everyone. Good design and good coding help everyone
+
+Don't think of this as you're coding to a small minority of users. Almost everyone at one point in their life will require some type of accessible support in one form or another. What we have found is that web page and accessibility design standards are really the same. They look to do the same things and in large part, the same ways. While the work might be mandated to meet a niche need, the work is required for everyone's need.
+
+Accessibility Requirements for Images:
+Non-decorative images must have alt-text that describes the image's content and purpose
+Accessibility Requirements for Text & Structure:
+Use proper markup, allowing individuals to understand the page's structure and hierarchy even without seeing it. People must be able to navigate section headings and document landmarks
+Multi-page components (navigation, headers, footers, and sidebars) are located in the same position
+Provide textual descriptions for images, tables, and embedded content
+Instructions are presented so that they don't require any vision (for instance, 'click the red button on the top of this window')
+Users should be able to use the 'tab' button on a keyboard to progress through any given page
+Each web page needs to provide access through the keyboard for navigation
+Use access keys
+Don't use pop-up windows
+Information is passed using at least one redundant system
+Always provide textual descriptions for images, tables, and embedded content
+Accessibility Requirements for Links:
+Link text is self-descriptive rather than context-dependent
+Provide 'skip links' to move directly to the main page content
+Accessibility Requirements for Forms:
+Make sure your form elements have clear labels and can be navigated by the keyboard alone
+Controls must have clear labels that are easy to find
+all form-entry tasks need to exist without a time limit to accommodate the needs of people who need more time to fill out forms
+Website Accessibility Is A Legal And Moral Obligation
+Currently, all businesses must give all people equal access to their online services. Failing to do so results in expensive lawsuits with heavy fines and penalties. There are many benefits beyond avoiding legal jeopardy for using accessible design including that your site will provide a better user experience for everyone, it will be easier to navigate and use, and you'll have a higher chance to reach global audiences.
+
+Percentage Sizing for Media Queries
+More Math, but No Big Deal
+istockphoto-1130766907-612x612-1.pngLast week we created web pages that were responsive within pixel/em ranges. I know of no way to size the <main> page container using anything other than a pixel representation like px or em, but you can use percentage sizing on the content containers (the sections) that are inside of <main>. An RWD purist will probably expect content containers to be sized in percentages, but so long as you're using min-width, max-width, and 100% in between those ranges you are using responsive containers to hold your content.
+
+Percentage sizing of content layers is no different than what we did last week, but we'll be using percentages instead of ems. We'll still want to put a min- and mix-size on the layer so that the layer width stays in the reasonable range. The percentage-sized containers do require a bit more math and the measurement is more abstract than what we did, but it's the same thing using a different unit of measure.
+
+Points to consider when using percentage sizing:
+
+Percentage sizes refer to the current size of the parent element
+If your page design uses one layer horizontally, then that layer's width is 100% (of the parent container) minus any space that's consumed by padding, margins, and borders
+If your page design uses two layers horizontally, then each layer is 50% of the parent container's size minus any space that the layers use for padding, margin, and borders
+If your page design uses three layers horizontally, then each layer will use 33.3333% of the parent container's width minus any space that the layer uses for padding, margin, and borders
+You can set the width of any layer , but the cumulative width of the layers should add up to 100% minus space that's used for padding, margin, and borders
+You can make the layers smaller than a cumulative 100% if you increase the padding and margin that the layers use
+You'll probably want to set a specific height on all your layers and add scroll bars if needed. If your layers have unequal amounts of content, avoid using visible borders because that will make the unevenness easier to spot. A scroll bar will work equally well on a layer that has no borders as one that does have borders.
+Your measurements are always going to include calc(). calc() supports 4 decimal places like 33.3333%
+Calculations do get rounded to the nearest pixel, so always be aware of rounding up.  A horizontal scroll bar will appear if your combined layers and their spacing exceed the parent container's size
+Your calc() measurements will start out with a percentage that followed by any number of additions and subtractions come after it. Don't 'net' your math by combining like measurements. Combined measures are harder to troubleshoot and they're harder to edit if the page is re-designed 
+Don't forget to put spaces on either side of minus and plus signs
+width: calc(33.33% - .5em - 4px);
+
+Print Media Queries
+Designing Paper-Based Output
+printing pressThe question that this topic asks is: "what's appropriate for a web page and what's appropriate for a printed page"? That answer is going to vary, but any page element that's "web-oriented" shouldn't be on a printed document and printed formatting shouldn't be used on a web page. We have different expectations at this point for the two media types. In some cases, you can get away with printing web pages and having at least a serviceable paper document, but paper documents lack navigation and web documents are optimized for a screen instead of a piece of paper. We can certainly improve on the design and content that goes into a printed web page by using a 'print' media query to re-design a digital page to better align with the printing paradigm.
+
+Using media queries to efficiently design printed documents is often overlooked, or not done well. Cookbook web sites is one place where a serious attempt is made to create useful printed documents.
+
+Media Queries Control Printing:
+I think you'll find that media queries for printing are more about turning styles off or tweaking current styles than it is about creating styles. In large part, the 'trick' to making a media query for printing is to either remove or modify the declaration that was added in the screen part of the stylesheet. For example, an element that has been moved to the right by adding 30 pixels of padding will continue to sit in the same location if you try to move the element back by subtracting 30 pixels of margin.
+
+You're also going to find out how much you know about the role that inheritance plays in placing styles on page content. You not only have to modify the correct property, but you must also correct the property at the correct level of inheritance to get the result that you want.
+
+@media print (parameter) and (parameter) {
+    selector {
+        property/value declarations;
+    }
+}
+Below is a table that details the properties or attributes of media and how those values are expressed on a web page and on a printed document.
+
+Feature	Web Value	Print Value
+media	screen	print
+page layout	 multi-column	Single column 
+sizing	variable	fixed
+page width; line length	40 - 60em	6½" - 8¼"
+font color	Any color	Black
+font size	.8em to 1em	11pt or matching
+background	Color, image	None; default won't print background
+UI elements	images, lists, menus, buttons	Remove; display: none
+Header, footer, nav	<header>, <footer>, <nav>, areas	display: none
+sidebars, asides, advertising*	<iframe>, others	display: none;
+forms	<form>	display: none;
+call to action; response	thank you	thank you
+margin, padding, borders	images, lists, menus	only as needed
+Links	images, lists, menus	off for .docx; leave on .pdf
+All Web-oriented	 	display: none;
+Contextual Images	 	Leave but scale
+A web designer must  look at each page element and decide what information and structure is necessary for a web page and what information and structure a cook needs to use the recipe when it's printed out on paper.
+
+What do you want to see when you're looking at recipes on your computer?
+What do you need on the printed page to make the recipe in the kitchen?
+Our job is to create a single information flow that optimally serves both purposes
+
+Lab: Stars
+Instructions:
+
+A black web page with white textDownload and unzip 'stars.zip' Download Download and unzip 'stars.zip'. In this folder you'll find a completed web page that has a black background, a simulated aurora that's also a background color, some text that's white, and an image.
+
+Our job is to make this printer-friendly.
+
+By default, backgrounds do not print, so we don't have to worry about them. The white text is also automatically modified to a light gray color, so the text is visible on the printed page, but it's contrast is not high enough. The font that was chosen (Biome) is a very boring font because the font has to stand up against the starfield background image. We are going to change the font family to a more reading-friendly. The font-size also must be made a bit larger foir the print version, so we'll increase the font size a bit to get it to a good size.
+
+Lab: Cookbook Recipe
+Instructions:
+
+Download and unzip 'reciper.zip'. Download Download and unzip 'reciper.zip'.In this folder you'll find two web pages. The first page is the index file that we're going to style. The second page is an advertisement that goes into an <iframe> located on the index page. We're going to be adding a 'print' media query to the stylesheet for this site. The page that we're going to modify for printing is shown below:
+
+Example of a recipe shown on a monitor
+What should the web version look like?
+What should the paper version look like?
+We'll assume that the web page on the left is laid out reasonably for screen use. Is it laid out reasonably for paper use? Do we need:
+
+The brown title area at the top?
+The  text 'Dreamy Apple Pie'?
+The sub-title about decadent apples?
+The links?
+The author, date, rating, and printer icon?
+The image?
+The advertisement/iframe?
+The blue bar with vital statistics?
+The ingredient list?
+The cooking directions?
+Note: some concessions were made in this lab so that it would take a reasonable amount of time to complete. I did remove the blue bar and its contents from the printed version and they contents should have stayed. I also didn't put a lot of effort into creating a printed version that was pretty. The final result is functional, but 'functional' should never be our goal. I also removed the image entirely from the printed document. I could argue for a small image that's floated next to the title information, author information, and the vital statistics with the ingredients displayed first and the directions displayed second (as I did). 

@@ -1,0 +1,881 @@
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+2 unread release notes.2
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesModule 5 Overview: The Box Model
+Spring 2025
+Home
+Syllabus
+Modules
+Grades17
+Discussions
+Announcements
+Module 5 Overview: The Box Model
+Module 5: The Box Model
+Module Description
+In Module 5 we start using the containers that were introduced in Module 4 to hold content and design the page's appearance.  This week's instruction adds more information about how to locate and work with layers on a page.
+
+At the end of this module you'll be able to:
+
+ Describe the components of the Box Model
+ Apply padding to a layer
+ Apply a border to a layer
+ Apply margin to a layer
+ Use min- and max- widths to size a layer
+ Add a border-radius
+ Set scroll bars on a layer
+ Add a background to a layer
+Complete These Activities:
+
+ Complete the Readings
+ Watch and complete the labs
+Turn in These Products at the End of This Module:
+
+ Assignment 5
+ Vocabulary 5
+ Quiz 5
+ Discussion: Status Check
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+2 unread release notes.2
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesThe HTML5 Years (2005 - present)
+Spring 2025
+Home
+Syllabus
+Modules
+Grades17
+Discussions
+Announcements
+The HTML5 Years (2005 - present)
+XHTML is replaced with HTML5 and we've had 20 some years where the Internet met its mandate to be an open and free system of information interchange.
+
+Internet Pre-History (1960 - 1988)
+The Internet @ CERN (1988 - 1993)
+Internet Comes Home & The Browser Wars (1993 - 1998)
+The XHTML Years (1998 - 2005)
+The HTML5 Years (2005 - present)
+Maybe We Can Get Along
+The chaos of the Browser Wars and the threat of XHTML led to the creation of HTML5 and an agreement that standardized the Default Style values that browsers used. The HTML5 years can be characterized by the introduction of a few innovations instead of by being characterized by the bickering, in-fighting, and one-upmanship that characterized the Browser Wars. From 2000 to 2009, XHTML tried to gain traction and couldn't. HTML5 emerged to first became a recommendation and then the eventual path forward in 2012. XHTML was officially dropped in 2018.
+
+Emergence of Chrome
+ Google Chrome logoDevelopment of Chrome started in 2006 and Chrome was launched in 2008. Chrome offered several advantages over Firefox and Internet Explorer including, security (over Internet Explorer), speed (over both, but especially Firefox), separate sandboxing of tabs, Developer Tools (which you've seen), and its ability to handle asynchronous loading (Ajax) for GMail. Chrome was built with HTML5 and CSS3 in mind while Firefox and Internet Explorer were both built on browser platforms originally written in the early 1990s. With Chrome, clients had a new browser that was designed for HTML5 and for a new Internet Age. Chrome very quickly surpassed Firefox and IE and in 2018 exceeded 70% of the browsing market share. In 2024, Chrome controls about 68% of the browser market.
+
+Shown below is the very approximate browser usage by year. Browser statistics can be easily manipulated to say anything that you want them to say, but I think that this chart gives you the bigger picture about browser usage accurately.
+
+Chart of browser usage. Mosaic wins in 93-94, Navigator wins from 94-98, IE wins from 98-2007 and chrome has won since
+
+The Development of Rich Internet Applications, Single Page Applications & Web 2.0
+A Venn Diagram showing the intersection of desktop applications, web applications, and communications technologies as being Rich Internet ApplicationsNew programming languages and paradigms seemed to appear almost daily. Many of these technologies fell under the umbrella of "Web 2.0", which is a term that came and went, but as a programming paradigm is here to stay. Here are the key terms from this time:
+
+Web 2.0: a read and write Internet like social media
+
+Rich Internet Application: partial page refresh, used in GMail to update in boxes
+
+Single Page Application: One page gets new content as links are clicked on. Page fills browser window
+
+RIA is probably most associated with Ajax, which is not an acronym but none-the-less stands for Asynchronous JavaScript and XML. Ajax uses a method developed by Microsoft (XMLHttpRequest()) to refresh content on a portion of the page without having to reload the entire page. Stock market tickers and sports updates are all done using Ajax or a technology very similar to it. A single-page application uses one base page and loads new content into defined containers. Web 2.0 is the idea that a web page is not only a reading surface, but it's also a writing surface. Web 2.0 technologies helped drive the social media explosion that occurred during this time. All three of these programming systems require a consistent DOM and Google Chrome provided that DOM. Google Chrome was designed to work with RIA, SPA, and Web 2.0 while Firefox and Internet Explorer were now legacy technologies that needed to be re-engineered to stand up to the modern practice. Microsoft ended up scrapping Internet Explorer and moving to Edge as their flagship browser in 2015.
+
+Invention of Smartphones & Mobile Computing
+Steve Jobs holding up the first iPhoneSmartphones are yet another disruptive technology that we've lived through over the past 30 years. While we had mobile phones going back to the 60s and 70s, a smartphone is a very different thing; it's a computer that's combined with a phone and this device can use either telephone or Internet connections to work. Smartphones ushered in mobile computing. Shown to the right is an image of Steve Jobs introducing the Apple iPhone at Macworld in 2007. Today, more Internet bandwidth is consumed by mobile devices than by desktops, though that doesn't necessarily mean that more web pages are viewed on a smartphone than are viewed on a desktop computer.
+
+The Future
+HTML5 and CSS3 continue to evolve and grow. Both adapt to the changes in programming (like RIA and Responsive Web Design), devices used (tablets and smartphones), and the available bandwidth. As of the Fall of 2024, there is no plan to do a major re-write of HTML5 or CSS3. Both of these standards are now defined as "Living Standards" that are meant to grow and change through the addition of modules. (See animation below. Each circle is a module). WHATWG will continue to work on both HTML5 and CSS3's modules for the foreseeable future. The W3C has created two additional recommendations, HTML5.1 and HTML5.2, but neither of these recommendations is significant. If fact, if you go to the W3C's web site for HTML5.2 you'll be re-directed to WHATWG's Living Standard for HTML5. The baton has effectively been passed from the W3C to WHATWG.
+
+The four slides below show the status of HTML5 and CSS3 on the dates specified. Unfortunately, these are the only images like this that I could find. You can see the different modules that have been recently completed and are still being worked on. The titles in the circles are important and they define technologies that that are directing the future growth of the Internet.
+
+One takeaway for me from these taxonomies is that HTML is behind CSS when it comes to developing consensus about its features and its future direction.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+2 unread release notes.2
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesIntroduction the Human-Computer Interface (HCI)
+Spring 2025
+Home
+Syllabus
+Modules
+Grades17
+Discussions
+Announcements
+Introduction the Human-Computer Interface (HCI)
+Image of Jesse James GarrettHuman-Computer Interaction, or HCI studies how humans make sense of using mice, keyboards, and other devices to work the graphical user interfaces that computers outwardly display. HCI mixes learning and principles from computer science, design, behavioral sciences, and other disciplines to drive our understanding of how humans can effectively use computers. Human-Computer interaction was discussed in the very early 1980s and has grown steadily as a discipline since then. Schools at first offered a single course in the topic, but now there are schools where you can get a degree in the discipline of HCI.
+
+Elements of User experience, by Jesse James Garrett
+Shown to the right is Jesse James Garrett. He is a name to know, not because of the outlaw first half to his name, or that is surname (Pat Garrett) killed his given names (Jesse James), but because he is an important voice in a few different fields within information science. Garrett was an important voice during the early Web 2.0 year around 2005 to 2010. He popularized the use of Ajax and is a respected graphical designer.
+
+Shown to the left is the condensed version of Garrett's "Elements of User Experience (UX)". I think of this chart as Maslow’s Hierarchy of Needs applied to HCI and what you're looking at is the Design Hierarchy of Needs. If this was a course in design, we might take an hour to consider the implications of this image. There is nothing for you to memorize for a quiz question in this information. What I’d like you to take away from this idea is that effective design must meet these requirements in this order: functional, reliable, usable, proficient, and creative. Notice which one comes last: creative.
+
+Why bring up HCI in a web authoring course? Well, because a web page is a user interface and over the last 20 years there's been a lot of discussion about what should go on a web page, where it should go, and why it should go there. There's also been a lot of discussion about how web pages should be designed so that they provide a quality experience for users on desktop computers and on smartphones. Putting stuff on a web page is one thing. Putting the right content in the right place is something that takes some skill and artistic sense.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+2 unread release notes.2
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesWhat is a CDN?
+Spring 2025
+Home
+Syllabus
+Modules
+Grades17
+Discussions
+Announcements
+What is a CDN?
+Content Delivery Network
+A CDN cloud surrounded by 3 services to the left (music, web, streaming) and three different clients on the right (mobile, laptop, desktop)A Content Delivery Network (CDN) is a network of servers where each server covers a large geographic region. A CDN stores cached content that it delivers on demand to end users. When you download a font from Google, that font is sent to you by a CDN.
+
+A CDN reduces latency (delay) by moving the server closer to the end user and by distributing the system so that there's no single point of failure, or a single point to attack. A CDN duplicates content that's stored on a central server on regional delivery servers. The CDN manages the regional servers remotely.
+
+A CDN and "the cloud" are similar concepts with a few differences. CDNs and "the cloud" both serve content using a geographically organized system. The main difference between the two is that "the cloud" is application and data-oriented while a CDN is more about content delivery optimization.
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+2 unread release notes.2
+Help
+W25 CGS1820.0M1: WEB AUTH 1PagesEntity Names & Entity Numbers
+Spring 2025
+Home
+Syllabus
+Modules
+Grades17
+Discussions
+Announcements
+Entity Names & Entity Numbers
+Create Non-Keyboard Characters
+A map of entity namesThere are several different glyphs and shapes we use to communicate that aren't on our keyboards. You've probably used emojis now for a long time. An emoji is a key combination that the application converts into a shape; like :) becomes 😁.
+
+In HTML, we can create hundreds of non-keyboard characters and shapes by using entity names and entity numbers. Both types of entities are a string that starts with an ampersand '&' symbol and end with a semi-colon. What goes in between can be text, in which case it's an entity name or it can be a number, in which case it's an entity number. Entity names are easier to remember because the name used relates pretty closely to the symbol that you're trying to create, for example '&copy;' creates a copyright symbol ©. The matching entity number for a copyright symbol is '&#169;' but who's going to remember that??
+
+Entity numbers aren't random things, but they don't have the semantic tie-in that entity names usually have. The number part of an entity number defines a position in the Unicode table where the shape you want is located. Any character can be created as an entity number, but I'd rather type 'Sam' instead of '&#83;&#97;&#109;'. Both place the same text on the page, but you should only use entity names and numbers when you have no other way to get what you want.
+
+Portion of the ASCII table
+By the way, if you put a space in your folder name for 'mod 4', the browser will return that folder as 'mod%204. Your browser substituted the space character for '%20'. On the ASCII table portion above, you can see that the hexadecimal number position of a space bar is 20 and that's where the 20 comes from. Don't put spaces in your file and folder names. It's a bad habit that sooner or later you'll pay a price for.
+
+You can see a complete list of entity names and numbers at: https://www.freeformatter.com/html-entities.htmlLinks to an external site.
+
+Shown below are seven symbols that you can make using entity names or numbers. Do you need to memorize these? No, but you need to know that entity names and numbers exist, you need to know that there's a pattern to entity names and numbers, and you need to know how to look them up. There are easily hundreds of entities in HTML - way too many to memorize. Learn the pattern, know what the pattern means, and you'll be fine.
+
+Character	Entity Name	Entity Number	Description
+&	&amp;	&#38;	Ampersand
+©	&copy;	&#169;	Copyright
+∑	&sum;	&#8721;	Sum
+←	&larr;	&#8592;	Left Arrow
+→	&rarr;	&#8594;	Right Arrow
+·	&middot;	&#183;	Small Bullet Disc
+½	&frac12	&#189;	One half
+
+
+Skip To Content
+Michael Maguire
+Account
+Dashboard
+Courses
+Calendar
+Inbox
+History
+SF Learning Commons
+SF Learning Commons
+Timely Care
+Pathful Explore
+Pathful Explore
+Kaltura
+Kaltura My Media
+2 unread release notes.2
+Help
+W25 CGS1820.0M1: WEB AUTH 1Pages<span> Elements
+Spring 2025
+Home
+Syllabus
+Modules
+Grades17
+Discussions
+Announcements
+<span> Elements
+Two contrasting displays are inline and block. Block is like a <p> or <h1> element. A block element must start on the left margin of the page and it consumes all space on the row or rows where it sits. A block element has margin (empty space) above and below it, An inline element can start anywhere and be placed inside of a block element. An inline element takes up only the space that it needs to render it's content. Inline elements do not have margin.
+
+A <span> element is an inline element that's commonly mixed with text elements. The purpose of using a <span> element is to change the styling of the text that's inside the <span>. For example:
+
+<p>This text might look better if these words were colored magenta</p>
+<p>This text might look better if <span style="color: magenta">these words</span> were colored magenta</p>
+
+Results in this rendered output:;
+
+This text might look better if these words were colored magenta
+This text might look better if these words were colored magenta
+
+A <span> element can hold as many styles as you want to add - or remove.
+
+
+Container Elements
+Semantic Layers Are Containers
+Four Matryoshka dolls
+The Box Model can be applied to almost every HTML element, but where you'll use it the most is on 'container' elements. A container element holds other elements and acts as an organizer for the greater page. A container element is a parent element that holds child elements. The HTML5 semantic layers that were discussed in Module 4 are container elements. While my Matryoshka Dolls don't hold other things, they are all container elements that hold something. If my dolls are packed and I move the largest doll, I'm also moving all of the small dolls, which is the point. We don't want to move content, we want to move layers.
+
+Defining Layer Size
+The Size of Things
+A web page and a Word document both start out as containers that holds nothing that the author then adds content to. Text documents layout out text from the upper left-hand corner and render across first and then down the page. Where that last line of a document is located is purely up to text in the file and the width of the margins. In a word processor, the text is "squeezed" down the page. by the margins. In HTML, our content is "squeezed" down the page by the browser window or a layer's defined width. The page exists where there is content. Any space after the content ends isn't part of the document; it's void.
+
+Girl in purple dress blowing up a yellow balloon
+The height of the container is determined by its contents, unless you define a container's width and height. A container with no content will have no width or a height. Containers are inherently lazy and will only be as big as they need to be to hold the content that's currently inside them; again, unless you define a width or height in CSS.
+
+Principle: an undefined layer is only as wide first and as tall second as it needs to be to display its content.
+
+If I give a layer a defined width or height, then the layer will comply, but the natural size of layer is the same size as a balloon that has not been blown up yet. As we add air to the balloon, the balloon gets larger, but it won't get larger until more air is added. A layer in HTML works exactly the same way. The layer is only as large as it needs to be to display the content.
+
+If you create an empty web page and view it in your browser, it will look like you have an empty page, but that's not really true. What you have is a browser window that's displaying void.
+
+Defining Container Space
+The Box Model describes how a container element interacts with the content it holds and the other container elements on the page. Every element that's not empty (like <br> and <hr>) can have the box model applied to it. The Box Model defined padding, borders, and margins, which cumulatively define the space that the content controls - or the space that no element other than the content can be in.
+
+The Box Model icon in Chrome's Developer Tools
+The image to the right is the Box Model that's shown in Chrome's Developer Tools shows you the four parts that make up the Box Model. The green rectangle in the center is the content that the Box Model is being applied to. This content could be a <section> layer, in image, or even a <p> element. The element has a defined width and height. In this case, the content consumes 570 x 481 pixels.
+
+Padding
+Immediately outside of the content's boundary is a light green region that's known as padding. Padding sits between the content and the yellow area which is known as the border. Padding has a dimension (a width), but it doesn't have a color or a style because padding is invisible. There was no padding applied to this content.
+
+Border
+The border is the yellow area that sits outside of the padding. Borders have a width, a style, and a color and are visible on the web page. The container shown did not have a defined border.
+
+Margin
+Margin is empty space that's added outside of the border. The margin is represented by the orange area in the image. Margin is like padding but it's on the outside of the border instead of being on the inside. Margin is invisible, so there's no color or style to define, only a width. 
+
+Padding and margin create negative space outside of the content and the border respectively. The purpose of using padding and margin is to separate the content from the border and the border from other elements.
+
+An Example
+Chrome's Box Model icon in Developer Tools
+Shown to the right is another Box Model display. The content being shown is a <main> element. The rendered size of <main> is 570 x 503 pixels. The light green padding layer shows that 8 pixels of invisible padding was placed outside of each side of the content. Outside of the padding in the yellow box is a 1 pixel border. We don't know about the border's style or color, but we do know it's one pixel thick. Outside of the border is 20 pixels of invisible space above and below the content that nothing else can enter. There is also 521 pixels of allocated space that's outside the border and to the left and right of the border that no other element may enter. The size of the content is 570 x 503, With the padding added in, the content controls 586 x 519 pixels. Adding in the border means that the content now controls a space that's 588 x 521pixels and when we add in the margin, the image controls the entire width of <main> (1630 pixels and 561 pixels of its height.
+
+Box model exampleShown in this image is how the Box Model controls space around the content. In this example, you can see the upper right corner of the content, which is an image. Outside of the image is 3 pixels of padding, which is empty space that's colored green here so you can see it. Outside of the padding is a 1-pixel gray border, and outside of the border is 3 more pixels of margin that are also empty space and is colored orange so you can see it. The image controls its own space, plus the 7 pixels of Box Model space that's on each side of the image.
+
+Padding, Margin & Border Styling
+Borders
+Borders have a size, style, and color that can be addressed individually or as a group:
+
+Declaration	Possible Values
+border-color: green;	Any RGB color, named color, hex color
+border-style: solid;	border styles allowed: none, solid, dotted, inset, double, dashed, groove
+border-width: 3px;	pixels; any measuring system
+border: 1px solid black;	Shorthand declaration for width, style, and color of border
+Borders can be addressed to one side of the Box:
+
+Declaration	Possible Values
+border-top-width: 3px;	top-, left-, bottom-, right-
+border-bottom-style: double;	top-, left-, bottom-, right-
+Padding & Margin
+Padding and margin only have width. The width for padding/margin can be addressed to a single side of the Box:
+
+Declaration	Possible Values
+padding: 4px;	Addressed to all four sides
+padding-top: 4px;	top-, left-, bottom-, right-
+margin-left: 1px;	top-, left-, bottom-, right-
+Padding and margin can be addressed to multiple sides in a single declaration:
+
+Declaration	Possible Values
+padding: 4px;	4px added to all four sides of the container
+margin: 2px 4px	2px added to the top & bottom and 4px added to the left & right sides
+padding: 1px 2px 3px;	1px added to top, 2px to the left and right sides, and 3px to the bottom
+margin: 1px 2px 3px 4px;	1px to top, 2px to right side, 3px to bottom, and 4px to left side
+Note: the Box Model addresses sides clockwise from the top around the image
+
+Recommendation:
+
+In most cases, you'll use the same border on all four sides of the image and you'll also use the same padding and margin, so in most cases, your border declaration will be something like:
+
+border: 2px solid green;
+
+And your padding or margin declaration will be:
+
+padding: 3px;
+
+Padding, Margin & Border Styling
+Borders
+Borders have a size, style, and color that can be addressed individually or as a group:
+
+Declaration	Possible Values
+border-color: green;	Any RGB color, named color, hex color
+border-style: solid;	border styles allowed: none, solid, dotted, inset, double, dashed, groove
+border-width: 3px;	pixels; any measuring system
+border: 1px solid black;	Shorthand declaration for width, style, and color of border
+Borders can be addressed to one side of the Box:
+
+Declaration	Possible Values
+border-top-width: 3px;	top-, left-, bottom-, right-
+border-bottom-style: double;	top-, left-, bottom-, right-
+Padding & Margin
+Padding and margin only have width. The width for padding/margin can be addressed to a single side of the Box:
+
+Declaration	Possible Values
+padding: 4px;	Addressed to all four sides
+padding-top: 4px;	top-, left-, bottom-, right-
+margin-left: 1px;	top-, left-, bottom-, right-
+Padding and margin can be addressed to multiple sides in a single declaration:
+
+Declaration	Possible Values
+padding: 4px;	4px added to all four sides of the container
+margin: 2px 4px	2px added to the top & bottom and 4px added to the left & right sides
+padding: 1px 2px 3px;	1px added to top, 2px to the left and right sides, and 3px to the bottom
+margin: 1px 2px 3px 4px;	1px to top, 2px to right side, 3px to bottom, and 4px to left side
+Note: the Box Model addresses sides clockwise from the top around the image
+
+Recommendation:
+
+In most cases, you'll use the same border on all four sides of the image and you'll also use the same padding and margin, so in most cases, your border declaration will be something like:
+
+border: 2px solid green;
+
+And your padding or margin declaration will be:
+
+padding: 3px;
+
+Measuring with 'calc()'
+Combining Mixed Measuring Systems
+A calculator with a ruler'calc() is a value of the width and height properties. calc() allows you to define sizes by calculating them using mixed measuring systems. For example if I was a layer to have a width of 80% but I also want to subtract out 1em for some reason, I can do that with calc(80% - 1em). If there's a trick to using calc(), its that there MUST be one space on each side of the mathematical operator that you use to combine the two measures. 
+
+The real power to 'calc() is that it mixes measures while you're calculating. That's important for humans, but not so important for your browser. The rendering engine in your browser converts each measure to pixels before it calculates the color of each of those pixels, which it then sends out that color information to the frame buffer that in turn renders the screen.
+
+width: calc(100% - 3em);
+
+For 'calc()' to work, you must have a space on either side of the mathematical operator that sits inside the parenthesis. Type your calc() exactly as you see it typed above. This value is very touchy about whitespace, so follow my example exactly.
+
+Scroll Bars
+Use Only When Really Needed
+Scroll bar
+Scroll bars are a necessary evil when you have too much content to fit into a layer. Layers will have a defined width, but hopefully they don't have a defined height, which allows the content of the layer to force its container open just far enough for the content to fit. However, layers that have a very different heights will create a layout problem and the usual solution to that problem is to constrain the height of some layers. Any layer that has a defined height should also have the ability to display scroll bars so that the user can read all of the content in the layer. The CSS declaration that turns on scroll bars is:
+
+overflow-y: auto;
+
+'Overflow' is what turns on the scroll bars and 'y' is the direction. Just like in Algebra class, the Y axis runs up and down and the X axis goes from left to right. 'overflow-y' turns on a vertical scroll bar. You can turn on horizontal scrolling by using 'overflow-x', but you really, really really don't want to do that. Horizontal scrolling is a serious useability problem because it means that the user has to scroll each line to see the text that's hidden and that line could be a few words long or it could be several inches long. Your scrolling should always be vertical.
+
+Under no circumstances should you turn on both horizontal and vertical scrolling at the same time. One direction of scrolling is too many. Multi-directional scrolling on a smartphone is unworkable.
+
+There are five scroll values that can be used with 'overflow-y'. What you need to know is to use 'auto' and think of the other values as specialty settings.
+
+Value	Meaning
+auto	Scroll bar appears only if needed
+scroll	Vertical scroll bar appears whether needed or not
+hidden	Content that doesn't fit is not displayed and can't be accessed
+clip	Content defined as 'overflow-clip-margin' is not displayed if it doesn't fit
+visible	Content is displayed regardless of whether it fits the layer or not
+Scroll bars are approximately 20 pixels wide, but the width is browser-specific and there's no standard size
+
+Border Radius
+Rounding the Corners
+Animation of how a border radius is used to set rounding on layersBorder-radius is a CSS3 styling enhancement that allows you to set a radius (a distance) that you want your corners to be rounded to. Shown in the image to the right is a circle sitting in the upper right corner. The circle's radius is 5px, so the rounding that it creates on the layer's border is also 5 pixels.
+
+You can set border-radius on each corner, but that's usually a design error. You can also set the rounding on the layer to be based in an oval instead of a circle, but I'll leave instruction on how to do that for CGS1821. For the border-radius to work, the border must be visible. To set the border-radius on the <main> layer at 5 pixels:
+
+main {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+To set the border-radius to 4 pixels on only the upper-right corner use:
+
+section {
+    border: 1px solid black;
+    border-top-right-radius: 4px;
+}
+
+Box Model & Developer Tools
+Box Model in Developer ToolsDeveloper Tools shows the Box Model for every element that you select. The darker blue area is the content. The content's current defined width and height are shown in pixels. All measurements here are in pixels regardless to how you defined them in your stylesheet. The purpose of Developer Tools is to show you the instructions that the browser's rendering engine is using to color the pixels in the browser window, so it makes sense that dimensions are defined in pixels. The content that's being drawn into the browser window is 570 x 503 pixels.
+
+Around the content is padding defined in the green area; if padding is set in the CSS. If no padding is defined, then you'll see a dash for the value. Each side of the content can have a different amount of padding. Currently, the browser will not allow anything to be closer to the content than 8 pixels. Those 8 pixels will be void, though the background color from an ancestor layer will inherit into the voided area.
+
+Outside of the padding and in the yellow area is the border, which is 1 pixel in width.
+
+Outside of the border is the margin, if it's defined. In this case, the margin was defined using:
+
+margin: 1.25em auto;
+
+This declaration means to add 1.25 ems (20 pixels) of margin to the top and bottom of the accumulated shape and to center inside of its parent container.
+
+'display:' Property Values
+Defining Content Interaction
+'display' describes how a page element will interact with other page elements. All page elements have a display and that display is defined in the Default Values. There are 23 different display values. The first three of those are:
+
+display: block;
+display: inline-block;
+display: none; 
+
+display: block: means that no other element can sit beside (to the left or right) this element. Another way to say that is that block elements consume their entire row. Block elements have a width and height. In the image below, two <p> elements start out "on the same line", but that's not allowed by the 'display: block' default value for a <p> element. This causes the second <p> element to be pushed down to the second line even though the first line is not full of text. A <p> element is an example of a block element.
+
+Second paragraph cannot sit beside first paragraph even though it fits
+display: inline-block: An image is an inline-block element. It is allowed to sit in the same line as a block element. Inline-block elements do have a width and height. Inline-block elements are included in the determination of the line-height where it is rendered if the inline-block element is taller than the text around it. Images are displayed as inline-block unless you overwrite that default style. In the image below, the inline-block image sits beside the text: "First line".
+
+image sits next to text on the same line
+display: none: A display of none means that the element is be visible in the browser window and it takes up no space in the page rendering. The element is totally ignored by the rendering engine. There is also a property 'visibility', which when set to 'hidden' will make the content invisible in the browser window, but 'visibility' doesn't remove the element from the rendering process, so the element will not be seen, but it will still take up space on the web page.
+
+As the course goes on, we will add to this list of displays.
+
+Backgrounds
+Lots of Choices; Only a Few Good Ones
+The background color of a web page is white by default. This color can be changed by adding a background color to the 'body' element. You can also add an image or a gradient to the background, but solid-colored backgrounds or very lightly gradiated backgrounds is usually the best choice.
+
+Advantages of white:
+
+highest contrast with black text makes for easy reading
+Western significance of white as a clean, pure color
+Disadvantages of white:
+
+eye strain due to brightness
+arguably its overuse
+The compromise solution is to use a very light background that's approaching white but isn't white. To add a background color other than white to your web page:
+
+body {
+    background: #f7f7f7;   
+}
+
+Gradients
+A second compromise is to use a color gradient where the color range sits very close to white. A background color for the screen should be defined in the 'body' style rule and the background color for your "page" should defined in the 'main' style rule. A background can be applied to any container element, but it's very easy to have too many backgrounds on the same page. Two background colors is probably enough. Background colors do inherit to any child elements. The CSS to create a background color and a background gradient are shown below:
+
+body {
+    background-image: linear-gradient(90deg, #f7f7f7 0%, white 50%, #f7f7f7 100%);
+}
+
+Components of the Gradient:
+
+90deg makes the gradient go across the page instead of up and down the page.
+Three defined colors: #f7f7f7 (a very light gray), white, and the the light gray color again.
+The gradient's stops are a 0 (the left edge), 50% (the middle of the container), and at 100% (the right edge). 
+Types of gradients:
+
+linearred-green linear gradient
+
+radialred-green radial gradient
+
+conicred-green conic gradient
+
+Background Images
+Background images are generally not a good idea because they create contrast problems with the text they sit beneath. To pass an accessibility test, your content has to have at least a 50% brightness difference to the background, which means that black text must have a background that's no darker than middle gray. Background images are called into your page this way:
+
+body {
+    background-image: url('../images/background.png')    //from the stylesheet
+}
+
+Unless you state otherwise, a background image will 'tile' or repeat itself across the page until it covers the row first and then it will repeat the rows until the page is filled.
+
+You can control tiling of background images by using 'background-repeat' and 'background-position'. 'repeat' allows you to set the background to tile one row horizontally or one column vertically on whichever margin you prefer. 'X' is for horizontal and 'Y' is for vertical, just like in Geometry class!
+
+body {
+    background-image: url('../images/background.png');
+    background-repeat: repeat-x;      //repeat-y, no-repeat
+}
+
+'background-position' allows you to set a starting point for the tiling. Your choices are:
+
+left, center, and right for horizontal settings
+top, center, and bottom for vertical settings
+You can also offset the initial position of the background by using:
+
+body {
+    background-position: 1% 2%;       //1% horizontal, 2% vertical offset from UL corner
+
+} 
+
+There are other background settings, but this is more than enough to get you started.
+
+
+Skip To Quiz Content
+Results
+Michael Maguire
+Assessment Statistics
+
+66.67%
+66.667 out of 100 points
+66.667
+Out of 100 points
+Time for this attempt: 12 minutes 36 seconds
+12 minutes 36 seconds12:36
+Time for this attempt
+Your Answers:
+Results for question 1.
+1
+6.667 / 10 points
+Features of Google Chrome that made it a better browser include:
+
+Correct answer:
+
+Faster rendering and scripting engines
+
+Incorrect answer:
+
+An improved version of HTML5 & CSS3
+
+Selected Answer - Incorrect
+Correct answer:
+
+Separate sandboxing of tabs (instances)
+
+Correct answer:
+
+Ability to better handle Rich Internet Applications (RIA)
+
+Results for question 2.
+2
+10 / 10 points
+A major driver of change in the HTML5 Years was:
+
+
+A completely new HTML programming language
+
+, Not Selected
+Correct answer:
+
+The emergence of smartphones
+
+
+HTTP being replaced by HTTPS
+
+, Not Selected
+
+The Internet being replaced by the Extranet
+
+, Not Selected
+Results for question 3.
+3
+10 / 10 points
+Web 2.0 is:
+
+
+Built on web sockets
+
+, Not Selected
+
+An improved version of SSL/TLS
+
+, Not Selected
+
+A more efficient way to use bandwidth
+
+, Not Selected
+Correct answer:
+
+A read/write Internet and social media
+
+Results for question 4.
+4
+10 / 10 points
+A likely entity name for an apostrophe might be:
+
+
+#apos
+
+, Not Selected
+
+#apos;
+
+, Not Selected
+Correct answer:
+
+&apos;
+
+
+&apos
+
+, Not Selected
+Results for question 5.
+5
+0 / 10 points
+A layer that has no defined dimensions is how big?
+
+Incorrect answer:
+
+It will fill the width of the parent container but not its height
+
+Correct Answer:
+It will only be as large as its contents require it to be
+
+
+It will fill the height of the parent container but not its width
+
+, Not Selected
+
+It will fill the width and height of the parent container
+
+, Not Selected
+
+It will only be as large as its contents require it to be
+
+, Not Selected
+Results for question 6.
+6
+0 / 10 points
+An image that is 100 x 100px and has a 2 pixel border is how large?
+
+
+98 x 98px
+
+, Not Selected
+
+100 x 100px
+
+, Not Selected
+
+102 x 102px
+
+, Not Selected
+Incorrect answer:
+
+104 x 104px
+
+Correct Answer:
+102 x 102px
+
+Results for question 7.
+7
+10 / 10 points
+Padding sits:
+
+Correct answer:
+
+Between the shape and the border if present
+
+
+Outside of the border
+
+, Not Selected
+
+Outside of the margin
+
+, Not Selected
+Results for question 8.
+8
+10 / 10 points
+Margin is located
+
+
+Inside of the border
+
+, Not Selected
+Correct answer:
+
+Outside of the border
+
+
+Immediately outside of the padding
+
+, Not Selected
+Results for question 9.
+9
+10 / 10 points
+If scroll bars are needed, how should they be deployed?
+
+
+Horizontal only
+
+, Not Selected
+Correct answer:
+
+Vertical only
+
+
+Horizontal and vertical together
+
+, Not Selected
+Results for question 10.
+10
+0 / 10 points
+Layer sizes should be defined:
+
+
+Both horizontally and vertically in pixels
+
+, Not Selected
+
+Horizontally in a size range
+
+, Not Selected
+Incorrect answer:
+
+Vertically in a size range
+
+Correct Answer:
+Horizontally in a size range
+
+
+Horizontally in a fixed pixel size
+
+, Not Selected
+
+Vertically in a fixed pixel size
+
+, Not Selected
+
+
+Skip To Quiz Content
+Results
+Michael Maguire
+Assessment Statistics
+
+100%
+100 out of 100 points
+100
+Out of 100 points
+Time for this attempt: 8 minutes 45 seconds
+8 minutes 45 seconds08:45
+Time for this attempt
+Your Answers:
+Results for question 1.
+1
+18 / 18 points
+    
+
+Web 2.0
+Correct match:
+Read and write web content
+Rich Internet Applications
+Correct match:
+Partial page refresh over full page refresh
+Module
+Correct match:
+Recommendation for one new feature or technology
+Single Page Application
+Correct match:
+Site that loads new content into the index page
+Results for question 2.
+2
+16 / 16 points
+    
+
+Entity Name
+Correct match:
+Keyboard sequence of text that creates a character
+Entity Number
+Correct match:
+Keyboard sequence that creates a character based on its position in a Unicode chart
+<span>
+Correct match:
+Inline tags used to apply a style to a portion of the element
+Container element
+Correct match:
+An element holding child elements
+Results for question 3.
+3
+16 / 16 points
+    
+
+Margin
+Correct match:
+Void space outside of the border
+Padding
+Correct match:
+Void space between the shape and the border
+Border
+Correct match:
+Visible edge outside of the shape
+Results for question 4.
+4
+18 / 18 points
+    
+
+margin: 5px;
+Correct match:
+Applies same margin on all four sides
+margin: 2px 5px;
+Correct match:
+Applies top & bottom and then left & right margin
+margin: 2px 4px 5px;
+Correct match:
+Applies margin to top, sides, and bottom
+margin: 2px 3px 4px 5px;
+Correct match:
+Applies margin to the top, right, bottom, and left sides
+Results for question 5.
+5
+16 / 16 points
+   
+
+Variable sizing
+Correct match:
+Size ranges better than fixed pixel sizes
+calc()
+Correct match:
+Ability to add different measuring systems together
+border-radius
+Correct match:
+Rounds the corners of a visible border
+Results for question 6.
+6
+16 / 16 points
+    
+
+block
+Correct match:
+Element allows nothing beside it
+inline-block
+Correct match:
+Has width and height, but allows other content beside it
+none
+Correct match:
+invisible and unrendered

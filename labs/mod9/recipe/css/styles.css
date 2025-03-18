@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-size: 1.2em;
+	font-family: "Times New Roman", serif;
+}
+main {
+	width: 1500px;
+	margin: 1em auto;
+	overflow: auto;
+}
+header {
+	background: #ffddbb;
+	padding: .5em 30px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+nav article div {
+	float: left;
+	width: calc(16.66% - 2px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffddbb;
+	border-left: 1px solid white;
+	border-right: 1px solid black;
+}
+nav article div:first-child {
+	border-left: 1px solid black;
+}
+article div p {
+	margin: .5em;
+}
+#author {
+	padding-top: 2em;
+}
+#printerpix {
+	margin-left: 30px;
+	vertical-align: middle;
+}
+#piepix {
+	float: left;
+	width: 1000px;
+	height: auto;
+}
+iframe {
+	width: 476px;
+	height: 996px;
+	margin-left: 20px;
+}
+
+#stats {
+	width: 1498px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #cde;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+.stats {
+	margin: 1em 0;
+	padding: 0 2em;
+}
+#stat1, #stat2, #stat3 {
+	border-right: 2px solid #999;
+}
+.smallcaps, .answer {
+	text-align: center;
+	margin: 0;
+}
+.smallcaps {
+	font-variant: small-caps;
+	font-size: 1.4em;
+}
+#ingredients, #directions {
+	float: left;
+	width: 470px;
+	margin-left: 30px;
+}
+.stat {
+	display: block;
+}
+#stat1, #stat2, #stat3 {
+	display: none;
+}
+#ingredients, #directions {
+	float: none;
+	margin: 0;
+	width: 8in;
+
+}
+#ingredients p, #directions p {
+	margin: .6em;
+}
+@media print {
+	/* Reposition body and font size */
+	body {
+		font-size: 1em;
+		font-family: calibri, sans-serif;
+	}
+	main {
+		width: 8in;
+	}
+	header {
+		padding: 0;
+		border: 0;
+	}
+}

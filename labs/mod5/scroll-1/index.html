@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Scroll Bars</title>
+		<link href = "css/styles.css" rel = "stylesheet">
+		<style>
+			body {
+				margin: 8px
+			}
+			main {
+			    margin: 1em auto;
+				min-width: 35em;
+				max-width: 45em;
+				width: calc(100% - 1em);
+				background: #efcdab;
+				padding: .5em;
+			}
+			section {
+				
+				width: calc(100% - 1em); /* 100% - section padding */
+				margin: 1em auto; /* adds top-bottom only */
+				padding: .5em;
+				height: 6em;
+				background: #f3fff3;
+				border: 1px solid black;
+			}
+			section {
+				width: calc(100% - 1em);    /* 100% - section padding */
+				margin: 1em auto;           /* adds top-bottom only */
+				padding: .5em;
+				height: 6em;
+				background: #f3fff3;
+				border: 1px solid black;
+			}
+			#one {
+				overflow-y: auto;
+			}
+			#two {
+				overflow-y: scroll;
+			}
+			#three {
+				overflow-y: hidden;
+			}
+			#four {
+				overflow-y: clip;
+			}
+			#five{
+				overflow-y: visible;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<section id="one" >
+				<p>auto</p>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula at lacus quis convallis. Pellentesque consequat sem in aliquam ornare. Maecenas molestie erat non ante tempor ultricies. Sed dui enim, tincidunt lobortis lectus id, sollicitudin convallis ex. Nam consectetur magna sit amet nibh aliquet, a fringilla dolor molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ultricies ut tellus non auctor. Phasellus vel pellentesque massa. Donec porta elit non turpis posuere blandit. Aliquam eget bibendum diam. Etiam semper consequat metus, ut luctus quam faucibus sed. Fusce non pretium ante, non interdum massa. Sed pulvinar ipsum sed enim pharetra, a blandit erat iaculis.</p>
+				<p>Vivamus condimentum, mauris efficitur sodales varius, elit metus tincidunt leo, in laoreet purus lacus vitae quam. Sed mi enim, venenatis non eleifend id, vulputate vel eros. Mauris volutpat vehicula ligula at molestie. Etiam eros urna, mattis sit amet scelerisque sed, dapibus vel magna. Nam aliquet ultricies congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</section>
+			
+			<section id="two">
+				<p>scroll</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula at lacus quis convallis. Pellentesque consequat sem in aliquam ornare. Maecenas molestie erat non ante tempor ultricies. Sed dui enim, tincidunt lobortis lectus id, sollicitudin convallis ex. Nam consectetur magna sit amet nibh aliquet, a fringilla dolor molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ultricies ut tellus non auctor. Phasellus vel pellentesque massa. Donec porta elit non turpis posuere blandit. Aliquam eget bibendum diam. Etiam semper consequat metus, ut luctus quam faucibus sed. Fusce non pretium ante, non interdum massa. Sed pulvinar ipsum sed enim pharetra, a blandit erat iaculis.</p>
+				<p>Vivamus condimentum, mauris efficitur sodales varius, elit metus tincidunt leo, in laoreet purus lacus vitae quam. Sed mi enim, venenatis non eleifend id, vulputate vel eros. Mauris volutpat vehicula ligula at molestie. Etiam eros urna, mattis sit amet scelerisque sed, dapibus vel magna. Nam aliquet ultricies congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</section>
+			
+			<section id="three">
+				<p>hidden</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula at lacus quis convallis. Pellentesque consequat sem in aliquam ornare. Maecenas molestie erat non ante tempor ultricies. Sed dui enim, tincidunt lobortis lectus id, sollicitudin convallis ex. Nam consectetur magna sit amet nibh aliquet, a fringilla dolor molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ultricies ut tellus non auctor. Phasellus vel pellentesque massa. Donec porta elit non turpis posuere blandit. Aliquam eget bibendum diam. Etiam semper consequat metus, ut luctus quam faucibus sed. Fusce non pretium ante, non interdum massa. Sed pulvinar ipsum sed enim pharetra, a blandit erat iaculis.</p>
+				<p>Vivamus condimentum, mauris efficitur sodales varius, elit metus tincidunt leo, in laoreet purus lacus vitae quam. Sed mi enim, venenatis non eleifend id, vulputate vel eros. Mauris volutpat vehicula ligula at molestie. Etiam eros urna, mattis sit amet scelerisque sed, dapibus vel magna. Nam aliquet ultricies congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</section>
+			
+			<section id="four">
+				<p>clip</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula at lacus quis convallis. Pellentesque consequat sem in aliquam ornare. Maecenas molestie erat non ante tempor ultricies. Sed dui enim, tincidunt lobortis lectus id, sollicitudin convallis ex. Nam consectetur magna sit amet nibh aliquet, a fringilla dolor molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ultricies ut tellus non auctor. Phasellus vel pellentesque massa. Donec porta elit non turpis posuere blandit. Aliquam eget bibendum diam. Etiam semper consequat metus, ut luctus quam faucibus sed. Fusce non pretium ante, non interdum massa. Sed pulvinar ipsum sed enim pharetra, a blandit erat iaculis.</p>
+				<p>Vivamus condimentum, mauris efficitur sodales varius, elit metus tincidunt leo, in laoreet purus lacus vitae quam. Sed mi enim, venenatis non eleifend id, vulputate vel eros. Mauris volutpat vehicula ligula at molestie. Etiam eros urna, mattis sit amet scelerisque sed, dapibus vel magna. Nam aliquet ultricies congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</section>
+			
+			<section id="five">
+				<p>visible</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula at lacus quis convallis. Pellentesque consequat sem in aliquam ornare. Maecenas molestie erat non ante tempor ultricies. Sed dui enim, tincidunt lobortis lectus id, sollicitudin convallis ex. Nam consectetur magna sit amet nibh aliquet, a fringilla dolor molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ultricies ut tellus non auctor. Phasellus vel pellentesque massa. Donec porta elit non turpis posuere blandit. Aliquam eget bibendum diam. Etiam semper consequat metus, ut luctus quam faucibus sed. Fusce non pretium ante, non interdum massa. Sed pulvinar ipsum sed enim pharetra, a blandit erat iaculis.</p>
+				<p>Vivamus condimentum, mauris efficitur sodales varius, elit metus tincidunt leo, in laoreet purus lacus vitae quam. Sed mi enim, venenatis non eleifend id, vulputate vel eros. Mauris volutpat vehicula ligula at molestie. Etiam eros urna, mattis sit amet scelerisque sed, dapibus vel magna. Nam aliquet ultricies congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</section>
+	    </main>
+    </body>
+</html>
